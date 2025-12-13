@@ -1,0 +1,15 @@
+[0/2] Re-checking globbed directories...
+[1/2] Building CXX object scratch/CMakeFiles/scratch_evalvid_lte_aval_x2.dir/evalvid_lte_aval_x2.cc.o
+[2/2] Linking CXX executable ../build/scratch/ns3.39-evalvid_lte_aval_x2-optimized
+==========================================
+Iniciando simulação: COM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: st_highway_cif.st, football.st
+  Diretório: results_lte_sdn_20251213_175141
+==========================================
+
+==========================================
+Simulação COM_SDN concluída!
+Resultados em: results_lte_sdn_20251213_175141
+==========================================

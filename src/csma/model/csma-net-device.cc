@@ -807,6 +807,34 @@ CsmaNetDevice::Receive(Ptr<Packet> packet, Ptr<CsmaNetDevice> senderDevice)
     }
 
     //
+    // Check if this device is configure as an OpenFlow switch port.
+    //
+    if (!m_openFlowRxCallback.IsNull())
+    {
+        // For all kinds of packet we receive, we hit the promiscuous sniffer
+        // hook. If the packet is addressed to this device (which is not supposed
+        // to happen in normal situations), we also hit the non-promiscuous
+        // sniffer hook, but in both cases we don't forward the packet up the
+        // stack.
+        m_promiscSnifferTrace(originalPacket);
+        if (packetType != PACKET_OTHERHOST)
+        {
+            m_snifferTrace(originalPacket);
+        }
+
+        // We forward the original packet (which includes the EthernetHeader) to
+        // the OpenFlow receive callback for all kinds of packetType we receive
+        // (broadcast, multicast, host or other host).
+        m_openFlowRxCallback(this,
+                             originalPacket,
+                             protocol,
+                             header.GetSource(),
+                             header.GetDestination(),
+                             packetType);
+        return;
+    }
+
+    //
     // For all kinds of packetType we receive, we hit the promiscuous sniffer
     // hook and pass a copy up to the promiscuous callback.  Pass a copy to
     // make sure that nobody messes with our packet.
@@ -1022,6 +1050,13 @@ CsmaNetDevice::GetNode() const
 {
     NS_LOG_FUNCTION_NOARGS();
     return m_node;
+}
+
+void
+CsmaNetDevice::SetOpenFlowReceiveCallback(NetDevice::PromiscReceiveCallback cb)
+{
+    NS_LOG_FUNCTION(&cb);
+    m_openFlowRxCallback = cb;
 }
 
 void

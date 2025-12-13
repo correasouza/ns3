@@ -161,6 +161,9 @@ macro(write_configtable)
   string(APPEND out "ns-3 Click Integration        : ")
   check_on_or_off("ON" "${NS3_CLICK}")
 
+  string(APPEND out "ns-3 OFSwitch13 Integration   : ")
+  check_on_or_off("ON" "${NS3_OFSWITCH13}")
+
   string(APPEND out "ns-3 OpenFlow Integration     : ")
   check_on_or_off("ON" "${NS3_OPENFLOW}")
 

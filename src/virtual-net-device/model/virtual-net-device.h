@@ -153,6 +153,14 @@ class VirtualNetDevice : public NetDevice
     bool SupportsSendFrom() const override;
     bool IsBridge() const override;
 
+    /**
+     * Set the callback used to notify the OpenFlow when a packet has been
+     * received by this device.
+     *
+     * \param cb The OpenFlow receive callback.
+     */
+    void SetOpenFlowReceiveCallback(NetDevice::PromiscReceiveCallback cb);
+
   protected:
     void DoDispose() override;
 
@@ -173,6 +181,9 @@ class VirtualNetDevice : public NetDevice
     bool m_needsArp;                                         //!< True if the device needs ARP
     bool m_supportsSendFrom; //!< True if the device supports SendFrm
     bool m_isPointToPoint;   //!< True if the device is a PointToPoint type device
+
+    /** The OpenFlow receive callback. */
+    NetDevice::PromiscReceiveCallback m_openFlowRxCallback;
 };
 
 } // namespace ns3
