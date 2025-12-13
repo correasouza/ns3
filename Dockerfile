@@ -13,9 +13,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Sao_Paulo
 
 # Configuração de locale
-RUN apt-get update && apt-get install -y locales && \
-    locale-gen en_US.UTF-8 && \
-    update-locale LANG=en_US.UTF-8
+RUN apt-get update && apt-get install -y locales \
+    && locale-gen en_US.UTF-8 \
+    && update-locale LANG=en_US.UTF-8
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
@@ -25,36 +25,27 @@ ENV LC_ALL=en_US.UTF-8
 # Dependências básicas do sistema
 # ==============================================================================
 RUN apt-get update && apt-get install -y \
-    # Ferramentas de compilação essenciais
     build-essential \
     g++ \
     gcc \
-    
     make \
     cmake \
     ninja-build \
     ccache \
-    # Git e controle de versão
     git \
     git-core \
-    # Python e dependências
     python3 \
     python3-dev \
     python3-pip \
     python3-setuptools \
     python3-wheel \
     python3-venv \
-    # Bibliotecas de desenvolvimento
     libsqlite3-dev \
     libgsl-dev \
     libxml2-dev \
-    # GTK3 para visualização
     libgtk-3-dev \
-    # Boost libraries
     libboost-all-dev \
-    # Bibliotecas de rede
     libpcap-dev \
-    # Outras ferramentas úteis
     wget \
     curl \
     unzip \
@@ -67,40 +58,34 @@ RUN apt-get update && apt-get install -y \
     libtool \
     flex \
     bison \
-    # Documentação
     doxygen \
     graphviz \
-    # Ferramentas de debug
     gdb \
     valgrind \
-    # Para suporte MPI (opcional)
     openmpi-bin \
     openmpi-common \
     libopenmpi-dev \
-    # Para testes de rede
     tcpdump \
     wireshark-common \
     tshark \
-    # Editor de texto
     vim \
     nano \
+    dos2unix \
+    sed \
     && rm -rf /var/lib/apt/lists/*
 
 # ==============================================================================
 # Dependências para EvalVid (avaliação de qualidade de vídeo)
 # ==============================================================================
 RUN apt-get update && apt-get install -y \
-    # FFmpeg para processamento de vídeo
     ffmpeg \
     libavcodec-dev \
     libavformat-dev \
     libavutil-dev \
     libswscale-dev \
     libavfilter-dev \
-    # Ferramentas de vídeo adicionais
     x264 \
     libx264-dev \
-    # Para gráficos e visualização
     gnuplot \
     gnuplot-x11 \
     imagemagick \
@@ -110,11 +95,9 @@ RUN apt-get update && apt-get install -y \
 # Dependências para OFSwitch13 (OpenFlow 1.3 / SDN)
 # ==============================================================================
 RUN apt-get update && apt-get install -y \
-    # Dependências do BOFUSS (ofsoftswitch13)
     libpcap-dev \
     libxerces-c-dev \
     libnetfilter-queue-dev \
-    # Para compilação do switch OpenFlow
     libevent-dev \
     libssl-dev \
     && rm -rf /var/lib/apt/lists/*
@@ -122,25 +105,19 @@ RUN apt-get update && apt-get install -y \
 # ==============================================================================
 # Dependências Python para NS-3 e scripts
 # ==============================================================================
-RUN pip3 install --upgrade pip && \
-    pip3 install \
-    # Para bindings Python do NS-3
+RUN pip3 install --upgrade pip \
+    && pip3 install \
     cppyy==2.4.2 \
-    # Para build do NS-3 via pip
-    cmake-build-extension>=0.4 \
-    setuptools>=45 \
-    setuptools_scm[toml]>=6.0 \
-    # Para análise de dados e gráficos
+    cmake-build-extension \
+    setuptools \
+    setuptools_scm \
     numpy \
     pandas \
     matplotlib \
     scipy \
-    # Para processamento de resultados
     pyyaml \
-    # Jupyter notebook (opcional, para análises interativas)
     jupyter \
     jupyterlab \
-    # Outras ferramentas úteis
     tqdm \
     click \
     tabulate
@@ -153,17 +130,11 @@ RUN apt-get update && apt-get install -y \
     python3-gi-cairo \
     gir1.2-gtk-3.0 \
     gir1.2-goocanvas-2.0 \
-    && rm -rf /var/lib/apt/lists/*
-
-# ==============================================================================
-# Dependências para Eigen (álgebra linear)
-# ==============================================================================
-RUN apt-get update && apt-get install -y \
     libeigen3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # ==============================================================================
-# Criação do diretório de trabalho e cópia do código fonte
+# Criação do diretório de trabalho
 # ==============================================================================
 WORKDIR /ns-3
 
@@ -171,28 +142,37 @@ WORKDIR /ns-3
 COPY . /ns-3/
 
 # ==============================================================================
+# CRÍTICO: Converter line endings de CRLF (Windows) para LF (Unix)
+# Isso resolve o erro: /usr/bin/env: 'python3\r': No such file or directory
+# ==============================================================================
+RUN find /ns-3 -type f -name "ns3" -exec sed -i 's/\r$//' {} \; \
+    && find /ns-3 -type f -name "*.py" -exec sed -i 's/\r$//' {} \; \
+    && find /ns-3 -type f -name "*.sh" -exec sed -i 's/\r$//' {} \; \
+    && chmod +x /ns-3/ns3
+
+# ==============================================================================
 # Compilação do BOFUSS (ofsoftswitch13) para OFSwitch13
 # ==============================================================================
 RUN if [ -d "/ns-3/contrib/ofswitch13" ]; then \
-    echo "Compilando BOFUSS (ofsoftswitch13)..." && \
-    cd /tmp && \
-    git clone --branch ns-3.39 https://github.com/ljerezchaves/ofsoftswitch13.git bofuss || \
-    git clone https://github.com/ljerezchaves/ofsoftswitch13.git bofuss && \
-    cd bofuss && \
-    ./boot.sh && \
-    ./configure --prefix=/usr/local && \
-    make -j$(nproc) && \
-    make install && \
-    ldconfig && \
-    rm -rf /tmp/bofuss; \
+    echo "Compilando BOFUSS (ofsoftswitch13)..." \
+    && cd /tmp \
+    && git clone --branch ns-3.39 https://github.com/ljerezchaves/ofsoftswitch13.git bofuss || \
+       git clone https://github.com/ljerezchaves/ofsoftswitch13.git bofuss \
+    && cd bofuss \
+    && ./boot.sh \
+    && ./configure --prefix=/usr/local \
+    && make -j$(nproc) \
+    && make install \
+    && ldconfig \
+    && rm -rf /tmp/bofuss; \
     fi
 
 # ==============================================================================
 # Configuração e compilação do NS-3
 # ==============================================================================
-RUN cd /ns-3 && \
-    ./ns3 clean 2>/dev/null || true && \
-    ./ns3 configure \
+RUN cd /ns-3 \
+    && ./ns3 clean 2>/dev/null || true \
+    && ./ns3 configure \
         --enable-examples \
         --enable-tests \
         --enable-python-bindings \
@@ -203,29 +183,29 @@ RUN cd /ns-3 && \
 # Variáveis de ambiente
 # ==============================================================================
 ENV NS3_HOME=/ns-3
-ENV PATH="${NS3_HOME}:${PATH}"
-ENV LD_LIBRARY_PATH="${NS3_HOME}/build/lib:${LD_LIBRARY_PATH}"
-ENV PYTHONPATH="${NS3_HOME}/build/bindings/python:${PYTHONPATH}"
+ENV PATH="/ns-3:${PATH}"
+ENV LD_LIBRARY_PATH="/ns-3/build/lib"
+ENV PYTHONPATH="/ns-3/build/bindings/python"
 
 # ==============================================================================
 # Script de entrada
 # ==============================================================================
-RUN echo '#!/bin/bash\n\
+RUN printf '#!/bin/bash\n\
 echo "================================================="\n\
 echo "  NS-3 Network Simulator - Docker Container"\n\
 echo "================================================="\n\
 echo ""\n\
 echo "NS-3 Home: $NS3_HOME"\n\
 echo ""\n\
-echo "Comandos úteis:"\n\
-echo "  ./ns3 run <programa>     - Executa uma simulação"\n\
+echo "Comandos uteis:"\n\
+echo "  ./ns3 run <programa>     - Executa uma simulacao"\n\
 echo "  ./ns3 build              - Compila o projeto"\n\
-echo "  ./ns3 configure --help   - Opções de configuração"\n\
+echo "  ./ns3 configure --help   - Opcoes de configuracao"\n\
 echo ""\n\
-echo "Exemplos disponíveis em: examples/"\n\
-echo "Scratch disponível em: scratch/"\n\
+echo "Exemplos disponiveis em: examples/"\n\
+echo "Scratch disponivel em: scratch/"\n\
 echo ""\n\
-exec "$@"' > /entrypoint.sh && chmod +x /entrypoint.sh
+exec "$@"\n' > /entrypoint.sh && chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/bin/bash"]
