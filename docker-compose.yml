@@ -1,0 +1,100 @@
+# Docker Compose para NS-3 Network Simulator
+# 
+# Uso:
+#   docker-compose build    - Constrói a imagem
+#   docker-compose up -d    - Inicia o container em background
+#   docker-compose exec ns3 bash - Acessa o terminal do container
+#   docker-compose down     - Para e remove o container
+#
+
+version: '3.8'
+
+services:
+  ns3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ns3-lte-sdn-evalvid:latest
+    container_name: ns3-simulator
+    
+    # Mantém o container rodando
+    stdin_open: true
+    tty: true
+    
+    # Volumes para persistência de dados
+    volumes:
+      # Resultados das simulações
+      - ./results:/ns-3/results
+      # Scripts de scratch (desenvolvimento)
+      - ./scratch:/ns-3/scratch
+      # Arquivos de trace de vídeo
+      - ./videos:/ns-3/videos
+      # Contribuições (evalvid, ofswitch13)
+      - ./contrib:/ns-3/contrib
+    
+    # Variáveis de ambiente
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - NS3_HOME=/ns-3
+    
+    # Rede
+    ports:
+      - "8080:8080"   # Para servidores web de resultados
+      - "6633:6633"   # OpenFlow (legacy)
+      - "6653:6653"   # OpenFlow 1.3+
+      - "8888:8888"   # Jupyter Notebook
+    
+    # Recursos
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          cpus: '2'
+          memory: 4G
+    
+    # Compartilha rede do host (necessário para algumas simulações)
+    # network_mode: host
+    
+    # Permite operações de rede avançadas (para fd-net-device, tap, etc.)
+    cap_add:
+      - NET_ADMIN
+      - SYS_PTRACE
+    
+    # Dispositivos (para TAP/TUN)
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    
+    # Comando padrão
+    command: /bin/bash
+
+  # Serviço opcional para Jupyter Notebook
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ns3-lte-sdn-evalvid:latest
+    container_name: ns3-jupyter
+    
+    volumes:
+      - ./results:/ns-3/results
+      - ./scratch:/ns-3/scratch
+      - ./notebooks:/ns-3/notebooks
+    
+    ports:
+      - "8889:8888"
+    
+    environment:
+      - JUPYTER_TOKEN=ns3
+    
+    command: >
+      jupyter lab 
+      --ip=0.0.0.0 
+      --port=8888 
+      --no-browser 
+      --allow-root
+      --notebook-dir=/ns-3
+    
+    profiles:
+      - jupyter

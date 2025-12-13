@@ -1,0 +1,62 @@
+# Arquivos e diretórios a serem ignorados no build do Docker
+
+# Diretórios de build existentes (serão recriados no container)
+build/
+cmake-cache/
+
+# Resultados de simulações anteriores
+results_*/
+*.tr
+*.pcap
+*.xml
+
+# Diretórios Git
+.git/
+.github/
+.gitignore
+.gitattributes
+
+# Arquivos de configuração do VS Code
+.vscode/
+
+# Arquivos de lock
+.lock-*
+
+# Arquivos de documentação (podem ser recriados)
+doc/_build/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Arquivos de debug
+debug_test/
+
+# Arquivos de IDE
+*.idea/
+*.sublime-*
+
+# Arquivos macOS
+.DS_Store
+
+# Arquivos Windows
+Thumbs.db
+
+# Dockerfile (não precisa estar dentro do container)
+Dockerfile
+docker-compose.yml
+.dockerignore
