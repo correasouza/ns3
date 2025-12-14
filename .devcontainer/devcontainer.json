@@ -4,7 +4,7 @@
         "dockerfile": "../Dockerfile",
         "context": ".."
     },
-    "workspaceFolder": "/ns-3",
+    "workspaceFolder": "/usr",
     "workspaceMount": "",
     "runArgs": [
         "--cap-add=NET_ADMIN",
@@ -28,6 +28,6 @@
             }
         }
     },
-    "postStartCommand": "echo '✅ NS-3 está pronto! Use: ./ns3 run <programa>' && ./ns3 show version",
+    "postStartCommand": "cd /usr/ns-3-dev && echo '✅ NS-3 está pronto! Use: ./ns3 run <programa>' && ./ns3 show version",
     "remoteUser": "root"
 }

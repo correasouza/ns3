@@ -136,24 +136,24 @@ RUN apt-get update && apt-get install -y \
 # ==============================================================================
 # Criação do diretório de trabalho
 # ==============================================================================
-WORKDIR /ns-3
+WORKDIR /usr/ns-3-dev
 
 # Copia todo o código fonte do projeto
-COPY . /ns-3/
+COPY . /usr/ns-3-dev/
 
 # ==============================================================================
 # CRÍTICO: Converter line endings de CRLF (Windows) para LF (Unix)
 # Isso resolve o erro: /usr/bin/env: 'python3\r': No such file or directory
 # ==============================================================================
-RUN find /ns-3 -type f -name "ns3" -exec sed -i 's/\r$//' {} \; \
-    && find /ns-3 -type f -name "*.py" -exec sed -i 's/\r$//' {} \; \
-    && find /ns-3 -type f -name "*.sh" -exec sed -i 's/\r$//' {} \; \
-    && chmod +x /ns-3/ns3
+RUN find /usr/ns-3-dev -type f -name "ns3" -exec sed -i 's/\r$//' {} \; \
+    && find /usr/ns-3-dev -type f -name "*.py" -exec sed -i 's/\r$//' {} \; \
+    && find /usr/ns-3-dev -type f -name "*.sh" -exec sed -i 's/\r$//' {} \; \
+    && chmod +x /usr/ns-3-dev/ns3
 
 # ==============================================================================
 # Compilação do BOFUSS (ofsoftswitch13) para OFSwitch13
 # ==============================================================================
-RUN if [ -d "/ns-3/contrib/ofswitch13" ]; then \
+RUN if [ -d "/usr/ns-3-dev/contrib/ofswitch13" ]; then \
     echo "Compilando BOFUSS (ofsoftswitch13)..." \
     && cd /tmp \
     && git clone https://github.com/ljerezchaves/ofsoftswitch13.git bofuss \
@@ -169,7 +169,7 @@ RUN if [ -d "/ns-3/contrib/ofswitch13" ]; then \
 # ==============================================================================
 # Configuração e compilação do NS-3
 # ==============================================================================
-RUN cd /ns-3 \
+RUN cd /usr/ns-3-dev \
     && ./ns3 clean 2>/dev/null || true \
     && ./ns3 configure \
         --enable-examples \
@@ -181,10 +181,10 @@ RUN cd /ns-3 \
 # ==============================================================================
 # Variáveis de ambiente
 # ==============================================================================
-ENV NS3_HOME=/ns-3
-ENV PATH="/ns-3:${PATH}"
-ENV LD_LIBRARY_PATH="/ns-3/build/lib"
-ENV PYTHONPATH="/ns-3/build/bindings/python"
+ENV NS3_HOME=/usr/ns-3-dev
+ENV PATH="/usr/ns-3-dev:${PATH}"
+ENV LD_LIBRARY_PATH="/usr/ns-3-dev/build/lib"
+ENV PYTHONPATH="/usr/ns-3-dev/build/bindings/python"
 
 # ==============================================================================
 # Script de entrada
@@ -217,10 +217,10 @@ EXPOSE 8080 6633 6653
 # ==============================================================================
 # Volume para resultados de simulação
 # ==============================================================================
-VOLUME ["/ns-3/results"]
+VOLUME ["/usr/ns-3-dev/results"]
 
 # ==============================================================================
 # Healthcheck
 # ==============================================================================
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD cd /ns-3 && ./ns3 show version || exit 1
+    CMD cd /usr/ns-3-dev && ./ns3 show version || exit 1

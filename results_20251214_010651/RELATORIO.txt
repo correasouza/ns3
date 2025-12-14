@@ -1,0 +1,75 @@
+================================================================================
+RELATÓRIO DE AUTOMAÇÃO - EvalVid + NS-3 LTE
+================================================================================
+
+Data: Sun Dec 14 01:11:20 UTC 2025
+Script: scratch/evalvid_lte_aval_x2
+Vídeo: football.y4m
+
+PSNR de Referência: 0 dB
+Número de Simulações: 5
+Parâmetro Variado: numUes (5 a 13)
+
+RESULTADOS:
+# Sim NumUEs PSNR Throughput Loss Delay Jitter
+1 5 42.00 0 0 0 0
+2 7 42.00 0 0 0 0
+3 9 42.00 0 0 0 0
+4 11 42.00 0 0 0 0
+5 13 42.00 0 0 0 0
+
+ARQUIVOS GERADOS:
+- Métricas: /usr/ns-3-dev/results_20251214_010651/metrics/consolidated_metrics.dat
+- Gráfico: /usr/ns-3-dev/results_20251214_010651/graphs/metrics_graph.png
+- PSNR Ref: /usr/ns-3-dev/results_20251214_010651/metrics/ref_psnr.txt
+- Vídeos: /usr/ns-3-dev/results_20251214_010651/videos/reconstructed/
+
+ESTRUTURA:
+/usr/ns-3-dev/results_20251214_010651:
+RELATORIO.txt
+graphs
+metrics
+simulations
+traces
+videos
+
+/usr/ns-3-dev/results_20251214_010651/graphs:
+consolidated_metrics.dat
+metrics_graph.png
+plot.gnuplot
+
+/usr/ns-3-dev/results_20251214_010651/metrics:
+consolidated_metrics.dat
+params.txt
+ref_psnr.txt
+
+/usr/ns-3-dev/results_20251214_010651/simulations:
+sim_1
+sim_2
+sim_3
+sim_4
+sim_5
+
+/usr/ns-3-dev/results_20251214_010651/simulations/sim_1:
+
+/usr/ns-3-dev/results_20251214_010651/simulations/sim_2:
+
+/usr/ns-3-dev/results_20251214_010651/simulations/sim_3:
+
+/usr/ns-3-dev/results_20251214_010651/simulations/sim_4:
+
+/usr/ns-3-dev/results_20251214_010651/simulations/sim_5:
+
+/usr/ns-3-dev/results_20251214_010651/traces:
+st_football.st
+
+/usr/ns-3-dev/results_20251214_010651/videos:
+football.m4v
+football.mp4
+football_original.yuv
+football_ref.yuv
+reconstructed
+
+/usr/ns-3-dev/results_20251214_010651/videos/reconstructed:
+
+================================================================================

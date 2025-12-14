@@ -1,0 +1,203 @@
+[0/2] Re-checking globbed directories...
+[1/2] Re-running CMake...
+-- Using default output directory /usr/ns-3-dev/build
+-- [33mProceeding without cmake-format[0m
+-- find_external_library: SQLite3 was found.
+-- [33mEigen was not found[0m
+-- [33mHarfbuzz is required by GTK3 and was not found.[0m
+-- LibXML2 was found.
+-- [33mVisualizer requires Python bindings[0m
+-- GSL was found.
+-- [33mdocs: doxygen documentation not enabled due to missing dependencies: doxygen dot dia[0m
+-- Failed to locate sphinx-build executable (missing: SPHINX_EXECUTABLE) 
+-- [33mdocs: sphinx documentation not enabled due to missing dependencies: Sphinx epstopdf pdflatex latexmk convert dvipng[0m
+-- Precompiled headers were enabled
+-- Processing contrib/evalvid
+-- Processing contrib/ofswitch13
+-- Looking for BOFUSS library in 
+-- find_external_library: bofuss was found.
+-- Processing src/antenna
+-- Processing src/aodv
+-- Processing src/applications
+-- Processing src/bridge
+-- Processing src/brite
+-- [33mfind_external_library: brite was not found. Missing headers: "Brite.h" and missing libraries: "brite".[0m
+-- [33mSkipping src/brite[0m
+-- Processing src/buildings
+-- Processing src/click
+-- [33mfind_external_library: click was not found. Missing headers: "simclick.h" and missing libraries: "nsclick click".[0m
+-- [33mSkipping src/click[0m
+-- Processing src/config-store
+-- Processing src/core
+-- Boost Units have been found.
+-- Processing src/csma
+-- Processing src/csma-layout
+-- Processing src/dsdv
+-- Processing src/dsr
+-- Processing src/energy
+-- Processing src/fd-net-device
+-- Checking for module 'libdpdk'
+--   No package 'libdpdk' found
+-- Processing src/flow-monitor
+-- Processing src/internet
+-- Processing src/internet-apps
+-- Processing src/lr-wpan
+-- Processing src/lte
+-- Processing src/mesh
+-- Processing src/mobility
+-- Processing src/netanim
+-- Processing src/network
+-- Processing src/nix-vector-routing
+-- Processing src/olsr
+-- Processing src/openflow
+-- [33mfind_external_library: openflow was not found. Missing headers: "openflow.h" and missing libraries: "openflow".[0m
+-- [33mSkipping src/openflow[0m
+-- Processing src/point-to-point
+-- Processing src/point-to-point-layout
+-- Processing src/propagation
+-- Processing src/sixlowpan
+-- Processing src/spectrum
+-- Processing src/stats
+-- Processing src/tap-bridge
+-- Processing src/test
+-- Processing src/topology-read
+-- Processing src/traffic-control
+-- Processing src/uan
+-- Processing src/virtual-net-device
+-- Processing src/wifi
+-- Processing src/wimax
+-- ---- Summary of ns-3 settings:
+Build profile                 : optimized
+Build directory               : /usr/ns-3-dev/build
+Build with runtime asserts    : OFF (not requested)
+Build with runtime logging    : OFF (not requested)
+Build version embedding       : OFF (not requested)
+BRITE Integration             : [31mOFF (missing dependency)[0m
+DES Metrics event collection  : OFF (not requested)
+DPDK NetDevice                : OFF (not requested)
+Emulation FdNetDevice         : [32mON[0m
+Examples                      : [32mON[0m
+File descriptor NetDevice     : [32mON[0m
+GNU Scientific Library (GSL)  : [32mON[0m
+GtkConfigStore                : [31mOFF (missing dependency)[0m
+LibXml2 support               : [32mON[0m
+MPI Support                   : OFF (not requested)
+ns-3 Click Integration        : [31mOFF (missing dependency)[0m
+ns-3 OFSwitch13 Integration   : [32mON[0m
+ns-3 OpenFlow Integration     : [31mOFF (missing dependency)[0m
+Netmap emulation FdNetDevice  : [31mOFF (missing dependency)[0m
+PyViz visualizer              : [31mOFF (missing dependency)[0m
+Python Bindings               : OFF (not requested)
+SQLite support                : [32mON[0m
+Eigen3 support                : [31mOFF (missing dependency)[0m
+Tap Bridge                    : [32mON[0m
+Tap FdNetDevice               : [32mON[0m
+Tests                         : [32mON[0m
+
+
+Modules configured to be built:
+antenna                   aodv                      applications              
+bridge                    buildings                 config-store              
+core                      csma                      csma-layout               
+dsdv                      dsr                       energy                    
+evalvid                   fd-net-device             flow-monitor              
+internet                  internet-apps             lr-wpan                   
+lte                       mesh                      mobility                  
+netanim                   network                   nix-vector-routing        
+ofswitch13                olsr                      point-to-point            
+point-to-point-layout     propagation               sixlowpan                 
+spectrum                  stats                     tap-bridge                
+test                      topology-read             traffic-control           
+uan                       virtual-net-device        wifi                      
+wimax                     
+
+Modules that cannot be built:
+brite                     click                     mpi                       
+openflow                  visualizer                
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/ns-3-dev/cmake-cache
+[0/2] Re-checking globbed directories...
+[1/22] Building CXX object contrib/evalvid/CMakeFiles/libevalvid-obj.dir/helper/evalvid-client-server-helper.cc.o
+[2/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-interface.cc.o
+[3/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-queue.cc.o
+[4/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/queue-tag.cc.o
+[5/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-priority-queue.cc.o
+[6/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-learning-controller.cc.o
+[7/22] Building CXX object contrib/evalvid/CMakeFiles/libevalvid-obj.dir/model/evalvid-client.cc.o
+../contrib/evalvid/model/evalvid-client.cc: In member function ‘virtual void ns3::EvalvidClient::StartApplication()’:
+../contrib/evalvid/model/evalvid-client.cc:96:19: warning: ‘ns3::Ptr<T>::operator ns3::Ptr<T>::Tester*() const [with T = ns3::Socket]’ is deprecated: see operator bool [-Wdeprecated-declarations]
+   96 |   if (m_socket == 0)
+      |                   ^
+In file included from /usr/ns-3-dev/src/core/model/attribute.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-accessor-helper.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-helper.h:23,
+                 from ../build/include/ns3/attribute-helper.h:1,
+                 from /usr/ns-3-dev/src/network/model/address.h:23,
+                 from ../build/include/ns3/address.h:1,
+                 from /usr/ns-3-dev/src/network/utils/ipv4-address.h:23,
+                 from ../build/include/ns3/ipv4-address.h:1,
+                 from ../contrib/evalvid/model/evalvid-client.cc:22:
+/usr/ns-3-dev/src/core/model/ptr.h:781:1: note: declared here
+  781 | Ptr<T>::operator Tester*() const // NS_DEPRECATED_3_37
+      | ^~~~~~
+[8/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/tunnel-id-tag.cc.o
+[9/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-socket-handler.cc.o
+[10/22] Building CXX object contrib/evalvid/CMakeFiles/libevalvid-obj.dir/model/evalvid-server.cc.o
+../contrib/evalvid/model/evalvid-server.cc: In member function ‘virtual void ns3::EvalvidServer::StartApplication()’:
+../contrib/evalvid/model/evalvid-server.cc:107:17: warning: ‘ns3::Ptr<T>::operator ns3::Ptr<T>::Tester*() const [with T = ns3::Socket]’ is deprecated: see operator bool [-Wdeprecated-declarations]
+  107 |   if (socket == 0)
+      |                 ^
+In file included from /usr/ns-3-dev/src/core/model/attribute.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-accessor-helper.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-helper.h:23,
+                 from ../build/include/ns3/attribute-helper.h:1,
+                 from /usr/ns-3-dev/src/network/model/address.h:23,
+                 from ../build/include/ns3/address.h:1,
+                 from /usr/ns-3-dev/src/network/utils/ipv4-address.h:23,
+                 from ../build/include/ns3/ipv4-address.h:1,
+                 from ../contrib/evalvid/model/evalvid-server.cc:24:
+/usr/ns-3-dev/src/core/model/ptr.h:781:1: note: declared here
+  781 | Ptr<T>::operator Tester*() const // NS_DEPRECATED_3_37
+      | ^~~~~~
+../contrib/evalvid/model/evalvid-server.cc:119:18: warning: ‘ns3::Ptr<T>::operator ns3::Ptr<T>::Tester*() const [with T = ns3::Socket]’ is deprecated: see operator bool [-Wdeprecated-declarations]
+  119 |   if (socket6 == 0)
+      |                  ^
+In file included from /usr/ns-3-dev/src/core/model/attribute.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-accessor-helper.h:22,
+                 from /usr/ns-3-dev/src/core/model/attribute-helper.h:23,
+                 from ../build/include/ns3/attribute-helper.h:1,
+                 from /usr/ns-3-dev/src/network/model/address.h:23,
+                 from ../build/include/ns3/address.h:1,
+                 from /usr/ns-3-dev/src/network/utils/ipv4-address.h:23,
+                 from ../build/include/ns3/ipv4-address.h:1,
+                 from ../contrib/evalvid/model/evalvid-server.cc:24:
+/usr/ns-3-dev/src/core/model/ptr.h:781:1: note: declared here
+  781 | Ptr<T>::operator Tester*() const // NS_DEPRECATED_3_37
+      | ^~~~~~
+[11/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-device-container.cc.o
+[12/22] Linking CXX shared library ../build/lib/libns3.39-evalvid-optimized.so
+[13/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-port.cc.o
+[14/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-helper.cc.o
+[15/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-external-helper.cc.o
+[16/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-controller.cc.o
+[17/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-internal-helper.cc.o
+[18/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-stats-calculator.cc.o
+[19/22] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-device.cc.o
+[20/22] Linking CXX shared library ../build/lib/libns3.39-ofswitch13-optimized.so
+[21/22] Building CXX object scratch/CMakeFiles/scratch_evalvid_lte_aval_x2.dir/evalvid_lte_aval_x2.cc.o
+[22/22] Linking CXX executable ../build/scratch/ns3.39-evalvid_lte_aval_x2-optimized
+==========================================
+Iniciando simulação: SEM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: st_highway_cif.st, football.st
+  Diretório: results_lte_sdn_20251214_011701
+==========================================
+
+==========================================
+Simulação SEM_SDN concluída!
+Resultados em: results_lte_sdn_20251214_011701
+==========================================
