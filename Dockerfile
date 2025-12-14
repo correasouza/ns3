@@ -156,10 +156,9 @@ RUN find /ns-3 -type f -name "ns3" -exec sed -i 's/\r$//' {} \; \
 RUN if [ -d "/ns-3/contrib/ofswitch13" ]; then \
     echo "Compilando BOFUSS (ofsoftswitch13)..." \
     && cd /tmp \
-    && git clone --branch ns-3.39 https://github.com/ljerezchaves/ofsoftswitch13.git bofuss || \
-       git clone https://github.com/ljerezchaves/ofsoftswitch13.git bofuss \
+    && git clone https://github.com/ljerezchaves/ofsoftswitch13.git bofuss \
     && cd bofuss \
-    && ./boot.sh \
+    && autoreconf -i \
     && ./configure --prefix=/usr/local \
     && make -j$(nproc) \
     && make install \
