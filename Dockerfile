@@ -170,7 +170,7 @@ RUN if [ -d "/usr/ns-3-dev/contrib/ofswitch13" ]; then \
 # Configuração e compilação do NS-3
 # ==============================================================================
 RUN cd /usr/ns-3-dev \
-    && ./ns3 clean 2>/dev/null || true \
+    && (./ns3 clean 2>/dev/null || true) \
     && ./ns3 configure \
         --enable-examples \
         --enable-tests \
