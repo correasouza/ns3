@@ -1,0 +1,76 @@
+========================================
+Métricas QoS - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: highway
+  Throughput: 0.460 Mbps
+  Delay médio: 37.000 ms
+  Jitter médio: 5.000 ms
+  Perda de pacotes: 71.617 % (1032/1441)
+
+UE 2 - Vídeo: highway
+  Throughput: 0.279 Mbps
+  Delay médio: 54.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 81.749 % (1178/1441)
+
+UE 3 - Vídeo: highway
+  Throughput: 0.188 Mbps
+  Delay médio: 78.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 85.566 % (1233/1441)
+
+UE 4 - Vídeo: highway
+  Throughput: 0.136 Mbps
+  Delay médio: 92.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 88.203 % (1271/1441)
+
+UE 5 - Vídeo: highway
+  Throughput: 0.205 Mbps
+  Delay médio: 48.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 84.733 % (1221/1441)
+
+UE 1 - Vídeo: football
+  Throughput: 1.833 Mbps
+  Delay médio: 30.000 ms
+  Jitter médio: 8.000 ms
+  Perda de pacotes: 65.764 % (2695/4098)
+
+UE 6 - Vídeo: highway
+  Throughput: 0.170 Mbps
+  Delay médio: 50.000 ms
+  Jitter médio: 5.000 ms
+  Perda de pacotes: 86.815 % (1251/1441)
+
+UE 2 - Vídeo: football
+  Throughput: 1.156 Mbps
+  Delay médio: 56.000 ms
+  Jitter médio: 10.000 ms
+  Perda de pacotes: 77.452 % (3174/4098)
+
+UE 3 - Vídeo: football
+  Throughput: 0.783 Mbps
+  Delay médio: 88.000 ms
+  Jitter médio: 12.000 ms
+  Perda de pacotes: 84.285 % (3454/4098)
+
+UE 4 - Vídeo: football
+  Throughput: 0.697 Mbps
+  Delay médio: 105.000 ms
+  Jitter médio: 12.000 ms
+  Perda de pacotes: 85.920 % (3521/4098)
+
+UE 5 - Vídeo: football
+  Throughput: 1.545 Mbps
+  Delay médio: 48.000 ms
+  Jitter médio: 9.000 ms
+  Perda de pacotes: 70.717 % (2898/4098)
+
+UE 6 - Vídeo: football
+  Throughput: 1.554 Mbps
+  Delay médio: 50.000 ms
+  Jitter médio: 9.000 ms
+  Perda de pacotes: 70.742 % (2899/4098)
+
