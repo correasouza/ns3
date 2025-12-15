@@ -1,0 +1,952 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 2 - Vídeo: highway
+  Throughput: 0.259 Mbps
+  Delay médio: 410.000 ms
+  Jitter médio: 31.000 ms
+  Perda de pacotes: 82.929 % (1195/1441)
+
+UE 3 - Vídeo: highway
+  Throughput: 0.282 Mbps
+  Delay médio: 267.000 ms
+  Jitter médio: 20.000 ms
+  Perda de pacotes: 80.708 % (1163/1441)
+
+UE 5 - Vídeo: highway
+  Throughput: 0.289 Mbps
+  Delay médio: 261.000 ms
+  Jitter médio: 26.000 ms
+  Perda de pacotes: 80.708 % (1163/1441)
+
+UE 3 - Vídeo: football
+  Throughput: 0.413 Mbps
+  Delay médio: 280.000 ms
+  Jitter médio: 15.000 ms
+  Perda de pacotes: 91.288 % (3741/4098)
+
+UE 8 - Vídeo: highway
+  Throughput: 0.217 Mbps
+  Delay médio: 267.000 ms
+  Jitter médio: 29.000 ms
+  Perda de pacotes: 84.802 % (1222/1441)
+
+UE 9 - Vídeo: highway
+  Throughput: 0.214 Mbps
+  Delay médio: 277.000 ms
+  Jitter médio: 26.000 ms
+  Perda de pacotes: 85.427 % (1231/1441)
+
+UE 5 - Vídeo: football
+  Throughput: 0.378 Mbps
+  Delay médio: 332.000 ms
+  Jitter médio: 16.000 ms
+  Perda de pacotes: 92.216 % (3779/4098)
+
+UE 12 - Vídeo: highway
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (1441/1441)
+
+UE 8 - Vídeo: football
+  Throughput: 0.383 Mbps
+  Delay médio: 429.000 ms
+  Jitter médio: 20.000 ms
+  Perda de pacotes: 92.362 % (3785/4098)
+
+UE 13 - Vídeo: highway
+  Throughput: 0.170 Mbps
+  Delay médio: 375.000 ms
+  Jitter médio: 30.000 ms
+  Perda de pacotes: 87.509 % (1261/1441)
+
+UE 9 - Vídeo: football
+  Throughput: 0.297 Mbps
+  Delay médio: 514.000 ms
+  Jitter médio: 23.000 ms
+  Perda de pacotes: 93.826 % (3845/4098)
+
+UE 15 - Vídeo: highway
+  Throughput: 0.219 Mbps
+  Delay médio: 406.000 ms
+  Jitter médio: 30.000 ms
+  Perda de pacotes: 85.149 % (1227/1441)
+
+UE 16 - Vídeo: highway
+  Throughput: 0.234 Mbps
+  Delay médio: 419.000 ms
+  Jitter médio: 35.000 ms
+  Perda de pacotes: 84.941 % (1224/1441)
+
+UE 12 - Vídeo: football
+  Throughput: 0.011 Mbps
+  Delay médio: 394.000 ms
+  Jitter médio: 41.000 ms
+  Perda de pacotes: 99.780 % (4089/4098)
+
+UE 17 - Vídeo: highway
+  Throughput: 0.287 Mbps
+  Delay médio: 425.000 ms
+  Jitter médio: 32.000 ms
+  Perda de pacotes: 81.749 % (1178/1441)
+
+UE 13 - Vídeo: football
+  Throughput: 0.197 Mbps
+  Delay médio: 730.000 ms
+  Jitter médio: 31.000 ms
+  Perda de pacotes: 95.681 % (3921/4098)
+
+UE 18 - Vídeo: highway
+  Throughput: 0.287 Mbps
+  Delay médio: 458.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 82.304 % (1186/1441)
+
+UE 15 - Vídeo: football
+  Throughput: 0.166 Mbps
+  Delay médio: 723.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 96.413 % (3951/4098)
+
+UE 16 - Vídeo: football
+  Throughput: 0.168 Mbps
+  Delay médio: 758.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 96.462 % (3953/4098)
+
+UE 17 - Vídeo: football
+  Throughput: 0.144 Mbps
+  Delay médio: 705.000 ms
+  Jitter médio: 36.000 ms
+  Perda de pacotes: 96.852 % (3969/4098)
+
+UE 22 - Vídeo: highway
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (1441/1441)
+
+UE 18 - Vídeo: football
+  Throughput: 0.135 Mbps
+  Delay médio: 737.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 97.194 % (3983/4098)
+
+UE 23 - Vídeo: highway
+  Throughput: 0.154 Mbps
+  Delay médio: 465.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 89.244 % (1286/1441)
+
+UE 24 - Vídeo: highway
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (1441/1441)
+
+UE 1 - Vídeo: football
+  Throughput: 0.103 Mbps
+  Delay médio: 762.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 97.755 % (4006/4098)
+
+UE 1 - Vídeo: highway
+  Throughput: 0.172 Mbps
+  Delay médio: 641.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 88.411 % (1274/1441)
+
+UE 21 - Vídeo: highway
+  Throughput: 0.136 Mbps
+  Delay médio: 547.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 91.117 % (1313/1441)
+
+UE 7 - Vídeo: football
+  Throughput: 0.131 Mbps
+  Delay médio: 750.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 97.267 % (3986/4098)
+
+UE 19 - Vídeo: football
+  Throughput: 0.207 Mbps
+  Delay médio: 655.000 ms
+  Jitter médio: 39.000 ms
+  Perda de pacotes: 95.876 % (3929/4098)
+
+UE 20 - Vídeo: football
+  Throughput: 0.264 Mbps
+  Delay médio: 806.000 ms
+  Jitter médio: 33.000 ms
+  Perda de pacotes: 94.656 % (3879/4098)
+
+UE 7 - Vídeo: highway
+  Throughput: 0.165 Mbps
+  Delay médio: 544.000 ms
+  Jitter médio: 41.000 ms
+  Perda de pacotes: 89.313 % (1287/1441)
+
+UE 19 - Vídeo: highway
+  Throughput: 0.160 Mbps
+  Delay médio: 481.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 90.423 % (1303/1441)
+
+UE 25 - Vídeo: highway
+  Throughput: 0.183 Mbps
+  Delay médio: 572.000 ms
+  Jitter médio: 36.000 ms
+  Perda de pacotes: 87.856 % (1266/1441)
+
+UE 21 - Vídeo: football
+  Throughput: 0.149 Mbps
+  Delay médio: 833.000 ms
+  Jitter médio: 41.000 ms
+  Perda de pacotes: 96.999 % (3975/4098)
+
+UE 27 - Vídeo: highway
+  Throughput: 0.177 Mbps
+  Delay médio: 612.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 88.758 % (1279/1441)
+
+UE 23 - Vídeo: football
+  Throughput: 0.206 Mbps
+  Delay médio: 707.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 95.876 % (3929/4098)
+
+UE 29 - Vídeo: highway
+  Throughput: 0.247 Mbps
+  Delay médio: 585.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 84.663 % (1220/1441)
+
+UE 25 - Vídeo: football
+  Throughput: 0.070 Mbps
+  Delay médio: 892.000 ms
+  Jitter médio: 51.000 ms
+  Perda de pacotes: 98.267 % (4027/4098)
+
+UE 31 - Vídeo: highway
+  Throughput: 0.175 Mbps
+  Delay médio: 730.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 91.117 % (1313/1441)
+
+UE 27 - Vídeo: football
+  Throughput: 0.072 Mbps
+  Delay médio: 831.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 98.414 % (4033/4098)
+
+UE 33 - Vídeo: highway
+  Throughput: 0.266 Mbps
+  Delay médio: 613.000 ms
+  Jitter médio: 43.000 ms
+  Perda de pacotes: 84.247 % (1214/1441)
+
+UE 29 - Vídeo: football
+  Throughput: 0.064 Mbps
+  Delay médio: 624.000 ms
+  Jitter médio: 46.000 ms
+  Perda de pacotes: 98.658 % (4043/4098)
+
+UE 34 - Vídeo: highway
+  Throughput: 0.060 Mbps
+  Delay médio: 442.000 ms
+  Jitter médio: 60.000 ms
+  Perda de pacotes: 96.530 % (1391/1441)
+
+UE 35 - Vídeo: highway
+  Throughput: 0.079 Mbps
+  Delay médio: 596.000 ms
+  Jitter médio: 49.000 ms
+  Perda de pacotes: 94.587 % (1363/1441)
+
+UE 31 - Vídeo: football
+  Throughput: 0.043 Mbps
+  Delay médio: 981.000 ms
+  Jitter médio: 94.000 ms
+  Perda de pacotes: 99.146 % (4063/4098)
+
+UE 36 - Vídeo: highway
+  Throughput: 0.136 Mbps
+  Delay médio: 765.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 90.493 % (1304/1441)
+
+UE 33 - Vídeo: football
+  Throughput: 0.084 Mbps
+  Delay médio: 455.000 ms
+  Jitter médio: 35.000 ms
+  Perda de pacotes: 98.292 % (4028/4098)
+
+UE 38 - Vídeo: highway
+  Throughput: 0.104 Mbps
+  Delay médio: 1002.000 ms
+  Jitter médio: 60.000 ms
+  Perda de pacotes: 92.713 % (1336/1441)
+
+UE 34 - Vídeo: football
+  Throughput: 0.094 Mbps
+  Delay médio: 1158.000 ms
+  Jitter médio: 59.000 ms
+  Perda de pacotes: 97.853 % (4010/4098)
+
+UE 39 - Vídeo: highway
+  Throughput: 0.113 Mbps
+  Delay médio: 614.000 ms
+  Jitter médio: 54.000 ms
+  Perda de pacotes: 92.713 % (1336/1441)
+
+UE 35 - Vídeo: football
+  Throughput: 0.115 Mbps
+  Delay médio: 869.000 ms
+  Jitter médio: 54.000 ms
+  Perda de pacotes: 97.609 % (4000/4098)
+
+UE 40 - Vídeo: highway
+  Throughput: 0.143 Mbps
+  Delay médio: 851.000 ms
+  Jitter médio: 47.000 ms
+  Perda de pacotes: 90.285 % (1301/1441)
+
+UE 36 - Vídeo: football
+  Throughput: 0.072 Mbps
+  Delay médio: 796.000 ms
+  Jitter médio: 55.000 ms
+  Perda de pacotes: 98.341 % (4030/4098)
+
+UE 41 - Vídeo: highway
+  Throughput: 0.087 Mbps
+  Delay médio: 1182.000 ms
+  Jitter médio: 66.000 ms
+  Perda de pacotes: 93.407 % (1346/1441)
+
+UE 42 - Vídeo: highway
+  Throughput: 0.042 Mbps
+  Delay médio: 1079.000 ms
+  Jitter médio: 71.000 ms
+  Perda de pacotes: 96.808 % (1395/1441)
+
+UE 38 - Vídeo: football
+  Throughput: 0.033 Mbps
+  Delay médio: 1194.000 ms
+  Jitter médio: 130.000 ms
+  Perda de pacotes: 99.146 % (4063/4098)
+
+UE 43 - Vídeo: highway
+  Throughput: 0.091 Mbps
+  Delay médio: 630.000 ms
+  Jitter médio: 120.000 ms
+  Perda de pacotes: 98.473 % (1419/1441)
+
+UE 39 - Vídeo: football
+  Throughput: 0.188 Mbps
+  Delay médio: 633.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 96.315 % (3947/4098)
+
+UE 44 - Vídeo: highway
+  Throughput: 0.018 Mbps
+  Delay médio: 2884.000 ms
+  Jitter médio: 279.000 ms
+  Perda de pacotes: 97.988 % (1412/1441)
+
+UE 40 - Vídeo: football
+  Throughput: 0.038 Mbps
+  Delay médio: 700.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 99.170 % (4064/4098)
+
+UE 45 - Vídeo: highway
+  Throughput: 0.025 Mbps
+  Delay médio: 2810.000 ms
+  Jitter médio: 337.000 ms
+  Perda de pacotes: 97.710 % (1408/1441)
+
+UE 41 - Vídeo: football
+  Throughput: 0.014 Mbps
+  Delay médio: 1112.000 ms
+  Jitter médio: 129.000 ms
+  Perda de pacotes: 99.683 % (4085/4098)
+
+UE 46 - Vídeo: highway
+  Throughput: 0.175 Mbps
+  Delay médio: 830.000 ms
+  Jitter médio: 47.000 ms
+  Perda de pacotes: 88.758 % (1279/1441)
+
+UE 42 - Vídeo: football
+  Throughput: 0.096 Mbps
+  Delay médio: 936.000 ms
+  Jitter médio: 53.000 ms
+  Perda de pacotes: 97.901 % (4012/4098)
+
+UE 47 - Vídeo: highway
+  Throughput: 0.172 Mbps
+  Delay médio: 691.000 ms
+  Jitter médio: 53.000 ms
+  Perda de pacotes: 89.174 % (1285/1441)
+
+UE 43 - Vídeo: football
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (4098/4098)
+
+UE 48 - Vídeo: highway
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (1441/1441)
+
+UE 44 - Vídeo: football
+  Throughput: 0.006 Mbps
+  Delay médio: 3217.000 ms
+  Jitter médio: 454.000 ms
+  Perda de pacotes: 99.707 % (4086/4098)
+
+UE 49 - Vídeo: highway
+  Throughput: 0.190 Mbps
+  Delay médio: 664.000 ms
+  Jitter médio: 49.000 ms
+  Perda de pacotes: 87.994 % (1268/1441)
+
+UE 45 - Vídeo: football
+  Throughput: 0.004 Mbps
+  Delay médio: 2759.000 ms
+  Jitter médio: 793.000 ms
+  Perda de pacotes: 99.854 % (4092/4098)
+
+UE 50 - Vídeo: highway
+  Throughput: 0.115 Mbps
+  Delay médio: 677.000 ms
+  Jitter médio: 51.000 ms
+  Perda de pacotes: 92.019 % (1326/1441)
+
+UE 46 - Vídeo: football
+  Throughput: 0.045 Mbps
+  Delay médio: 719.000 ms
+  Jitter médio: 51.000 ms
+  Perda de pacotes: 98.951 % (4055/4098)
+
+UE 51 - Vídeo: highway
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (1441/1441)
+
+UE 47 - Vídeo: football
+  Throughput: 0.150 Mbps
+  Delay médio: 546.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 97.023 % (3976/4098)
+
+UE 52 - Vídeo: highway
+  Throughput: 0.176 Mbps
+  Delay médio: 687.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 88.480 % (1275/1441)
+
+UE 48 - Vídeo: football
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (4098/4098)
+
+UE 49 - Vídeo: football
+  Throughput: 0.179 Mbps
+  Delay médio: 505.000 ms
+  Jitter médio: 24.000 ms
+  Perda de pacotes: 96.486 % (3954/4098)
+
+UE 54 - Vídeo: highway
+  Throughput: 0.084 Mbps
+  Delay médio: 797.000 ms
+  Jitter médio: 52.000 ms
+  Perda de pacotes: 93.754 % (1351/1441)
+
+UE 50 - Vídeo: football
+  Throughput: 0.149 Mbps
+  Delay médio: 623.000 ms
+  Jitter médio: 39.000 ms
+  Perda de pacotes: 96.877 % (3970/4098)
+
+UE 55 - Vídeo: highway
+  Throughput: 0.234 Mbps
+  Delay médio: 528.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 85.496 % (1232/1441)
+
+UE 51 - Vídeo: football
+  Throughput: 0.000 Mbps
+  Delay médio: 0.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 100.000 % (4098/4098)
+
+UE 56 - Vídeo: highway
+  Throughput: 0.101 Mbps
+  Delay médio: 753.000 ms
+  Jitter médio: 58.000 ms
+  Perda de pacotes: 92.991 % (1340/1441)
+
+UE 52 - Vídeo: football
+  Throughput: 0.078 Mbps
+  Delay médio: 521.000 ms
+  Jitter médio: 51.000 ms
+  Perda de pacotes: 98.365 % (4031/4098)
+
+UE 58 - Vídeo: highway
+  Throughput: 0.031 Mbps
+  Delay médio: 1681.000 ms
+  Jitter médio: 174.000 ms
+  Perda de pacotes: 97.224 % (1401/1441)
+
+UE 54 - Vídeo: football
+  Throughput: 0.087 Mbps
+  Delay médio: 825.000 ms
+  Jitter médio: 61.000 ms
+  Perda de pacotes: 98.048 % (4018/4098)
+
+UE 59 - Vídeo: highway
+  Throughput: 0.148 Mbps
+  Delay médio: 652.000 ms
+  Jitter médio: 58.000 ms
+  Perda de pacotes: 90.562 % (1305/1441)
+
+UE 55 - Vídeo: football
+  Throughput: 0.172 Mbps
+  Delay médio: 341.000 ms
+  Jitter médio: 22.000 ms
+  Perda de pacotes: 96.730 % (3964/4098)
+
+UE 11 - Vídeo: football
+  Throughput: 0.152 Mbps
+  Delay médio: 585.000 ms
+  Jitter médio: 41.000 ms
+  Perda de pacotes: 96.925 % (3972/4098)
+
+UE 60 - Vídeo: highway
+  Throughput: 0.121 Mbps
+  Delay médio: 598.000 ms
+  Jitter médio: 49.000 ms
+  Perda de pacotes: 91.672 % (1321/1441)
+
+UE 11 - Vídeo: highway
+  Throughput: 0.167 Mbps
+  Delay médio: 536.000 ms
+  Jitter médio: 46.000 ms
+  Perda de pacotes: 89.938 % (1296/1441)
+
+UE 56 - Vídeo: football
+  Throughput: 0.092 Mbps
+  Delay médio: 739.000 ms
+  Jitter médio: 62.000 ms
+  Perda de pacotes: 98.097 % (4020/4098)
+
+UE 62 - Vídeo: highway
+  Throughput: 0.126 Mbps
+  Delay médio: 1038.000 ms
+  Jitter médio: 63.000 ms
+  Perda de pacotes: 91.256 % (1315/1441)
+
+UE 58 - Vídeo: football
+  Throughput: 0.043 Mbps
+  Delay médio: 1766.000 ms
+  Jitter médio: 132.000 ms
+  Perda de pacotes: 98.780 % (4048/4098)
+
+UE 63 - Vídeo: highway
+  Throughput: 0.064 Mbps
+  Delay médio: 1350.000 ms
+  Jitter médio: 143.000 ms
+  Perda de pacotes: 95.073 % (1370/1441)
+
+UE 59 - Vídeo: football
+  Throughput: 0.138 Mbps
+  Delay médio: 675.000 ms
+  Jitter médio: 29.000 ms
+  Perda de pacotes: 97.096 % (3979/4098)
+
+UE 64 - Vídeo: highway
+  Throughput: 0.053 Mbps
+  Delay médio: 755.000 ms
+  Jitter médio: 62.000 ms
+  Perda de pacotes: 96.183 % (1386/1441)
+
+UE 60 - Vídeo: football
+  Throughput: 0.168 Mbps
+  Delay médio: 605.000 ms
+  Jitter médio: 45.000 ms
+  Perda de pacotes: 96.633 % (3960/4098)
+
+UE 66 - Vídeo: highway
+  Throughput: 0.118 Mbps
+  Delay médio: 906.000 ms
+  Jitter médio: 56.000 ms
+  Perda de pacotes: 92.436 % (1332/1441)
+
+UE 67 - Vídeo: highway
+  Throughput: 0.168 Mbps
+  Delay médio: 753.000 ms
+  Jitter médio: 50.000 ms
+  Perda de pacotes: 89.105 % (1284/1441)
+
+UE 63 - Vídeo: football
+  Throughput: 0.039 Mbps
+  Delay médio: 1169.000 ms
+  Jitter médio: 222.000 ms
+  Perda de pacotes: 99.073 % (4060/4098)
+
+UE 68 - Vídeo: highway
+  Throughput: 0.038 Mbps
+  Delay médio: 1219.000 ms
+  Jitter médio: 205.000 ms
+  Perda de pacotes: 98.473 % (1419/1441)
+
+UE 64 - Vídeo: football
+  Throughput: 0.198 Mbps
+  Delay médio: 647.000 ms
+  Jitter médio: 41.000 ms
+  Perda de pacotes: 95.925 % (3931/4098)
+
+UE 69 - Vídeo: highway
+  Throughput: 0.040 Mbps
+  Delay médio: 1182.000 ms
+  Jitter médio: 169.000 ms
+  Perda de pacotes: 97.363 % (1403/1441)
+
+UE 70 - Vídeo: highway
+  Throughput: 0.182 Mbps
+  Delay médio: 660.000 ms
+  Jitter médio: 52.000 ms
+  Perda de pacotes: 88.203 % (1271/1441)
+
+UE 66 - Vídeo: football
+  Throughput: 0.109 Mbps
+  Delay médio: 1055.000 ms
+  Jitter médio: 28.000 ms
+  Perda de pacotes: 97.682 % (4003/4098)
+
+UE 71 - Vídeo: highway
+  Throughput: 0.070 Mbps
+  Delay médio: 954.000 ms
+  Jitter médio: 103.000 ms
+  Perda de pacotes: 94.448 % (1361/1441)
+
+UE 67 - Vídeo: football
+  Throughput: 0.082 Mbps
+  Delay médio: 582.000 ms
+  Jitter médio: 27.000 ms
+  Perda de pacotes: 98.316 % (4029/4098)
+
+UE 72 - Vídeo: highway
+  Throughput: 0.094 Mbps
+  Delay médio: 827.000 ms
+  Jitter médio: 68.000 ms
+  Perda de pacotes: 93.199 % (1343/1441)
+
+UE 68 - Vídeo: football
+  Throughput: 0.014 Mbps
+  Delay médio: 1938.000 ms
+  Jitter médio: 455.000 ms
+  Perda de pacotes: 99.829 % (4091/4098)
+
+UE 69 - Vídeo: football
+  Throughput: 0.014 Mbps
+  Delay médio: 1377.000 ms
+  Jitter médio: 221.000 ms
+  Perda de pacotes: 99.707 % (4086/4098)
+
+UE 74 - Vídeo: highway
+  Throughput: 0.075 Mbps
+  Delay médio: 1101.000 ms
+  Jitter médio: 116.000 ms
+  Perda de pacotes: 94.726 % (1365/1441)
+
+UE 70 - Vídeo: football
+  Throughput: 0.122 Mbps
+  Delay médio: 718.000 ms
+  Jitter médio: 34.000 ms
+  Perda de pacotes: 97.316 % (3988/4098)
+
+UE 71 - Vídeo: football
+  Throughput: 0.121 Mbps
+  Delay médio: 982.000 ms
+  Jitter médio: 63.000 ms
+  Perda de pacotes: 97.487 % (3995/4098)
+
+UE 76 - Vídeo: highway
+  Throughput: 0.072 Mbps
+  Delay médio: 622.000 ms
+  Jitter médio: 81.000 ms
+  Perda de pacotes: 95.281 % (1373/1441)
+
+UE 72 - Vídeo: football
+  Throughput: 0.115 Mbps
+  Delay médio: 839.000 ms
+  Jitter médio: 47.000 ms
+  Perda de pacotes: 97.511 % (3996/4098)
+
+UE 78 - Vídeo: highway
+  Throughput: 0.154 Mbps
+  Delay médio: 610.000 ms
+  Jitter médio: 53.000 ms
+  Perda de pacotes: 90.076 % (1298/1441)
+
+UE 74 - Vídeo: football
+  Throughput: 0.066 Mbps
+  Delay médio: 1055.000 ms
+  Jitter médio: 134.000 ms
+  Perda de pacotes: 98.585 % (4040/4098)
+
+UE 80 - Vídeo: highway
+  Throughput: 0.161 Mbps
+  Delay médio: 719.000 ms
+  Jitter médio: 53.000 ms
+  Perda de pacotes: 89.591 % (1291/1441)
+
+UE 76 - Vídeo: football
+  Throughput: 0.150 Mbps
+  Delay médio: 956.000 ms
+  Jitter médio: 42.000 ms
+  Perda de pacotes: 96.852 % (3969/4098)
+
+UE 81 - Vídeo: highway
+  Throughput: 0.120 Mbps
+  Delay médio: 516.000 ms
+  Jitter médio: 56.000 ms
+  Perda de pacotes: 92.019 % (1326/1441)
+
+UE 82 - Vídeo: highway
+  Throughput: 0.179 Mbps
+  Delay médio: 644.000 ms
+  Jitter médio: 52.000 ms
+  Perda de pacotes: 88.827 % (1280/1441)
+
+UE 78 - Vídeo: football
+  Throughput: 0.198 Mbps
+  Delay médio: 735.000 ms
+  Jitter médio: 31.000 ms
+  Perda de pacotes: 95.900 % (3930/4098)
+
+UE 83 - Vídeo: highway
+  Throughput: 0.152 Mbps
+  Delay médio: 702.000 ms
+  Jitter médio: 55.000 ms
+  Perda de pacotes: 90.354 % (1302/1441)
+
+UE 84 - Vídeo: highway
+  Throughput: 0.195 Mbps
+  Delay médio: 647.000 ms
+  Jitter médio: 52.000 ms
+  Perda de pacotes: 88.064 % (1269/1441)
+
+UE 80 - Vídeo: football
+  Throughput: 0.166 Mbps
+  Delay médio: 767.000 ms
+  Jitter médio: 35.000 ms
+  Perda de pacotes: 96.681 % (3962/4098)
+
+UE 81 - Vídeo: football
+  Throughput: 0.245 Mbps
+  Delay médio: 789.000 ms
+  Jitter médio: 35.000 ms
+  Perda de pacotes: 95.046 % (3895/4098)
+
+UE 86 - Vídeo: highway
+  Throughput: 0.150 Mbps
+  Delay médio: 572.000 ms
+  Jitter médio: 57.000 ms
+  Perda de pacotes: 90.770 % (1308/1441)
+
+UE 82 - Vídeo: football
+  Throughput: 0.139 Mbps
+  Delay médio: 428.000 ms
+  Jitter médio: 27.000 ms
+  Perda de pacotes: 97.243 % (3985/4098)
+
+UE 83 - Vídeo: football
+  Throughput: 0.201 Mbps
+  Delay médio: 792.000 ms
+  Jitter médio: 28.000 ms
+  Perda de pacotes: 95.900 % (3930/4098)
+
+UE 88 - Vídeo: highway
+  Throughput: 0.163 Mbps
+  Delay médio: 544.000 ms
+  Jitter médio: 50.000 ms
+  Perda de pacotes: 90.007 % (1297/1441)
+
+UE 84 - Vídeo: football
+  Throughput: 0.159 Mbps
+  Delay médio: 552.000 ms
+  Jitter médio: 29.000 ms
+  Perda de pacotes: 96.974 % (3974/4098)
+
+UE 89 - Vídeo: highway
+  Throughput: 0.115 Mbps
+  Delay médio: 558.000 ms
+  Jitter médio: 65.000 ms
+  Perda de pacotes: 92.297 % (1330/1441)
+
+UE 90 - Vídeo: highway
+  Throughput: 0.085 Mbps
+  Delay médio: 990.000 ms
+  Jitter médio: 37.000 ms
+  Perda de pacotes: 94.448 % (1361/1441)
+
+UE 86 - Vídeo: football
+  Throughput: 0.308 Mbps
+  Delay médio: 1043.000 ms
+  Jitter médio: 22.000 ms
+  Perda de pacotes: 93.558 % (3834/4098)
+
+UE 91 - Vídeo: highway
+  Throughput: 0.211 Mbps
+  Delay médio: 584.000 ms
+  Jitter médio: 46.000 ms
+  Perda de pacotes: 86.398 % (1245/1441)
+
+UE 92 - Vídeo: highway
+  Throughput: 0.245 Mbps
+  Delay médio: 464.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 84.941 % (1224/1441)
+
+UE 88 - Vídeo: football
+  Throughput: 0.249 Mbps
+  Delay médio: 825.000 ms
+  Jitter médio: 27.000 ms
+  Perda de pacotes: 94.998 % (3893/4098)
+
+UE 89 - Vídeo: football
+  Throughput: 0.259 Mbps
+  Delay médio: 854.000 ms
+  Jitter médio: 23.000 ms
+  Perda de pacotes: 94.705 % (3881/4098)
+
+UE 94 - Vídeo: highway
+  Throughput: 0.186 Mbps
+  Delay médio: 482.000 ms
+  Jitter médio: 44.000 ms
+  Perda de pacotes: 88.203 % (1271/1441)
+
+UE 90 - Vídeo: football
+  Throughput: 0.317 Mbps
+  Delay médio: 846.000 ms
+  Jitter médio: 27.000 ms
+  Perda de pacotes: 93.729 % (3841/4098)
+
+UE 95 - Vídeo: highway
+  Throughput: 0.196 Mbps
+  Delay médio: 522.000 ms
+  Jitter médio: 48.000 ms
+  Perda de pacotes: 87.509 % (1261/1441)
+
+UE 91 - Vídeo: football
+  Throughput: 0.238 Mbps
+  Delay médio: 825.000 ms
+  Jitter médio: 21.000 ms
+  Perda de pacotes: 94.998 % (3893/4098)
+
+UE 96 - Vídeo: highway
+  Throughput: 0.221 Mbps
+  Delay médio: 494.000 ms
+  Jitter médio: 45.000 ms
+  Perda de pacotes: 85.982 % (1239/1441)
+
+UE 92 - Vídeo: football
+  Throughput: 0.246 Mbps
+  Delay médio: 793.000 ms
+  Jitter médio: 21.000 ms
+  Perda de pacotes: 94.924 % (3890/4098)
+
+UE 98 - Vídeo: highway
+  Throughput: 0.239 Mbps
+  Delay médio: 562.000 ms
+  Jitter médio: 43.000 ms
+  Perda de pacotes: 85.080 % (1226/1441)
+
+UE 94 - Vídeo: football
+  Throughput: 0.326 Mbps
+  Delay médio: 743.000 ms
+  Jitter médio: 24.000 ms
+  Perda de pacotes: 93.607 % (3836/4098)
+
+UE 99 - Vídeo: highway
+  Throughput: 0.250 Mbps
+  Delay médio: 483.000 ms
+  Jitter médio: 42.000 ms
+  Perda de pacotes: 84.455 % (1217/1441)
+
+UE 95 - Vídeo: football
+  Throughput: 0.299 Mbps
+  Delay médio: 750.000 ms
+  Jitter médio: 20.000 ms
+  Perda de pacotes: 94.168 % (3859/4098)
+
+UE 100 - Vídeo: highway
+  Throughput: 0.198 Mbps
+  Delay médio: 341.000 ms
+  Jitter médio: 40.000 ms
+  Perda de pacotes: 87.647 % (1263/1441)
+
+UE 96 - Vídeo: football
+  Throughput: 0.295 Mbps
+  Delay médio: 715.000 ms
+  Jitter médio: 21.000 ms
+  Perda de pacotes: 94.339 % (3866/4098)
+
+UE 98 - Vídeo: football
+  Throughput: 0.291 Mbps
+  Delay médio: 682.000 ms
+  Jitter médio: 16.000 ms
+  Perda de pacotes: 94.339 % (3866/4098)
+
+UE 99 - Vídeo: football
+  Throughput: 0.336 Mbps
+  Delay médio: 664.000 ms
+  Jitter médio: 16.000 ms
+  Perda de pacotes: 93.582 % (3835/4098)
+
+UE 85 - Vídeo: football
+  Throughput: 0.389 Mbps
+  Delay médio: 661.000 ms
+  Jitter médio: 24.000 ms
+  Perda de pacotes: 92.606 % (3795/4098)
+
+UE 85 - Vídeo: highway
+  Throughput: 0.218 Mbps
+  Delay médio: 307.000 ms
+  Jitter médio: 38.000 ms
+  Perda de pacotes: 86.121 % (1241/1441)
+
+UE 100 - Vídeo: football
+  Throughput: 0.413 Mbps
+  Delay médio: 617.000 ms
+  Jitter médio: 21.000 ms
+  Perda de pacotes: 92.216 % (3779/4098)
+
+UE 62 - Vídeo: football
+  Throughput: 3.561 Mbps
+  Delay médio: 65.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 33.675 % (1380/4098)
+
+UE 37 - Vídeo: football
+  Throughput: 3.755 Mbps
+  Delay médio: 18.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 31.381 % (1286/4098)
+
+UE 37 - Vídeo: highway
+  Throughput: 1.039 Mbps
+  Delay médio: 19.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 41.430 % (597/1441)
+

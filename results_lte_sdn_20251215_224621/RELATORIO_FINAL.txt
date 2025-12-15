@@ -1,0 +1,117 @@
+================================================================================
+RELATÓRIO FINAL - AVALIAÇÃO DE STREAMING DE VÍDEO SOBRE LTE + SDN
+================================================================================
+
+Data: Mon Dec 15 22:47:09 UTC 2025
+Diretório: results_lte_sdn_20251215_224621
+
+================================================================================
+1. CONFIGURAÇÃO DO CENÁRIO
+================================================================================
+
+Infraestrutura de Rede:
+  - 2 eNodeBs (multi-cell) com handover X2 ativado
+  - 4 UEs móveis transitando entre as torres (30 km/h)
+  - 1 Switch SDN (ofswitch13)
+  - 1 Servidor de vídeo remoto (remoteHost)
+
+Vídeos Utilizados:
+  - highway (st_highway_cif.st): Cenas de estrada - movimento moderado
+  - football (football.st): Cenas de esporte - alta movimentação
+
+Tempo de Simulação: 60 segundos
+
+================================================================================
+2. CENÁRIOS AVALIADOS
+================================================================================
+
+CENÁRIO 1 - SEM SDN:
+  - Switch atua como comutador normal (learning controller)
+  - Sem priorização de tráfego
+  - Todos os fluxos tratados igualmente
+
+CENÁRIO 2 - COM SDN:
+  - Aplicação de regras OpenFlow para priorização
+  - Tráfego de vídeo (UDP portas 8000-8010) com alta prioridade
+  - Redução de latência para fluxos priorizados
+
+================================================================================
+3. MÉTRICAS COLETADAS
+================================================================================
+
+QoS (Quality of Service):
+  - Delay (atraso fim-a-fim)
+  - Jitter (variação do atraso)
+  - Throughput (vazão)
+  - Packet Loss (perda de pacotes)
+
+QoE (Quality of Experience):
+  - PSNR (Peak Signal-to-Noise Ratio) - estimado
+  - MOS (Mean Opinion Score) - estimado
+  - Frames perdidos
+
+================================================================================
+4. ESTRUTURA DE ARQUIVOS
+================================================================================
+
+results_lte_sdn_20251215_224621/
+├── metrics/
+│   ├── QoS_SEM_SDN.txt          # Métricas QoS sem SDN
+│   ├── QoS_COM_SDN.txt          # Métricas QoS com SDN
+│   ├── QoE_SEM_SDN.txt          # Métricas QoE sem SDN
+│   ├── QoE_COM_SDN.txt          # Métricas QoE com SDN
+│   ├── RESUMO_SEM_SDN.txt       # Resumo cenário sem SDN
+│   ├── RESUMO_COM_SDN.txt       # Resumo cenário com SDN
+│   └── flowmonitor_*.xml        # Dados detalhados FlowMonitor
+├── graphs/
+│   ├── delay_*.csv              # Dados de delay por cenário
+│   ├── throughput_*.csv         # Dados de throughput por cenário
+│   ├── psnr_*.csv               # Dados de PSNR por cenário
+│   ├── jitter_*.csv             # Dados de jitter por cenário
+│   └── packet_loss_*.csv        # Dados de perda por cenário
+├── comparison/
+│   ├── delay_comparison.png     # Gráfico comparativo delay
+│   ├── throughput_comparison.png # Gráfico comparativo throughput
+│   └── psnr_comparison.png      # Gráfico comparativo PSNR
+├── traces/
+│   └── sd_*/rd_*                # Traces EvalVid por UE
+└── log_*.txt                    # Logs das simulações
+
+================================================================================
+5. ANÁLISE: DIFERENÇAS ENTRE OS VÍDEOS
+================================================================================
+
+Os resultados para vídeos diferentes (highway vs football) são DIFERENTES devido a:
+
+1. CARACTERÍSTICAS DO CONTEÚDO:
+   - Highway: Cenas mais estáticas, menor complexidade temporal
+   - Football: Alta movimentação, muitas mudanças entre frames
+   
+2. TAXA DE BITS:
+   - Football possui GOP mais complexo, gerando pacotes maiores
+   - Maior sensibilidade à perda de pacotes (frames I críticos)
+
+3. IMPACTO DA PERDA:
+   - Em football, perda de frame I afeta mais frames subsequentes
+   - Highway se recupera mais rapidamente de perdas
+
+4. REQUISITOS DE BANDA:
+   - Football demanda mais throughput para mesma qualidade
+   - Highway mantém qualidade com menor vazão
+
+================================================================================
+6. CONCLUSÕES ESPERADAS
+================================================================================
+
+Com SDN ATIVADO espera-se:
+  - Redução do delay médio (priorização de vídeo)
+  - Menor variação de jitter
+  - PSNR mais elevado (menor degradação)
+  - MOS melhorado
+  - Menor perda de pacotes para fluxos de vídeo
+
+Diferenças entre vídeos:
+  - Football deve apresentar mais sensibilidade às condições de rede
+  - Highway deve ter métricas mais estáveis
+
+================================================================================

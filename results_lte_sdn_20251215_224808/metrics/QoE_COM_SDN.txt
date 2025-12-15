@@ -1,0 +1,54 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: highway
+  PSNR estimado: 40.62 dB
+  MOS estimado: 4.73
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: highway
+  PSNR estimado: 38.01 dB
+  MOS estimado: 4.56
+  Frames perdidos: ~7
+
+UE 3 - Vídeo: highway
+  PSNR estimado: 35.49 dB
+  MOS estimado: 4.37
+  Frames perdidos: ~16
+
+UE 4 - Vídeo: highway
+  PSNR estimado: 38.06 dB
+  MOS estimado: 4.57
+  Frames perdidos: ~8
+
+UE 5 - Vídeo: highway
+  PSNR estimado: 37.91 dB
+  MOS estimado: 4.56
+  Frames perdidos: ~9
+
+UE 1 - Vídeo: football
+  PSNR estimado: 32.06 dB
+  MOS estimado: 4.09
+  Frames perdidos: ~251
+
+UE 2 - Vídeo: football
+  PSNR estimado: 29.57 dB
+  MOS estimado: 3.76
+  Frames perdidos: ~339
+
+UE 3 - Vídeo: football
+  PSNR estimado: 27.63 dB
+  MOS estimado: 3.44
+  Frames perdidos: ~369
+
+UE 4 - Vídeo: football
+  PSNR estimado: 30.79 dB
+  MOS estimado: 3.97
+  Frames perdidos: ~299
+
+UE 5 - Vídeo: football
+  PSNR estimado: 31.57 dB
+  MOS estimado: 4.05
+  Frames perdidos: ~268
+

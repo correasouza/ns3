@@ -1,0 +1,52 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: highway
+  Throughput: 0.466 Mbps
+  Delay médio: 47.000 ms
+  Jitter médio: 5.000 ms
+  Perda de pacotes: 71.478 % (1030/1441)
+
+UE 2 - Vídeo: highway
+  Throughput: 0.788 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 55.031 % (793/1441)
+
+UE 3 - Vídeo: highway
+  Throughput: 0.329 Mbps
+  Delay médio: 45.000 ms
+  Jitter médio: 5.000 ms
+  Perda de pacotes: 78.071 % (1125/1441)
+
+UE 4 - Vídeo: highway
+  Throughput: 0.349 Mbps
+  Delay médio: 40.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 76.960 % (1109/1441)
+
+UE 1 - Vídeo: football
+  Throughput: 1.754 Mbps
+  Delay médio: 46.000 ms
+  Jitter médio: 8.000 ms
+  Perda de pacotes: 66.691 % (2733/4098)
+
+UE 2 - Vídeo: football
+  Throughput: 2.739 Mbps
+  Delay médio: 29.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 49.585 % (2032/4098)
+
+UE 3 - Vídeo: football
+  Throughput: 2.166 Mbps
+  Delay médio: 46.000 ms
+  Jitter médio: 7.000 ms
+  Perda de pacotes: 59.761 % (2449/4098)
+
+UE 4 - Vídeo: football
+  Throughput: 2.657 Mbps
+  Delay médio: 39.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 51.098 % (2094/4098)
+

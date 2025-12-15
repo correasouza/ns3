@@ -1,0 +1,44 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: ice
+  PSNR estimado: 39.64 dB
+  MOS estimado: 4.67
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 1 - Vídeo: mother_daughter
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: mother_daughter
+  PSNR estimado: 39.55 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: mother_daughter
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: mother_daughter
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+

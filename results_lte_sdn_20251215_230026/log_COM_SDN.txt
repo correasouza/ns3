@@ -1,0 +1,6 @@
+[0/2] Re-checking globbed directories...
+[1/21] Skipping update step for 'bofuss_dep'
+[2/21] Performing configure step for 'bofuss_dep'
+-- bofuss_dep configure command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-configure-*.log
+[3/21] Performing build step for 'bofuss_dep'
+-- bofuss_dep build command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-build-*.log

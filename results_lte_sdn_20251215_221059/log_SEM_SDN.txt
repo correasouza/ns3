@@ -1,0 +1,37 @@
+[0/2] Re-checking globbed directories...
+[1/21] Skipping update step for 'bofuss_dep'
+[2/21] Performing configure step for 'bofuss_dep'
+-- bofuss_dep configure command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-configure-*.log
+[3/21] Performing build step for 'bofuss_dep'
+-- bofuss_dep build command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-build-*.log
+[4/21] Performing install step for 'bofuss_dep'
+-- bofuss_dep install command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-install-*.log
+[5/21] Completed 'bofuss_dep'
+[6/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-interface.cc.o
+[7/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-device-container.cc.o
+[8/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-queue.cc.o
+[9/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-priority-queue.cc.o
+[10/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-learning-controller.cc.o
+[11/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-helper.cc.o
+[12/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-socket-handler.cc.o
+[13/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-external-helper.cc.o
+[14/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-port.cc.o
+[15/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-internal-helper.cc.o
+[16/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-controller.cc.o
+[17/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-stats-calculator.cc.o
+[18/21] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-device.cc.o
+[19/21] Linking CXX shared library ../build/lib/libns3.39-ofswitch13-optimized.so
+[20/21] Building CXX object scratch/CMakeFiles/scratch_evalvid_lte_aval_x2.dir/evalvid_lte_aval_x2.cc.o
+[21/21] Linking CXX executable ../build/scratch/ns3.39-evalvid_lte_aval_x2-optimized
+==========================================
+Iniciando simulação: SEM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: st_highway_cif.st, football.st
+  Diretório: results_lte_sdn_20251215_221059
+==========================================
+
+==========================================
+Simulação SEM_SDN concluída!
+Resultados em: results_lte_sdn_20251215_221059
+==========================================

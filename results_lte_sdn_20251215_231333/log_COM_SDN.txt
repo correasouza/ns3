@@ -1,0 +1,21 @@
+[0/2] Re-checking globbed directories...
+[1/5] Skipping update step for 'bofuss_dep'
+[2/5] Performing configure step for 'bofuss_dep'
+-- bofuss_dep configure command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-configure-*.log
+[3/5] Performing build step for 'bofuss_dep'
+-- bofuss_dep build command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-build-*.log
+[4/5] Performing install step for 'bofuss_dep'
+-- bofuss_dep install command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-install-*.log
+[5/5] Completed 'bofuss_dep'
+==========================================
+Iniciando simulação: COM_SDN
+  eNodeBs: 2
+  UEs: 4
+  Vídeos: ice.st (ice), mother_daughter_cif.st (mother_daughter)
+  Diretório: results_lte_sdn_20251215_231333
+==========================================
+
+==========================================
+Simulação COM_SDN concluída!
+Resultados em: results_lte_sdn_20251215_231333
+==========================================

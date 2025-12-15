@@ -322,6 +322,32 @@ double EstimatePSNR (double packetLoss, double jitter, double delay, const std::
 
 // ============================================================================
 // Função principal
+// Função auxiliar para extrair nome base do arquivo de vídeo
+std::string ExtractVideoName(const std::string& filename)
+{
+  // Remove caminho se existir
+  std::string name = filename;
+  size_t lastSlash = name.find_last_of("/\\");
+  if (lastSlash != std::string::npos)
+    name = name.substr(lastSlash + 1);
+  
+  // Remove extensão .st
+  size_t dotPos = name.find(".st");
+  if (dotPos != std::string::npos)
+    name = name.substr(0, dotPos);
+  
+  // Remove prefixo st_ se existir
+  if (name.substr(0, 3) == "st_")
+    name = name.substr(3);
+  
+  // Remove sufixo _cif se existir
+  size_t cifPos = name.find("_cif");
+  if (cifPos != std::string::npos)
+    name = name.substr(0, cifPos);
+  
+  return name;
+}
+
 // ============================================================================
 int main (int argc, char *argv[])
 {
@@ -333,8 +359,8 @@ int main (int argc, char *argv[])
   double areaY = 400.0;
   double ueSpeedKmph = 30.0;
   uint16_t basePort = 8000;
-  uint16_t portHighway = basePort;       // Portas para vídeo highway (8000+)
-  uint16_t portFootball = basePort + 100; // Portas para vídeo football (8100+)
+  uint16_t portVideo1 = basePort;        // Portas para vídeo 1 (8000+)
+  uint16_t portVideo2 = basePort + 100;  // Portas para vídeo 2 (8100+)
   bool enableSdn = false;        // Modo SDN
   std::string outputDir = "";
   std::string video1 = "st_highway_cif.st";
@@ -368,11 +394,15 @@ int main (int argc, char *argv[])
 
   std::string scenarioName = enableSdn ? "COM_SDN" : "SEM_SDN";
   
+  // Extrai nomes dos vídeos para uso nos gráficos
+  std::string video1Name = ExtractVideoName(video1);
+  std::string video2Name = ExtractVideoName(video2);
+  
   std::cout << "==========================================" << std::endl;
   std::cout << "Iniciando simulação: " << scenarioName << std::endl;
   std::cout << "  eNodeBs: " << numEnbs << std::endl;
   std::cout << "  UEs: " << numUes << std::endl;
-  std::cout << "  Vídeos: " << video1 << ", " << video2 << std::endl;
+  std::cout << "  Vídeos: " << video1 << " (" << video1Name << "), " << video2 << " (" << video2Name << ")" << std::endl;
   std::cout << "  Diretório: " << outputDir << std::endl;
   std::cout << "==========================================" << std::endl;
 
@@ -562,60 +592,60 @@ int main (int argc, char *argv[])
     }
 
   // ======= Aplicações Evalvid - Cada UE recebe AMBOS os vídeos =======
-  // Porta base: highway usa 8000+u, football usa 8100+u
+  // Porta base: video1 usa 8000+u, video2 usa 8100+u
   ApplicationContainer serverApps, clientApps;
   
   for (uint32_t u = 0; u < ueNodes.GetN (); ++u)
     {
-      // ====== Vídeo 1: Highway ======
-      uint16_t port1 = portHighway + u;
+      // ====== Vídeo 1 ======
+      uint16_t port1 = portVideo1 + u;
       
-      EvalvidServerHelper serverHw (port1);
-      serverHw.SetAttribute ("SenderTraceFilename", StringValue (video1));
+      EvalvidServerHelper serverV1 (port1);
+      serverV1.SetAttribute ("SenderTraceFilename", StringValue (video1));
       
-      std::ostringstream sdnameHw;
-      sdnameHw << outputDir << "/traces/sd_" << scenarioName << "_highway_ue" << (u + 1);
-      serverHw.SetAttribute ("SenderDumpFilename", StringValue (sdnameHw.str ()));
+      std::ostringstream sdnameV1;
+      sdnameV1 << outputDir << "/traces/sd_" << scenarioName << "_" << video1Name << "_ue" << (u + 1);
+      serverV1.SetAttribute ("SenderDumpFilename", StringValue (sdnameV1.str ()));
       
-      ApplicationContainer saHw = serverHw.Install (remoteHost);
-      saHw.Start (Seconds (1.0 + u * 0.1));
-      saHw.Stop (Seconds (simTime - 1.0));
-      serverApps.Add (saHw);
+      ApplicationContainer saV1 = serverV1.Install (remoteHost);
+      saV1.Start (Seconds (1.0 + u * 0.1));
+      saV1.Stop (Seconds (simTime - 1.0));
+      serverApps.Add (saV1);
 
-      EvalvidClientHelper clientHw (remoteHostAddr, port1);
-      std::ostringstream rdnameHw;
-      rdnameHw << outputDir << "/traces/rd_" << scenarioName << "_highway_ue" << (u + 1);
-      clientHw.SetAttribute ("ReceiverDumpFilename", StringValue (rdnameHw.str ()));
+      EvalvidClientHelper clientV1 (remoteHostAddr, port1);
+      std::ostringstream rdnameV1;
+      rdnameV1 << outputDir << "/traces/rd_" << scenarioName << "_" << video1Name << "_ue" << (u + 1);
+      clientV1.SetAttribute ("ReceiverDumpFilename", StringValue (rdnameV1.str ()));
       
-      ApplicationContainer caHw = clientHw.Install (ueNodes.Get (u));
-      caHw.Start (Seconds (2.0 + u * 0.1));
-      caHw.Stop (Seconds (simTime - 5.0));
-      clientApps.Add (caHw);
+      ApplicationContainer caV1 = clientV1.Install (ueNodes.Get (u));
+      caV1.Start (Seconds (2.0 + u * 0.1));
+      caV1.Stop (Seconds (simTime - 5.0));
+      clientApps.Add (caV1);
       
-      // ====== Vídeo 2: Football ======
-      uint16_t port2 = portFootball + u;
+      // ====== Vídeo 2 ======
+      uint16_t port2 = portVideo2 + u;
       
-      EvalvidServerHelper serverFb (port2);
-      serverFb.SetAttribute ("SenderTraceFilename", StringValue (video2));
+      EvalvidServerHelper serverV2 (port2);
+      serverV2.SetAttribute ("SenderTraceFilename", StringValue (video2));
       
-      std::ostringstream sdnameFb;
-      sdnameFb << outputDir << "/traces/sd_" << scenarioName << "_football_ue" << (u + 1);
-      serverFb.SetAttribute ("SenderDumpFilename", StringValue (sdnameFb.str ()));
+      std::ostringstream sdnameV2;
+      sdnameV2 << outputDir << "/traces/sd_" << scenarioName << "_" << video2Name << "_ue" << (u + 1);
+      serverV2.SetAttribute ("SenderDumpFilename", StringValue (sdnameV2.str ()));
       
-      ApplicationContainer saFb = serverFb.Install (remoteHost);
-      saFb.Start (Seconds (1.5 + u * 0.1));  // Inicia 0.5s depois do highway
-      saFb.Stop (Seconds (simTime - 1.0));
-      serverApps.Add (saFb);
+      ApplicationContainer saV2 = serverV2.Install (remoteHost);
+      saV2.Start (Seconds (1.5 + u * 0.1));  // Inicia 0.5s depois do video1
+      saV2.Stop (Seconds (simTime - 1.0));
+      serverApps.Add (saV2);
 
-      EvalvidClientHelper clientFb (remoteHostAddr, port2);
-      std::ostringstream rdnameFb;
-      rdnameFb << outputDir << "/traces/rd_" << scenarioName << "_football_ue" << (u + 1);
-      clientFb.SetAttribute ("ReceiverDumpFilename", StringValue (rdnameFb.str ()));
+      EvalvidClientHelper clientV2 (remoteHostAddr, port2);
+      std::ostringstream rdnameV2;
+      rdnameV2 << outputDir << "/traces/rd_" << scenarioName << "_" << video2Name << "_ue" << (u + 1);
+      clientV2.SetAttribute ("ReceiverDumpFilename", StringValue (rdnameV2.str ()));
       
-      ApplicationContainer caFb = clientFb.Install (ueNodes.Get (u));
-      caFb.Start (Seconds (2.5 + u * 0.1));  // Inicia 0.5s depois do highway
-      caFb.Stop (Seconds (simTime - 5.0));
-      clientApps.Add (caFb);
+      ApplicationContainer caV2 = clientV2.Install (ueNodes.Get (u));
+      caV2.Start (Seconds (2.5 + u * 0.1));  // Inicia 0.5s depois do video1
+      caV2.Stop (Seconds (simTime - 5.0));
+      clientApps.Add (caV2);
     }
 
   // ======= FlowMonitor =======
@@ -651,17 +681,17 @@ int main (int argc, char *argv[])
       int ueIndex = -1;
       std::string videoName;
       
-      // Highway: portas 8000 até 8000+numUes-1
-      if (t.sourcePort >= portHighway && t.sourcePort < portHighway + numUes)
+      // Video1: portas 8000 até 8000+numUes-1
+      if (t.sourcePort >= portVideo1 && t.sourcePort < portVideo1 + numUes)
         {
-          ueIndex = t.sourcePort - portHighway;
-          videoName = "highway";
+          ueIndex = t.sourcePort - portVideo1;
+          videoName = video1Name;
         }
-      // Football: portas 8100 até 8100+numUes-1
-      else if (t.sourcePort >= portFootball && t.sourcePort < portFootball + numUes)
+      // Video2: portas 8100 até 8100+numUes-1
+      else if (t.sourcePort >= portVideo2 && t.sourcePort < portVideo2 + numUes)
         {
-          ueIndex = t.sourcePort - portFootball;
-          videoName = "football";
+          ueIndex = t.sourcePort - portVideo2;
+          videoName = video2Name;
         }
 
       if (ueIndex < 0 || ueIndex >= (int)numUes)
@@ -832,67 +862,68 @@ int main (int argc, char *argv[])
   fSummary << "  - Tempo de simulação: " << simTime << " s" << std::endl;
   fSummary << "  - Velocidade UE: " << ueSpeedKmph << " km/h" << std::endl;
   fSummary << "  - SDN Priorização: " << (enableSdn ? "ATIVADA" : "DESATIVADA") << std::endl;
-  fSummary << "  - Vídeos: " << video1 << ", " << video2 << std::endl;
+  fSummary << "  - Vídeo 1: " << video1 << " (" << video1Name << ")" << std::endl;
+  fSummary << "  - Vídeo 2: " << video2 << " (" << video2Name << ")" << std::endl;
   fSummary << std::endl;
   
   // Calcula médias por tipo de vídeo
-  double avgDelayHighway = 0, avgDelayFootball = 0;
-  double avgThrHighway = 0, avgThrFootball = 0;
-  double avgPsnrHighway = 0, avgPsnrFootball = 0;
-  double avgLossHighway = 0, avgLossFootball = 0;
-  int countHighway = 0, countFootball = 0;
+  double avgDelayVideo1 = 0, avgDelayVideo2 = 0;
+  double avgThrVideo1 = 0, avgThrVideo2 = 0;
+  double avgPsnrVideo1 = 0, avgPsnrVideo2 = 0;
+  double avgLossVideo1 = 0, avgLossVideo2 = 0;
+  int countVideo1 = 0, countVideo2 = 0;
   
   for (const auto &vm : allMetrics)
     {
-      if (vm.videoName == "highway")
+      if (vm.videoName == video1Name)
         {
-          avgDelayHighway += vm.delay;
-          avgThrHighway += vm.throughput;
-          avgPsnrHighway += vm.psnr;
-          avgLossHighway += vm.packetLoss;
-          countHighway++;
+          avgDelayVideo1 += vm.delay;
+          avgThrVideo1 += vm.throughput;
+          avgPsnrVideo1 += vm.psnr;
+          avgLossVideo1 += vm.packetLoss;
+          countVideo1++;
         }
       else
         {
-          avgDelayFootball += vm.delay;
-          avgThrFootball += vm.throughput;
-          avgPsnrFootball += vm.psnr;
-          avgLossFootball += vm.packetLoss;
-          countFootball++;
+          avgDelayVideo2 += vm.delay;
+          avgThrVideo2 += vm.throughput;
+          avgPsnrVideo2 += vm.psnr;
+          avgLossVideo2 += vm.packetLoss;
+          countVideo2++;
         }
     }
   
-  if (countHighway > 0)
+  if (countVideo1 > 0)
     {
-      avgDelayHighway /= countHighway;
-      avgThrHighway /= countHighway;
-      avgPsnrHighway /= countHighway;
-      avgLossHighway /= countHighway;
+      avgDelayVideo1 /= countVideo1;
+      avgThrVideo1 /= countVideo1;
+      avgPsnrVideo1 /= countVideo1;
+      avgLossVideo1 /= countVideo1;
     }
-  if (countFootball > 0)
+  if (countVideo2 > 0)
     {
-      avgDelayFootball /= countFootball;
-      avgThrFootball /= countFootball;
-      avgPsnrFootball /= countFootball;
-      avgLossFootball /= countFootball;
+      avgDelayVideo2 /= countVideo2;
+      avgThrVideo2 /= countVideo2;
+      avgPsnrVideo2 /= countVideo2;
+      avgLossVideo2 /= countVideo2;
     }
 
   fSummary << "Métricas Médias por Vídeo:" << std::endl;
   fSummary << std::endl;
-  fSummary << "  VÍDEO HIGHWAY (cenas de estrada):" << std::endl;
+  fSummary << "  VÍDEO 1 - " << video1Name << ":" << std::endl;
   fSummary << "    Delay médio: " << std::fixed << std::setprecision (2) 
-           << avgDelayHighway << " ms" << std::endl;
-  fSummary << "    Throughput médio: " << avgThrHighway << " Mbps" << std::endl;
-  fSummary << "    PSNR médio: " << avgPsnrHighway << " dB" << std::endl;
-  fSummary << "    Perda média: " << avgLossHighway << " %" << std::endl;
-  fSummary << "    MOS estimado: " << CalculateMOS (avgPsnrHighway) << std::endl;
+           << avgDelayVideo1 << " ms" << std::endl;
+  fSummary << "    Throughput médio: " << avgThrVideo1 << " Mbps" << std::endl;
+  fSummary << "    PSNR médio: " << avgPsnrVideo1 << " dB" << std::endl;
+  fSummary << "    Perda média: " << avgLossVideo1 << " %" << std::endl;
+  fSummary << "    MOS estimado: " << CalculateMOS (avgPsnrVideo1) << std::endl;
   fSummary << std::endl;
-  fSummary << "  VÍDEO FOOTBALL (cenas de esporte):" << std::endl;
-  fSummary << "    Delay médio: " << avgDelayFootball << " ms" << std::endl;
-  fSummary << "    Throughput médio: " << avgThrFootball << " Mbps" << std::endl;
-  fSummary << "    PSNR médio: " << avgPsnrFootball << " dB" << std::endl;
-  fSummary << "    Perda média: " << avgLossFootball << " %" << std::endl;
-  fSummary << "    MOS estimado: " << CalculateMOS (avgPsnrFootball) << std::endl;
+  fSummary << "  VÍDEO 2 - " << video2Name << ":" << std::endl;
+  fSummary << "    Delay médio: " << avgDelayVideo2 << " ms" << std::endl;
+  fSummary << "    Throughput médio: " << avgThrVideo2 << " Mbps" << std::endl;
+  fSummary << "    PSNR médio: " << avgPsnrVideo2 << " dB" << std::endl;
+  fSummary << "    Perda média: " << avgLossVideo2 << " %" << std::endl;
+  fSummary << "    MOS estimado: " << CalculateMOS (avgPsnrVideo2) << std::endl;
   fSummary << std::endl;
   
   fSummary.close ();

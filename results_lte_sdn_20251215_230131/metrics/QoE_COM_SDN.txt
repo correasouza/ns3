@@ -1,0 +1,24 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: highway
+  PSNR estimado: 37.46 dB
+  MOS estimado: 4.53
+  Frames perdidos: ~45
+
+UE 2 - Vídeo: highway
+  PSNR estimado: 37.46 dB
+  MOS estimado: 4.53
+  Frames perdidos: ~45
+
+UE 1 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+

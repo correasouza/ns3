@@ -1,0 +1,24 @@
+========================================
+Métricas QoE - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: highway
+  PSNR estimado: 37.97 dB
+  MOS estimado: 4.56
+  Frames perdidos: ~30
+
+UE 2 - Vídeo: highway
+  PSNR estimado: 37.98 dB
+  MOS estimado: 4.56
+  Frames perdidos: ~30
+
+UE 1 - Vídeo: ice
+  PSNR estimado: 37.42 dB
+  MOS estimado: 4.53
+  Frames perdidos: ~1
+
+UE 2 - Vídeo: ice
+  PSNR estimado: 37.95 dB
+  MOS estimado: 4.56
+  Frames perdidos: ~1
+

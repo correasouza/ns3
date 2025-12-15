@@ -1,0 +1,52 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 15.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 2 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 14.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 3 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 17.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 4 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 15.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 1 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 16.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+
+UE 2 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 14.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+
+UE 3 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 15.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+
+UE 4 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 14.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+

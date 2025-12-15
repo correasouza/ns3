@@ -8,22 +8,108 @@
 #
 # Gera métricas QoS (Delay, Jitter, Throughput) e QoE (PSNR, MOS)
 #
+# USO:
+#   ./run_lte_sdn_evaluation.sh [video1.st] [video2.st] [num_ues] [sim_time]
+#
+# EXEMPLOS:
+#   ./run_lte_sdn_evaluation.sh                           # Usa vídeos padrão
+#   ./run_lte_sdn_evaluation.sh meu_video.st outro.st     # Usa vídeos customizados
+#   ./run_lte_sdn_evaluation.sh video1.st video2.st 4 120 # 4 UEs, 120s de simulação
+#
 
 set -e
 
 # Configuração
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-OUTPUT_DIR="results_lte_sdn_$TIMESTAMP"
 NS3_DIR="/usr/ns-3-dev"
 NUM_ENBS=2
-NUM_UES=6
-SIM_TIME=60
-VIDEO1="st_highway_cif.st"
-VIDEO2="football.st"
+
+# Parâmetros de linha de comando (com valores padrão)
+VIDEO1="${1:-st_highway_cif.st}"
+VIDEO2="${2:-football.st}"
+NUM_UES="${3:-4}"
+SIM_TIME="${4:-60}"
+
+OUTPUT_DIR="results_lte_sdn_$TIMESTAMP"
+
+# Função para listar vídeos disponíveis
+list_available_videos() {
+    echo "Vídeos .st disponíveis:"
+    echo ""
+    for st_file in "$NS3_DIR"/*.st "$NS3_DIR"/contrib/evalvid/*.st; do
+        if [ -f "$st_file" ]; then
+            filename=$(basename "$st_file")
+            frames=$(wc -l < "$st_file" 2>/dev/null || echo "?")
+            echo "  - $filename ($frames frames)"
+        fi
+    done
+    echo ""
+}
+
+# Função para validar arquivo .st
+validate_st_file() {
+    local file="$1"
+    local name="$2"
+    
+    # Verifica se existe
+    if [ ! -f "$file" ]; then
+        # Tenta encontrar em contrib/evalvid
+        if [ -f "$NS3_DIR/contrib/evalvid/$file" ]; then
+            cp "$NS3_DIR/contrib/evalvid/$file" "$NS3_DIR/"
+            echo "  ✓ Copiado de contrib/evalvid: $file"
+            return 0
+        fi
+        echo "  ✗ ERRO: Arquivo não encontrado: $file"
+        list_available_videos
+        return 1
+    fi
+    
+    # Verifica se tem conteúdo
+    local lines=$(wc -l < "$file")
+    if [ "$lines" -lt 10 ]; then
+        echo "  ✗ ERRO: Arquivo $file parece estar vazio ou incompleto ($lines linhas)"
+        return 1
+    fi
+    
+    # Verifica formato básico (deve ter números separados por espaço/tab)
+    if ! head -1 "$file" | grep -qE '^[0-9]'; then
+        echo "  ✗ ERRO: Arquivo $file não parece ter formato .st válido"
+        echo "    Formato esperado: <frame_id> <frame_type> <frame_size> <num_packets>"
+        return 1
+    fi
+    
+    echo "  ✓ $name: $file ($lines frames)"
+    return 0
+}
+
+# Mostra ajuda se solicitado
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+    echo "USO: $0 [video1.st] [video2.st] [num_ues] [sim_time]"
+    echo ""
+    echo "PARÂMETROS:"
+    echo "  video1.st  - Primeiro arquivo de trace (padrão: st_highway_cif.st)"
+    echo "  video2.st  - Segundo arquivo de trace (padrão: football.st)"
+    echo "  num_ues    - Número de UEs (padrão: 4)"
+    echo "  sim_time   - Tempo de simulação em segundos (padrão: 60)"
+    echo ""
+    list_available_videos
+    exit 0
+fi
 
 echo "============================================================"
 echo "Avaliação de Streaming de Vídeo - LTE + SDN + EvalVid"
 echo "============================================================"
+echo ""
+echo "Validando arquivos de vídeo..."
+cd "$NS3_DIR"
+
+# Valida os dois vídeos
+if ! validate_st_file "$VIDEO1" "VIDEO1"; then
+    exit 1
+fi
+if ! validate_st_file "$VIDEO2" "VIDEO2"; then
+    exit 1
+fi
 echo ""
 echo "Configuração:"
 echo "  - eNodeBs: $NUM_ENBS"
@@ -37,18 +123,6 @@ echo ""
 mkdir -p "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR/graphs"
 mkdir -p "$OUTPUT_DIR/comparison"
-
-cd "$NS3_DIR"
-
-# Verifica se os arquivos de trace existem
-if [ ! -f "$VIDEO1" ]; then
-    echo "AVISO: Arquivo $VIDEO1 não encontrado, copiando de contrib/evalvid..."
-    cp contrib/evalvid/st_highway_cif.st . 2>/dev/null || echo "Arquivo não disponível"
-fi
-
-if [ ! -f "$VIDEO2" ]; then
-    echo "AVISO: Arquivo $VIDEO2 não encontrado"
-fi
 
 echo "============================================================"
 echo "CENÁRIO 1: SEM SDN (switch como comutador normal)"
@@ -138,16 +212,27 @@ def aggregate_by_ue(data):
         ue_data[key] = max(ue_data[key], value)
     
     result = {'UE': [], 'Video': [], 'Value': []}
-    video_order = {'highway': 0, 'football': 1}
-    sorted_keys = sorted(ue_data.keys(), key=lambda x: (x[0], video_order.get(x[1], 2)))
+    # Descobre os nomes únicos de vídeo dinamicamente
+    video_names = sorted(set(data['Video']))
+    video_order = {name: i for i, name in enumerate(video_names)}
+    sorted_keys = sorted(ue_data.keys(), key=lambda x: (x[0], video_order.get(x[1], 99)))
     for (ue, video), value in [(k, ue_data[k]) for k in sorted_keys]:
         result['UE'].append(ue)
         result['Video'].append(video)
         result['Value'].append(value)
     return result
 
+def get_video_names(data_sem, data_com):
+    """Extrai os nomes únicos de vídeos dos dados"""
+    videos = set()
+    for video in data_sem.get('Video', []):
+        videos.add(video)
+    for video in data_com.get('Video', []):
+        videos.add(video)
+    return sorted(list(videos))
+
 def create_comparison_plot_matplotlib(sem_sdn_file, com_sdn_file, output_file, title, ylabel):
-    """Cria gráfico comparativo usando matplotlib - agrupa por UE com 4 barras"""
+    """Cria gráfico comparativo usando matplotlib - agrupa por UE com 4 barras (dinâmico)"""
     data_sem = read_csv(sem_sdn_file)
     data_com = read_csv(com_sdn_file)
     
@@ -158,6 +243,14 @@ def create_comparison_plot_matplotlib(sem_sdn_file, com_sdn_file, output_file, t
     # Agrega dados por UE
     data_sem = aggregate_by_ue(data_sem)
     data_com = aggregate_by_ue(data_com)
+    
+    # Descobre os nomes dos vídeos dinamicamente
+    video_names = get_video_names(data_sem, data_com)
+    if len(video_names) < 2:
+        video_names = video_names + ['video2'] if len(video_names) == 1 else ['video1', 'video2']
+    
+    video1_name = video_names[0]
+    video2_name = video_names[1] if len(video_names) > 1 else 'video2'
     
     # Organiza dados por UE para agrupamento correto
     ues = sorted(set(data_sem['UE']))
@@ -175,40 +268,40 @@ def create_comparison_plot_matplotlib(sem_sdn_file, com_sdn_file, output_file, t
     current_x = 0
     
     for ue in ues:
-        ue_entry = {'ue': ue, 'hw_sem': 0, 'hw_com': 0, 'fb_sem': 0, 'fb_com': 0}
+        ue_entry = {'ue': ue, 'v1_sem': 0, 'v1_com': 0, 'v2_sem': 0, 'v2_com': 0}
         for i in range(len(data_sem['UE'])):
             if data_sem['UE'][i] == ue:
-                if data_sem['Video'][i] == 'highway':
-                    ue_entry['hw_sem'] = data_sem['Value'][i]
+                if data_sem['Video'][i] == video1_name:
+                    ue_entry['v1_sem'] = data_sem['Value'][i]
                 else:
-                    ue_entry['fb_sem'] = data_sem['Value'][i]
+                    ue_entry['v2_sem'] = data_sem['Value'][i]
         for i in range(len(data_com['UE'])):
             if data_com['UE'][i] == ue:
-                if data_com['Video'][i] == 'highway':
-                    ue_entry['hw_com'] = data_com['Value'][i]
+                if data_com['Video'][i] == video1_name:
+                    ue_entry['v1_com'] = data_com['Value'][i]
                 else:
-                    ue_entry['fb_com'] = data_com['Value'][i]
+                    ue_entry['v2_com'] = data_com['Value'][i]
         plot_data.append(ue_entry)
         positions.append(current_x)
         current_x += group_spacing
     
     positions = np.array(positions)
     
-    # Cria 4 barras por UE: Highway SEM, Highway COM, Football SEM, Football COM
-    hw_sem = [d['hw_sem'] for d in plot_data]
-    hw_com = [d['hw_com'] for d in plot_data]
-    fb_sem = [d['fb_sem'] for d in plot_data]
-    fb_com = [d['fb_com'] for d in plot_data]
+    # Cria 4 barras por UE com nomes dinâmicos
+    v1_sem = [d['v1_sem'] for d in plot_data]
+    v1_com = [d['v1_com'] for d in plot_data]
+    v2_sem = [d['v2_sem'] for d in plot_data]
+    v2_com = [d['v2_com'] for d in plot_data]
     
-    # Barras agrupadas com cores distintas
-    bars1 = ax.bar(positions - 1.5*bar_width, hw_sem, bar_width, 
-                   label='Highway - SEM SDN', color='#2980b9', edgecolor='black', linewidth=0.5)
-    bars2 = ax.bar(positions - 0.5*bar_width, hw_com, bar_width, 
-                   label='Highway - COM SDN', color='#85c1e9', edgecolor='black', linewidth=0.5)
-    bars3 = ax.bar(positions + 0.5*bar_width, fb_sem, bar_width, 
-                   label='Football - SEM SDN', color='#c0392b', edgecolor='black', linewidth=0.5)
-    bars4 = ax.bar(positions + 1.5*bar_width, fb_com, bar_width, 
-                   label='Football - COM SDN', color='#f1948a', edgecolor='black', linewidth=0.5)
+    # Barras agrupadas com cores distintas e nomes dinâmicos
+    bars1 = ax.bar(positions - 1.5*bar_width, v1_sem, bar_width, 
+                   label=f'{video1_name.capitalize()} - SEM SDN', color='#2980b9', edgecolor='black', linewidth=0.5)
+    bars2 = ax.bar(positions - 0.5*bar_width, v1_com, bar_width, 
+                   label=f'{video1_name.capitalize()} - COM SDN', color='#85c1e9', edgecolor='black', linewidth=0.5)
+    bars3 = ax.bar(positions + 0.5*bar_width, v2_sem, bar_width, 
+                   label=f'{video2_name.capitalize()} - SEM SDN', color='#c0392b', edgecolor='black', linewidth=0.5)
+    bars4 = ax.bar(positions + 1.5*bar_width, v2_com, bar_width, 
+                   label=f'{video2_name.capitalize()} - COM SDN', color='#f1948a', edgecolor='black', linewidth=0.5)
     
     # Adiciona valores nas barras
     def add_labels(bars):

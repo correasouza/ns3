@@ -1,0 +1,475 @@
+[0/2] Re-checking globbed directories...
+[1/459] Skipping update step for 'bofuss_dep'
+[2/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/waypoint.cc.o
+[3/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/random-waypoint-mobility-model.cc.o
+[4/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/random-direction-2d-mobility-model.cc.o
+[5/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/waypoint-mobility-model.cc.o
+[6/459] Performing configure step for 'bofuss_dep'
+-- bofuss_dep configure command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-configure-*.log
+[7/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/random-walk-2d-mobility-model.cc.o
+[8/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/hierarchical-mobility-model.cc.o
+[9/459] Performing build step for 'bofuss_dep'
+-- bofuss_dep build command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-build-*.log
+[10/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/mobility-model.cc.o
+[11/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/helper/delay-jitter-estimation.cc.o
+[12/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/gauss-markov-mobility-model.cc.o
+[13/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/steady-state-random-waypoint-mobility-model.cc.o
+[14/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/helper/net-device-container.cc.o
+[15/459] Performing install step for 'bofuss_dep'
+-- bofuss_dep install command succeeded.  See also /usr/ns-3-dev/cmake-cache/contrib/ofswitch13/bofuss_dep/src/bofuss_dep-stamp/bofuss_dep-install-*.log
+[16/459] Completed 'bofuss_dep'
+[17/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/chunk.cc.o
+[18/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/header.cc.o
+[19/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/channel.cc.o
+[20/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/helper/node-container.cc.o
+[21/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/net-device.cc.o
+[22/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/helper/application-container.cc.o
+[23/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/nix-vector.cc.o
+[24/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/channel-list.cc.o
+[25/459] Building CXX object src/mobility/CMakeFiles/libmobility-obj.dir/model/position-allocator.cc.o
+[26/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-interface.cc.o
+[27/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-queue.cc.o
+[28/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-device-container.cc.o
+[29/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-priority-queue.cc.o
+[30/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-learning-controller.cc.o
+[31/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-socket-handler.cc.o
+[32/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-external-helper.cc.o
+[33/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/node-list.cc.o
+[34/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/packet-tag-list.cc.o
+[35/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-helper.cc.o
+[36/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/socket-factory.cc.o
+[37/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/packet-metadata.cc.o
+[38/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/tag-buffer.cc.o
+[39/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/packet.cc.o
+[40/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-internal-helper.cc.o
+[41/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/tag.cc.o
+[42/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-controller.cc.o
+[43/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/address-utils.cc.o
+[44/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/trailer.cc.o
+[45/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-port.cc.o
+[46/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/crc32.cc.o
+[47/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/bit-deserializer.cc.o
+[48/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/bit-serializer.cc.o
+[49/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/data-rate.cc.o
+[50/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/socket.cc.o
+[51/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/drop-tail-queue.cc.o
+[52/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/ethernet-header.cc.o
+[53/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/model/node.cc.o
+[54/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/error-channel.cc.o
+[55/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/inet-socket-address.cc.o
+[56/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/inet6-socket-address.cc.o
+[57/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/ethernet-trailer.cc.o
+[58/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/flow-id-tag.cc.o
+[59/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/helper/ofswitch13-stats-calculator.cc.o
+[60/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/ipv4-address.cc.o
+[61/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/error-model.cc.o
+[62/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/mac8-address.cc.o
+[63/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/dynamic-queue-limits.cc.o
+[64/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/llc-snap-header.cc.o
+[65/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/mac16-address.cc.o
+[66/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/mac48-address.cc.o
+[67/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/mac64-address.cc.o
+[68/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/output-stream-wrapper.cc.o
+[69/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/ipv6-address.cc.o
+[70/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-socket-address.cc.o
+[71/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-socket-factory.cc.o
+[72/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-burst.cc.o
+[73/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-data-calculators.cc.o
+[74/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/net-device-queue-interface.cc.o
+[75/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/pcap-file.cc.o
+[76/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/queue-limits.cc.o
+[77/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/queue-item.cc.o
+[78/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/pcap-file-wrapper.cc.o
+[79/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/queue-size.cc.o
+[80/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-socket-client.cc.o
+[81/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-socket-server.cc.o
+[82/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-probe.cc.o
+[83/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/radiotap-header.cc.o
+[84/459] Building CXX object contrib/ofswitch13/CMakeFiles/libofswitch13-obj.dir/model/ofswitch13-device.cc.o
+[85/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/sll-header.cc.o
+[86/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/simple-channel.cc.o
+[87/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/timestamp-tag.cc.o
+[88/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packet-socket.cc.o
+[89/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/packetbb.cc.o
+[90/459] Building CXX object src/nix-vector-routing/CMakeFiles/libnix-vector-routing-obj.dir/helper/nix-vector-helper.cc.o
+[91/459] Building CXX object src/olsr/CMakeFiles/libolsr-obj.dir/helper/olsr-helper.cc.o
+[92/459] Building CXX object src/olsr/CMakeFiles/libolsr-obj.dir/model/olsr-header.cc.o
+[93/459] Building CXX object src/olsr/CMakeFiles/libolsr-obj.dir/model/olsr-state.cc.o
+[94/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/simple-net-device.cc.o
+[95/459] Building CXX object src/network/CMakeFiles/libnetwork-obj.dir/utils/queue.cc.o
+[96/459] Building CXX object src/point-to-point/CMakeFiles/libpoint-to-point-obj.dir/model/ppp-header.cc.o
+[97/459] Building CXX object src/point-to-point/CMakeFiles/libpoint-to-point-obj.dir/model/point-to-point-channel.cc.o
+[98/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/cost231-propagation-loss-model.cc.o
+[99/459] Building CXX object src/point-to-point-layout/CMakeFiles/libpoint-to-point-layout-obj.dir/model/point-to-point-dumbbell.cc.o
+[100/459] Building CXX object src/point-to-point-layout/CMakeFiles/libpoint-to-point-layout-obj.dir/model/point-to-point-star.cc.o
+[101/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/channel-condition-model.cc.o
+[102/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/itu-r-1411-los-propagation-loss-model.cc.o
+[103/459] Building CXX object src/point-to-point-layout/CMakeFiles/libpoint-to-point-layout-obj.dir/model/point-to-point-grid.cc.o
+[104/459] Building CXX object src/point-to-point/CMakeFiles/libpoint-to-point-obj.dir/helper/point-to-point-helper.cc.o
+[105/459] Building CXX object src/point-to-point/CMakeFiles/libpoint-to-point-obj.dir/model/point-to-point-net-device.cc.o
+[106/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/jakes-propagation-loss-model.cc.o
+[107/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/jakes-process.cc.o
+[108/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/itu-r-1411-nlos-over-rooftop-propagation-loss-model.cc.o
+[109/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/kun-2600-mhz-propagation-loss-model.cc.o
+[110/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/okumura-hata-propagation-loss-model.cc.o
+[111/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/probabilistic-v2v-channel-condition-model.cc.o
+[112/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/propagation-delay-model.cc.o
+[113/459] Building CXX object src/sixlowpan/CMakeFiles/libsixlowpan-obj.dir/helper/sixlowpan-helper.cc.o
+[114/459] Building CXX object src/nix-vector-routing/CMakeFiles/libnix-vector-routing-obj.dir/model/nix-vector-routing.cc.o
+[115/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/three-gpp-v2v-propagation-loss-model.cc.o
+[116/459] Building CXX object src/netanim/CMakeFiles/libnetanim-obj.dir/model/animation-interface.cc.o
+[117/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/helper/spectrum-helper.cc.o
+[118/459] Building CXX object src/sixlowpan/CMakeFiles/libsixlowpan-obj.dir/model/sixlowpan-header.cc.o
+[119/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/helper/tv-spectrum-transmitter-helper.cc.o
+[120/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/helper/waveform-generator-helper.cc.o
+[121/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/aloha-noack-mac-header.cc.o
+[122/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/half-duplex-ideal-phy-signal-parameters.cc.o
+[123/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/propagation-loss-model.cc.o
+[124/459] Building CXX object src/propagation/CMakeFiles/libpropagation-obj.dir/model/three-gpp-propagation-loss-model.cc.o
+[125/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/ism-spectrum-value-helper.cc.o
+[126/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/friis-spectrum-propagation-loss.cc.o
+[127/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/constant-spectrum-propagation-loss.cc.o
+[128/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/microwave-oven-spectrum-value-helper.cc.o
+[129/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/helper/spectrum-analyzer-helper.cc.o
+[130/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/matrix-based-channel-model.cc.o
+[131/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/helper/adhoc-aloha-noack-ideal-phy-helper.cc.o
+[132/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-converter.cc.o
+[133/459] Building CXX object src/olsr/CMakeFiles/libolsr-obj.dir/model/olsr-routing-protocol.cc.o
+[134/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/non-communicating-net-device.cc.o
+[135/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/aloha-noack-net-device.cc.o
+[136/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-model-300kHz-300GHz-log.cc.o
+[137/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-model-ism2400MHz-res1MHz.cc.o
+[138/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/single-model-spectrum-channel.cc.o
+[139/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-model.cc.o
+[140/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-error-model.cc.o
+[141/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/half-duplex-ideal-phy.cc.o
+[142/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-transmit-filter.cc.o
+[143/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-propagation-loss-model.cc.o
+[144/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-phy.cc.o
+[145/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-signal-parameters.cc.o
+[146/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-interference.cc.o
+[147/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-analyzer.cc.o
+[148/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/phased-array-spectrum-propagation-loss-model.cc.o
+[149/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/two-ray-spectrum-propagation-loss-model.cc.o
+[150/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/multi-model-spectrum-channel.cc.o
+[151/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-value.cc.o
+[152/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/sqlite-output.cc.o
+[153/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/spectrum-channel.cc.o
+[154/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/wifi-spectrum-value-helper.cc.o
+[155/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/sqlite-data-output.cc.o
+[156/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/three-gpp-spectrum-propagation-loss-model.cc.o
+[157/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/trace-fading-loss-model.cc.o
+[158/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/data-calculator.cc.o
+[159/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/basic-data-calculators.cc.o
+[160/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/tv-spectrum-transmitter.cc.o
+[161/459] Building CXX object src/sixlowpan/CMakeFiles/libsixlowpan-obj.dir/model/sixlowpan-net-device.cc.o
+[162/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/data-output-interface.cc.o
+[163/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/get-wildcard-matches.cc.o
+[164/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/waveform-generator.cc.o
+[165/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/file-aggregator.cc.o
+[166/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/data-collection-object.cc.o
+[167/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/data-collector.cc.o
+[168/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/boolean-probe.cc.o
+[169/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/histogram.cc.o
+[170/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/probe.cc.o
+[171/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/gnuplot.cc.o
+[172/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/gnuplot-aggregator.cc.o
+[173/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/time-data-calculators.cc.o
+[174/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/omnet-data-output.cc.o
+[175/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/helper/gnuplot-helper.cc.o
+[176/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/helper/file-helper.cc.o
+[177/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/double-probe.cc.o
+[178/459] Building CXX object src/tap-bridge/CMakeFiles/libtap-bridge-obj.dir/model/tap-encode-decode.cc.o
+[179/459] Building CXX object src/topology-read/CMakeFiles/libtopology-read-obj.dir/helper/topology-reader-helper.cc.o
+[180/459] Building CXX object src/tap-bridge/CMakeFiles/libtap-bridge-obj.dir/helper/tap-bridge-helper.cc.o
+[181/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/time-series-adaptor.cc.o
+[182/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/time-probe.cc.o
+[183/459] Building CXX object src/topology-read/CMakeFiles/libtopology-read-obj.dir/model/topology-reader.cc.o
+[184/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/uinteger-16-probe.cc.o
+[185/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/helper/queue-disc-container.cc.o
+[186/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/uinteger-32-probe.cc.o
+[187/459] Building CXX object src/stats/CMakeFiles/libstats-obj.dir/model/uinteger-8-probe.cc.o
+[188/459] Building CXX object src/topology-read/CMakeFiles/libtopology-read-obj.dir/model/inet-topology-reader.cc.o
+[189/459] Building CXX object src/spectrum/CMakeFiles/libspectrum-obj.dir/model/three-gpp-channel-model.cc.o
+[190/459] Building CXX object src/topology-read/CMakeFiles/libtopology-read-obj.dir/model/orbis-topology-reader.cc.o
+[191/459] Linking CXX shared library ../build/lib/libns3.39-stats-optimized.so
+[192/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/fifo-queue-disc.cc.o
+[193/459] Linking CXX shared library ../build/lib/libns3.39-network-optimized.so
+[194/459] Linking CXX shared library ../build/lib/libns3.39-bridge-optimized.so
+[195/459] Linking CXX shared library ../build/lib/libns3.39-config-store-optimized.so
+[196/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/mq-queue-disc.cc.o
+[197/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/packet-filter.cc.o
+[198/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/helper/traffic-control-helper.cc.o
+[199/459] Linking CXX shared library ../build/lib/libns3.39-csma-optimized.so
+[200/459] Linking CXX shared library ../build/lib/libns3.39-energy-optimized.so
+[201/459] Linking CXX shared library ../build/lib/libns3.39-fd-net-device-optimized.so
+[202/459] Linking CXX shared library ../build/lib/libns3.39-mobility-optimized.so
+[203/459] Linking CXX shared library ../build/lib/libns3.39-point-to-point-optimized.so
+[204/459] Linking CXX shared library ../build/lib/libns3.39-propagation-optimized.so
+[205/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/fq-cobalt-queue-disc.cc.o
+[206/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/fq-codel-queue-disc.cc.o
+[207/459] Linking CXX shared library ../build/lib/libns3.39-buildings-optimized.so
+[208/459] Linking CXX shared library ../build/lib/libns3.39-spectrum-optimized.so
+[209/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/codel-queue-disc.cc.o
+[210/459] Building CXX object src/tap-bridge/CMakeFiles/libtap-bridge-obj.dir/model/tap-bridge.cc.o
+[211/459] Linking CXX shared library ../build/lib/libns3.39-lr-wpan-optimized.so
+[212/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/fq-pie-queue-disc.cc.o
+[213/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/pfifo-fast-queue-disc.cc.o
+[214/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/prio-queue-disc.cc.o
+[215/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/cobalt-queue-disc.cc.o
+[216/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/helper/acoustic-modem-energy-model-helper.cc.o
+[217/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-noise-model-default.cc.o
+[218/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-noise-model.cc.o
+[219/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-channel.cc.o
+[220/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/pie-queue-disc.cc.o
+[221/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/helper/uan-helper.cc.o
+[222/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/tbf-queue-disc.cc.o
+[223/459] Building CXX object src/topology-read/CMakeFiles/libtopology-read-obj.dir/model/rocketfuel-topology-reader.cc.o
+[224/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/acoustic-modem-energy-model.cc.o
+[225/459] Linking CXX shared library ../build/lib/libns3.39-topology-read-optimized.so
+[226/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/red-queue-disc.cc.o
+[227/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-prop-model-ideal.cc.o
+[228/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-transducer.cc.o
+[229/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-prop-model-thorp.cc.o
+[230/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-prop-model.cc.o
+[231/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/erp-information.cc.o
+[232/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/traffic-control-layer.cc.o
+[233/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-phy.cc.o
+[234/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-tx-mode.cc.o
+[235/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-transducer-hd.cc.o
+[236/459] Building CXX object src/virtual-net-device/CMakeFiles/libvirtual-net-device-obj.dir/model/virtual-net-device.cc.o
+[237/459] Linking CXX shared library ../build/lib/libns3.39-virtual-net-device-optimized.so
+[238/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-phy-dual.cc.o
+[239/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/wifi-radio-energy-model-helper.cc.o
+[240/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/spectrum-wifi-helper.cc.o
+[241/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/yans-wifi-helper.cc.o
+[242/459] Building CXX object src/uan/CMakeFiles/libuan-obj.dir/model/uan-phy-gen.cc.o
+[243/459] Building CXX object src/traffic-control/CMakeFiles/libtraffic-control-obj.dir/model/queue-disc.cc.o
+[244/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ampdu-subframe-header.cc.o
+[245/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ampdu-tag.cc.o
+[246/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/block-ack-agreement.cc.o
+[247/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/amsdu-subframe-header.cc.o
+[248/459] Linking CXX shared library ../build/lib/libns3.39-traffic-control-optimized.so
+[249/459] Linking CXX shared library ../build/lib/libns3.39-uan-optimized.so
+[250/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/capability-information.cc.o
+[251/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/block-ack-type.cc.o
+[252/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/adhoc-wifi-mac.cc.o
+[253/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/wifi-mac-helper.cc.o
+[254/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/block-ack-window.cc.o
+[255/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/edca-parameter-set.cc.o
+[256/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/athstats-helper.cc.o
+[257/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-configuration.cc.o
+[258/459] Linking CXX shared library ../build/lib/libns3.39-internet-optimized.so
+[259/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-capabilities.cc.o
+[260/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-operation.cc.o
+[261/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/tid-to-link-mapping-element.cc.o
+[262/459] Linking CXX shared library ../build/lib/libns3.39-ofswitch13-optimized.so
+[263/459] Linking CXX shared library ../build/lib/libns3.39-csma-layout-optimized.so
+[264/459] Linking CXX shared library ../build/lib/libns3.39-applications-optimized.so
+[265/459] Linking CXX shared library ../build/lib/libns3.39-dsdv-optimized.so
+[266/459] Linking CXX shared library ../build/lib/libns3.39-flow-monitor-optimized.so
+[267/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/default-emlsr-manager.cc.o
+[268/459] Linking CXX shared library ../build/lib/libns3.39-internet-apps-optimized.so
+[269/459] Linking CXX shared library ../build/lib/libns3.39-evalvid-optimized.so
+[270/459] Linking CXX shared library ../build/lib/libns3.39-nix-vector-routing-optimized.so
+[271/459] Linking CXX shared library ../build/lib/libns3.39-olsr-optimized.so
+[272/459] Linking CXX shared library ../build/lib/libns3.39-sixlowpan-optimized.so
+[273/459] Linking CXX shared library ../build/lib/libns3.39-point-to-point-layout-optimized.so
+[274/459] Linking CXX shared library ../build/lib/libns3.39-tap-bridge-optimized.so
+[275/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/channel-access-manager.cc.o
+[276/459] Linking CXX shared library ../build/lib/libns3.39-lte-optimized.so
+[277/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ctrl-headers.cc.o
+[278/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/error-rate-model.cc.o
+[279/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/extended-capabilities.cc.o
+[280/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-ppdu.cc.o
+[281/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/frame-capture-model.cc.o
+[282/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-frame-exchange-manager.cc.o
+[283/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-capabilities.cc.o
+[284/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/block-ack-manager.cc.o
+[285/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-operation.cc.o
+[286/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/multi-link-element.cc.o
+[287/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-configuration.cc.o
+[288/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/eht-phy.cc.o
+[289/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/helper/wifi-helper.cc.o
+[290/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/mu-edca-parameter-set.cc.o
+[291/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/constant-obss-pd-algorithm.cc.o
+[292/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/eht/emlsr-manager.cc.o
+[293/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/mu-snr-tag.cc.o
+[294/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/fcfs-wifi-queue-scheduler.cc.o
+[295/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-capabilities.cc.o
+[296/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-ru.cc.o
+[297/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-ppdu.cc.o
+[298/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-configuration.cc.o
+[299/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-operation.cc.o
+[300/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/multi-user-scheduler.cc.o
+[301/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/frame-exchange-manager.cc.o
+[302/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-ppdu.cc.o
+[303/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/obss-pd-algorithm.cc.o
+[304/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/mac-tx-middle.cc.o
+[305/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/mac-rx-middle.cc.o
+[306/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/interference-helper.cc.o
+[307/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/nist-error-rate-model.cc.o
+[308/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/dsss-error-rate-model.cc.o
+[309/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/dsss-parameter-set.cc.o
+[310/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-phy.cc.o
+[311/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ap-wifi-mac.cc.o
+[312/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/mpdu-aggregator.cc.o
+[313/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/msdu-aggregator.cc.o
+[314/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-phy.cc.o
+[315/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/dsss-ppdu.cc.o
+[316/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/erp-ofdm-ppdu.cc.o
+[317/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-inheritance.cc.o
+[318/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/preamble-detection-model.cc.o
+[319/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/originator-block-ack-agreement.cc.o
+[320/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/rr-multi-user-scheduler.cc.o
+[321/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/ofdm-ppdu.cc.o
+[322/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ht/ht-frame-exchange-manager.cc.o
+[323/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/he/he-frame-exchange-manager.cc.o
+[324/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/dsss-phy.cc.o
+[325/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/erp-ofdm-phy.cc.o
+[326/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/qos-utils.cc.o
+[327/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/aarf-wifi-manager.cc.o
+[328/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/non-ht/ofdm-phy.cc.o
+[329/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/aarfcd-wifi-manager.cc.o
+[330/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/amrr-wifi-manager.cc.o
+[331/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/qos-frame-exchange-manager.cc.o
+[332/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/cara-wifi-manager.cc.o
+[333/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/phy-entity.cc.o
+[334/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/arf-wifi-manager.cc.o
+[335/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/mgt-headers.cc.o
+[336/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/constant-rate-wifi-manager.cc.o
+[337/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/aparf-wifi-manager.cc.o
+[338/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/recipient-block-ack-agreement.cc.o
+[339/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/reduced-neighbor-report.cc.o
+[340/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/onoe-wifi-manager.cc.o
+[341/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/ideal-wifi-manager.cc.o
+[342/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/simple-frame-capture-model.cc.o
+[343/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/ssid.cc.o
+[344/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/status-code.cc.o
+[345/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/snr-tag.cc.o
+[346/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/qos-txop.cc.o
+[347/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/minstrel-wifi-manager.cc.o
+[348/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/supported-rates.cc.o
+[349/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/thompson-sampling-wifi-manager.cc.o
+[350/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/parf-wifi-manager.cc.o
+[351/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/rraa-wifi-manager.cc.o
+[352/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-capabilities.cc.o
+[353/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/rrpaa-wifi-manager.cc.o
+[354/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-operation.cc.o
+[355/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/threshold-preamble-detection-model.cc.o
+[356/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/rate-control/minstrel-ht-wifi-manager.cc.o
+[357/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/table-based-error-rate-model.cc.o
+[358/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-configuration.cc.o
+[359/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-ppdu.cc.o
+[360/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-frame-exchange-manager.cc.o
+[361/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-ack-manager.cc.o
+[362/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-information-element.cc.o
+[363/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-acknowledgment.cc.o
+[364/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/spectrum-wifi-phy.cc.o
+[365/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-bandwidth-filter.cc.o
+[366/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-queue-elem.cc.o
+[367/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-header.cc.o
+[368/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-queue-scheduler.cc.o
+[369/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-queue-container.cc.o
+[370/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-trailer.cc.o
+[371/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-default-assoc-manager.cc.o
+[372/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-default-protection-manager.cc.o
+[373/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/vht/vht-phy.cc.o
+[374/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/txop.cc.o
+[375/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mode.cc.o
+[376/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-phy-common.cc.o
+[377/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mpdu.cc.o
+[378/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-phy-operating-channel.cc.o
+[379/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-default-ack-manager.cc.o
+[380/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac-queue.cc.o
+[381/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-protection.cc.o
+[382/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-ppdu.cc.o
+[383/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-assoc-manager.cc.o
+[384/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-protection-manager.cc.o
+[385/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-remote-station-info.cc.o
+[386/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-spectrum-signal-parameters.cc.o
+[387/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-psdu.cc.o
+[388/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-tx-current-model.cc.o
+[389/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-spectrum-phy-interface.cc.o
+[390/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-tx-timer.cc.o
+[391/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-utils.cc.o
+[392/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-phy-state-helper.cc.o
+[393/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-tx-parameters.cc.o
+[394/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-radio-energy-model.cc.o
+[395/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/cid.cc.o
+[396/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-tx-vector.cc.o
+[397/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/cid-factory.cc.o
+[398/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/yans-error-rate-model.cc.o
+[399/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/yans-wifi-phy.cc.o
+[400/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-net-device.cc.o
+[401/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/yans-wifi-channel.cc.o
+[402/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-mac-header.cc.o
+[403/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-channel.cc.o
+[404/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-phy.cc.o
+[405/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ofdm-downlink-frame-prefix.cc.o
+[406/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-record.cc.o
+[407/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-connection.cc.o
+[408/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-remote-station-manager.cc.o
+[409/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-net-device.cc.o
+[410/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/helper/wimax-helper.cc.o
+[411/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/mac-messages.cc.o
+[412/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/dl-mac-messages.cc.o
+[413/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/send-params.cc.o
+[414/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ul-mac-messages.cc.o
+[415/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-manager.cc.o
+[416/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-uplink-scheduler.cc.o
+[417/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/simple-ofdm-wimax-channel.cc.o
+[418/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-net-device.cc.o
+[419/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/connection-manager.cc.o
+[420/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-net-device.cc.o
+[421/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-scheduler.cc.o
+[422/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/sta-wifi-mac.cc.o
+[423/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-uplink-scheduler-simple.cc.o
+[424/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/burst-profile-manager.cc.o
+[425/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-scheduler.cc.o
+[426/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-uplink-scheduler-rtps.cc.o
+[427/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-phy.cc.o
+[428/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-scheduler-simple.cc.o
+[429/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-uplink-scheduler-mbqos.cc.o
+[430/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/simple-ofdm-wimax-phy.cc.o
+[431/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/crc8.cc.o
+[432/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/service-flow-manager.cc.o
+[433/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-scheduler-rtps.cc.o
+[434/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/service-flow-record.cc.o
+[435/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/snr-to-block-error-rate-record.cc.o
+[436/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/service-flow.cc.o
+[437/459] Building CXX object src/wifi/CMakeFiles/libwifi-obj.dir/model/wifi-mac.cc.o
+[438/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ul-job.cc.o
+[439/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bandwidth-manager.cc.o
+[440/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-mac-queue.cc.o
+[441/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-link-manager.cc.o
+[442/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/snr-to-block-error-rate-manager.cc.o
+[443/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/simple-ofdm-send-param.cc.o
+[444/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ipcs-classifier.cc.o
+[445/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-service-flow-manager.cc.o
+[446/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ss-link-manager.cc.o
+[447/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/ipcs-classifier-record.cc.o
+[448/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/bs-service-flow-manager.cc.o
+[449/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/cs-parameters.cc.o
+[450/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-mac-to-mac-header.cc.o
+[451/459] Linking CXX shared library ../build/lib/libns3.39-wifi-optimized.so
+[452/459] Linking CXX shared library ../build/lib/libns3.39-aodv-optimized.so
+[453/459] Linking CXX shared library ../build/lib/libns3.39-dsr-optimized.so
+[454/459] Linking CXX shared library ../build/lib/libns3.39-mesh-optimized.so
+[455/459] Building CXX object src/wimax/CMakeFiles/libwimax-obj.dir/model/wimax-tlv.cc.o
+[456/459] Linking CXX shared library ../build/lib/libns3.39-wimax-optimized.so
+[457/459] Linking CXX shared library ../build/lib/libns3.39-netanim-optimized.so
+[458/459] Building CXX object scratch/CMakeFiles/scratch_evalvid_lte_aval_x2.dir/evalvid_lte_aval_x2.cc.o
+[459/459] Linking CXX executable ../build/scratch/ns3.39-evalvid_lte_aval_x2-optimized
+==========================================
+Iniciando simulação: SEM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: st_highway_cif.st, football.st
+  Diretório: results_lte_sdn_20251214_033321
+==========================================
+
+==========================================
+Simulação SEM_SDN concluída!
+Resultados em: results_lte_sdn_20251214_033321
+==========================================

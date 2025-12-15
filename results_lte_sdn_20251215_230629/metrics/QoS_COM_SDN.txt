@@ -1,0 +1,28 @@
+========================================
+Métricas QoS - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 6.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 2 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 8.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 1 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 6.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+
+UE 2 - Vídeo: mother_daughter
+  Throughput: 0.245 Mbps
+  Delay médio: 7.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/329)
+

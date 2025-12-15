@@ -1,0 +1,789 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 2 - Vídeo: highway
+  PSNR estimado: 29.31 dB
+  MOS estimado: 3.72
+  Frames perdidos: ~125
+
+UE 3 - Vídeo: highway
+  PSNR estimado: 31.49 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~113
+
+UE 5 - Vídeo: highway
+  PSNR estimado: 29.17 dB
+  MOS estimado: 3.69
+  Frames perdidos: ~123
+
+UE 2 - Vídeo: football
+  PSNR estimado: 25.20 dB
+  MOS estimado: 3.03
+  Frames perdidos: ~365
+
+UE 7 - Vídeo: highway
+  PSNR estimado: 28.29 dB
+  MOS estimado: 3.55
+  Frames perdidos: ~123
+
+UE 8 - Vídeo: highway
+  PSNR estimado: 28.93 dB
+  MOS estimado: 3.66
+  Frames perdidos: ~122
+
+UE 9 - Vídeo: highway
+  PSNR estimado: 27.57 dB
+  MOS estimado: 3.43
+  Frames perdidos: ~122
+
+UE 5 - Vídeo: football
+  PSNR estimado: 24.40 dB
+  MOS estimado: 2.88
+  Frames perdidos: ~373
+
+UE 7 - Vídeo: football
+  PSNR estimado: 23.40 dB
+  MOS estimado: 2.68
+  Frames perdidos: ~377
+
+UE 8 - Vídeo: football
+  PSNR estimado: 23.52 dB
+  MOS estimado: 2.70
+  Frames perdidos: ~378
+
+UE 13 - Vídeo: highway
+  PSNR estimado: 27.55 dB
+  MOS estimado: 3.43
+  Frames perdidos: ~120
+
+UE 9 - Vídeo: football
+  PSNR estimado: 22.50 dB
+  MOS estimado: 2.50
+  Frames perdidos: ~382
+
+UE 15 - Vídeo: highway
+  PSNR estimado: 28.91 dB
+  MOS estimado: 3.65
+  Frames perdidos: ~124
+
+UE 1 - Vídeo: football
+  PSNR estimado: 20.93 dB
+  MOS estimado: 2.19
+  Frames perdidos: ~387
+
+UE 1 - Vídeo: highway
+  PSNR estimado: 25.11 dB
+  MOS estimado: 3.02
+  Frames perdidos: ~125
+
+UE 17 - Vídeo: highway
+  PSNR estimado: 24.99 dB
+  MOS estimado: 3.00
+  Frames perdidos: ~125
+
+UE 13 - Vídeo: football
+  PSNR estimado: 20.22 dB
+  MOS estimado: 2.04
+  Frames perdidos: ~389
+
+UE 14 - Vídeo: football
+  PSNR estimado: 28.93 dB
+  MOS estimado: 3.66
+  Frames perdidos: ~409
+
+UE 14 - Vídeo: highway
+  PSNR estimado: 33.49 dB
+  MOS estimado: 4.21
+  Frames perdidos: ~144
+
+UE 19 - Vídeo: highway
+  PSNR estimado: 28.30 dB
+  MOS estimado: 3.55
+  Frames perdidos: ~130
+
+UE 15 - Vídeo: football
+  PSNR estimado: 17.36 dB
+  MOS estimado: 1.74
+  Frames perdidos: ~388
+
+UE 20 - Vídeo: highway
+  PSNR estimado: 33.49 dB
+  MOS estimado: 4.21
+  Frames perdidos: ~144
+
+UE 21 - Vídeo: highway
+  PSNR estimado: 23.74 dB
+  MOS estimado: 2.75
+  Frames perdidos: ~128
+
+UE 17 - Vídeo: football
+  PSNR estimado: 16.79 dB
+  MOS estimado: 1.68
+  Frames perdidos: ~393
+
+UE 19 - Vídeo: football
+  PSNR estimado: 15.94 dB
+  MOS estimado: 1.59
+  Frames perdidos: ~388
+
+UE 24 - Vídeo: highway
+  PSNR estimado: 27.46 dB
+  MOS estimado: 3.41
+  Frames perdidos: ~123
+
+UE 11 - Vídeo: football
+  PSNR estimado: 18.05 dB
+  MOS estimado: 1.81
+  Frames perdidos: ~396
+
+UE 23 - Vídeo: highway
+  PSNR estimado: 22.67 dB
+  MOS estimado: 2.53
+  Frames perdidos: ~126
+
+UE 12 - Vídeo: football
+  PSNR estimado: 17.83 dB
+  MOS estimado: 1.78
+  Frames perdidos: ~392
+
+UE 11 - Vídeo: highway
+  PSNR estimado: 21.52 dB
+  MOS estimado: 2.30
+  Frames perdidos: ~127
+
+UE 3 - Vídeo: football
+  PSNR estimado: 15.37 dB
+  MOS estimado: 1.54
+  Frames perdidos: ~394
+
+UE 12 - Vídeo: highway
+  PSNR estimado: 24.39 dB
+  MOS estimado: 2.88
+  Frames perdidos: ~125
+
+UE 25 - Vídeo: highway
+  PSNR estimado: 23.34 dB
+  MOS estimado: 2.67
+  Frames perdidos: ~126
+
+UE 21 - Vídeo: football
+  PSNR estimado: 12.30 dB
+  MOS estimado: 1.41
+  Frames perdidos: ~395
+
+UE 27 - Vídeo: highway
+  PSNR estimado: 25.57 dB
+  MOS estimado: 3.09
+  Frames perdidos: ~124
+
+UE 23 - Vídeo: football
+  PSNR estimado: 13.62 dB
+  MOS estimado: 1.45
+  Frames perdidos: ~399
+
+UE 24 - Vídeo: football
+  PSNR estimado: 14.89 dB
+  MOS estimado: 1.50
+  Frames perdidos: ~394
+
+UE 29 - Vídeo: highway
+  PSNR estimado: 25.27 dB
+  MOS estimado: 3.05
+  Frames perdidos: ~120
+
+UE 25 - Vídeo: football
+  PSNR estimado: 11.65 dB
+  MOS estimado: 1.39
+  Frames perdidos: ~399
+
+UE 31 - Vídeo: highway
+  PSNR estimado: 20.57 dB
+  MOS estimado: 2.11
+  Frames perdidos: ~130
+
+UE 27 - Vídeo: football
+  PSNR estimado: 14.15 dB
+  MOS estimado: 1.47
+  Frames perdidos: ~397
+
+UE 33 - Vídeo: highway
+  PSNR estimado: 25.38 dB
+  MOS estimado: 3.06
+  Frames perdidos: ~122
+
+UE 29 - Vídeo: football
+  PSNR estimado: 13.48 dB
+  MOS estimado: 1.45
+  Frames perdidos: ~400
+
+UE 34 - Vídeo: highway
+  PSNR estimado: 22.64 dB
+  MOS estimado: 2.53
+  Frames perdidos: ~135
+
+UE 31 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~404
+
+UE 37 - Vídeo: highway
+  PSNR estimado: 24.80 dB
+  MOS estimado: 2.96
+  Frames perdidos: ~126
+
+UE 33 - Vídeo: football
+  PSNR estimado: 15.99 dB
+  MOS estimado: 1.60
+  Frames perdidos: ~399
+
+UE 34 - Vídeo: football
+  PSNR estimado: 12.67 dB
+  MOS estimado: 1.42
+  Frames perdidos: ~396
+
+UE 39 - Vídeo: highway
+  PSNR estimado: 23.71 dB
+  MOS estimado: 2.74
+  Frames perdidos: ~127
+
+UE 40 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~139
+
+UE 41 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~138
+
+UE 37 - Vídeo: football
+  PSNR estimado: 15.06 dB
+  MOS estimado: 1.51
+  Frames perdidos: ~396
+
+UE 42 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~139
+
+UE 43 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~142
+
+UE 39 - Vídeo: football
+  PSNR estimado: 14.21 dB
+  MOS estimado: 1.47
+  Frames perdidos: ~395
+
+UE 44 - Vídeo: highway
+  PSNR estimado: 19.38 dB
+  MOS estimado: 1.94
+  Frames perdidos: ~134
+
+UE 40 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~409
+
+UE 45 - Vídeo: highway
+  PSNR estimado: 17.10 dB
+  MOS estimado: 1.71
+  Frames perdidos: ~133
+
+UE 41 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~408
+
+UE 46 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~141
+
+UE 42 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~404
+
+UE 47 - Vídeo: highway
+  PSNR estimado: 19.64 dB
+  MOS estimado: 1.96
+  Frames perdidos: ~131
+
+UE 43 - Vídeo: football
+  PSNR estimado: 28.93 dB
+  MOS estimado: 3.66
+  Frames perdidos: ~409
+
+UE 48 - Vídeo: highway
+  PSNR estimado: 20.61 dB
+  MOS estimado: 2.12
+  Frames perdidos: ~124
+
+UE 44 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~400
+
+UE 49 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~134
+
+UE 45 - Vídeo: football
+  PSNR estimado: 11.87 dB
+  MOS estimado: 1.40
+  Frames perdidos: ~400
+
+UE 50 - Vídeo: highway
+  PSNR estimado: 23.00 dB
+  MOS estimado: 2.60
+  Frames perdidos: ~121
+
+UE 46 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~409
+
+UE 51 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~137
+
+UE 47 - Vídeo: football
+  PSNR estimado: 13.36 dB
+  MOS estimado: 1.45
+  Frames perdidos: ~399
+
+UE 52 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~131
+
+UE 48 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~403
+
+UE 53 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~139
+
+UE 49 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~404
+
+UE 50 - Vídeo: football
+  PSNR estimado: 10.25 dB
+  MOS estimado: 1.34
+  Frames perdidos: ~403
+
+UE 55 - Vídeo: highway
+  PSNR estimado: 13.95 dB
+  MOS estimado: 1.46
+  Frames perdidos: ~131
+
+UE 51 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~406
+
+UE 56 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~143
+
+UE 52 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~406
+
+UE 57 - Vídeo: highway
+  PSNR estimado: 13.73 dB
+  MOS estimado: 1.46
+  Frames perdidos: ~131
+
+UE 58 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~143
+
+UE 59 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~132
+
+UE 55 - Vídeo: football
+  PSNR estimado: 17.15 dB
+  MOS estimado: 1.71
+  Frames perdidos: ~402
+
+UE 60 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~132
+
+UE 56 - Vídeo: football
+  PSNR estimado: 28.93 dB
+  MOS estimado: 3.66
+  Frames perdidos: ~409
+
+UE 57 - Vídeo: football
+  PSNR estimado: 12.19 dB
+  MOS estimado: 1.41
+  Frames perdidos: ~403
+
+UE 62 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~138
+
+UE 58 - Vídeo: football
+  PSNR estimado: 28.93 dB
+  MOS estimado: 3.66
+  Frames perdidos: ~409
+
+UE 59 - Vídeo: football
+  PSNR estimado: 16.97 dB
+  MOS estimado: 1.70
+  Frames perdidos: ~401
+
+UE 64 - Vídeo: highway
+  PSNR estimado: 13.30 dB
+  MOS estimado: 1.44
+  Frames perdidos: ~139
+
+UE 60 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~405
+
+UE 65 - Vídeo: highway
+  PSNR estimado: 18.80 dB
+  MOS estimado: 1.88
+  Frames perdidos: ~130
+
+UE 66 - Vídeo: highway
+  PSNR estimado: 14.40 dB
+  MOS estimado: 1.48
+  Frames perdidos: ~139
+
+UE 62 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~408
+
+UE 68 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~134
+
+UE 64 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~409
+
+UE 65 - Vídeo: football
+  PSNR estimado: 10.52 dB
+  MOS estimado: 1.35
+  Frames perdidos: ~401
+
+UE 70 - Vídeo: highway
+  PSNR estimado: 19.58 dB
+  MOS estimado: 1.96
+  Frames perdidos: ~126
+
+UE 66 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~408
+
+UE 72 - Vídeo: highway
+  PSNR estimado: 17.80 dB
+  MOS estimado: 1.78
+  Frames perdidos: ~128
+
+UE 68 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~407
+
+UE 73 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~136
+
+UE 74 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~134
+
+UE 70 - Vídeo: football
+  PSNR estimado: 10.61 dB
+  MOS estimado: 1.35
+  Frames perdidos: ~401
+
+UE 75 - Vídeo: highway
+  PSNR estimado: 17.26 dB
+  MOS estimado: 1.73
+  Frames perdidos: ~131
+
+UE 76 - Vídeo: highway
+  PSNR estimado: 11.63 dB
+  MOS estimado: 1.39
+  Frames perdidos: ~138
+
+UE 72 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~402
+
+UE 73 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~405
+
+UE 78 - Vídeo: highway
+  PSNR estimado: 17.03 dB
+  MOS estimado: 1.70
+  Frames perdidos: ~128
+
+UE 74 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~407
+
+UE 35 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~408
+
+UE 35 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~143
+
+UE 75 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~400
+
+UE 80 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~135
+
+UE 76 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~405
+
+UE 82 - Vídeo: highway
+  PSNR estimado: 19.17 dB
+  MOS estimado: 1.92
+  Frames perdidos: ~130
+
+UE 78 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~404
+
+UE 84 - Vídeo: highway
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~131
+
+UE 80 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~407
+
+UE 85 - Vídeo: highway
+  PSNR estimado: 19.78 dB
+  MOS estimado: 1.98
+  Frames perdidos: ~131
+
+UE 86 - Vídeo: highway
+  PSNR estimado: 20.88 dB
+  MOS estimado: 2.18
+  Frames perdidos: ~129
+
+UE 82 - Vídeo: football
+  PSNR estimado: 12.04 dB
+  MOS estimado: 1.40
+  Frames perdidos: ~400
+
+UE 87 - Vídeo: highway
+  PSNR estimado: 21.49 dB
+  MOS estimado: 2.30
+  Frames perdidos: ~123
+
+UE 88 - Vídeo: highway
+  PSNR estimado: 17.28 dB
+  MOS estimado: 1.73
+  Frames perdidos: ~131
+
+UE 84 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~406
+
+UE 89 - Vídeo: highway
+  PSNR estimado: 17.06 dB
+  MOS estimado: 1.71
+  Frames perdidos: ~131
+
+UE 85 - Vídeo: football
+  PSNR estimado: 11.30 dB
+  MOS estimado: 1.38
+  Frames perdidos: ~399
+
+UE 90 - Vídeo: highway
+  PSNR estimado: 17.50 dB
+  MOS estimado: 1.75
+  Frames perdidos: ~134
+
+UE 86 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~399
+
+UE 91 - Vídeo: highway
+  PSNR estimado: 16.94 dB
+  MOS estimado: 1.69
+  Frames perdidos: ~130
+
+UE 87 - Vídeo: football
+  PSNR estimado: 12.15 dB
+  MOS estimado: 1.41
+  Frames perdidos: ~403
+
+UE 88 - Vídeo: football
+  PSNR estimado: 10.01 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~403
+
+UE 93 - Vídeo: highway
+  PSNR estimado: 21.82 dB
+  MOS estimado: 2.36
+  Frames perdidos: ~124
+
+UE 89 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~402
+
+UE 94 - Vídeo: highway
+  PSNR estimado: 15.14 dB
+  MOS estimado: 1.51
+  Frames perdidos: ~134
+
+UE 90 - Vídeo: football
+  PSNR estimado: 13.37 dB
+  MOS estimado: 1.45
+  Frames perdidos: ~393
+
+UE 95 - Vídeo: highway
+  PSNR estimado: 18.80 dB
+  MOS estimado: 1.88
+  Frames perdidos: ~132
+
+UE 91 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~402
+
+UE 96 - Vídeo: highway
+  PSNR estimado: 12.20 dB
+  MOS estimado: 1.41
+  Frames perdidos: ~132
+
+UE 97 - Vídeo: highway
+  PSNR estimado: 19.33 dB
+  MOS estimado: 1.93
+  Frames perdidos: ~126
+
+UE 93 - Vídeo: football
+  PSNR estimado: 14.90 dB
+  MOS estimado: 1.50
+  Frames perdidos: ~398
+
+UE 98 - Vídeo: highway
+  PSNR estimado: 21.22 dB
+  MOS estimado: 2.24
+  Frames perdidos: ~128
+
+UE 94 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~402
+
+UE 99 - Vídeo: highway
+  PSNR estimado: 18.68 dB
+  MOS estimado: 1.87
+  Frames perdidos: ~132
+
+UE 95 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~398
+
+UE 100 - Vídeo: highway
+  PSNR estimado: 22.08 dB
+  MOS estimado: 2.42
+  Frames perdidos: ~126
+
+UE 96 - Vídeo: football
+  PSNR estimado: 10.00 dB
+  MOS estimado: 1.33
+  Frames perdidos: ~403
+
+UE 97 - Vídeo: football
+  PSNR estimado: 15.51 dB
+  MOS estimado: 1.55
+  Frames perdidos: ~400
+
+UE 98 - Vídeo: football
+  PSNR estimado: 14.32 dB
+  MOS estimado: 1.48
+  Frames perdidos: ~395
+
+UE 53 - Vídeo: football
+  PSNR estimado: 11.82 dB
+  MOS estimado: 1.39
+  Frames perdidos: ~386
+
+UE 99 - Vídeo: football
+  PSNR estimado: 10.51 dB
+  MOS estimado: 1.35
+  Frames perdidos: ~398
+
+UE 100 - Vídeo: football
+  PSNR estimado: 17.44 dB
+  MOS estimado: 1.74
+  Frames perdidos: ~393
+
+UE 92 - Vídeo: football
+  PSNR estimado: 24.41 dB
+  MOS estimado: 2.88
+  Frames perdidos: ~377
+
+UE 92 - Vídeo: highway
+  PSNR estimado: 23.17 dB
+  MOS estimado: 2.63
+  Frames perdidos: ~126
+
+UE 26 - Vídeo: football
+  PSNR estimado: 32.33 dB
+  MOS estimado: 4.11
+  Frames perdidos: ~243
+
+UE 26 - Vídeo: highway
+  PSNR estimado: 36.27 dB
+  MOS estimado: 4.44
+  Frames perdidos: ~83
+

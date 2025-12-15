@@ -41,17 +41,35 @@ def aggregate_by_ue(data):
         ue_data[key] = max(ue_data[key], value)  # Usa o maior valor
     
     result = {'UE': [], 'Video': [], 'Value': []}
-    # Ordena por UE primeiro, depois por vídeo (highway=0, football=1 para highway vir primeiro)
-    video_order = {'highway': 0, 'football': 1}
-    sorted_keys = sorted(ue_data.keys(), key=lambda x: (x[0], video_order.get(x[1], 2)))
+    # Descobre os nomes únicos de vídeo dinamicamente
+    video_names = sorted(set(data['Video']))
+    video_order = {name: i for i, name in enumerate(video_names)}
+    sorted_keys = sorted(ue_data.keys(), key=lambda x: (x[0], video_order.get(x[1], 99)))
     for (ue, video), value in [(k, ue_data[k]) for k in sorted_keys]:
         result['UE'].append(ue)
         result['Video'].append(video)
         result['Value'].append(value)
     return result
 
+def get_video_names(data_sem, data_com):
+    """Extrai os nomes únicos de vídeos dos dados"""
+    videos = set()
+    for video in data_sem.get('Video', []):
+        videos.add(video)
+    for video in data_com.get('Video', []):
+        videos.add(video)
+    return sorted(list(videos))
+
 def create_comparison_bar_chart(data_sem, data_com, output_file, title, ylabel, colors=None):
-    """Cria gráfico de barras comparativo - agrupa por UE mostrando ambos vídeos"""
+    """Cria gráfico de barras comparativo - agrupa por UE mostrando ambos vídeos (dinâmico)"""
+    
+    # IMPORTANTE: Obter nomes dos vídeos ANTES de agregar
+    video_names = get_video_names(data_sem, data_com)
+    if len(video_names) < 2:
+        video_names = video_names + ['video2'] if len(video_names) == 1 else ['video1', 'video2']
+    
+    video1_name = video_names[0]
+    video2_name = video_names[1] if len(video_names) > 1 else 'video2'
     
     # Agrega dados por UE
     data_sem = aggregate_by_ue(data_sem)
@@ -78,40 +96,40 @@ def create_comparison_bar_chart(data_sem, data_com, output_file, title, ylabel, 
     # Coleta dados organizados por UE
     plot_data = []
     for ue in ues:
-        ue_entry = {'ue': ue, 'hw_sem': 0, 'hw_com': 0, 'fb_sem': 0, 'fb_com': 0}
+        ue_entry = {'ue': ue, 'v1_sem': 0, 'v1_com': 0, 'v2_sem': 0, 'v2_com': 0}
         for i in range(len(data_sem['UE'])):
             if data_sem['UE'][i] == ue:
-                if data_sem['Video'][i] == 'highway':
-                    ue_entry['hw_sem'] = data_sem['Value'][i]
+                if data_sem['Video'][i] == video1_name:
+                    ue_entry['v1_sem'] = data_sem['Value'][i]
                 else:
-                    ue_entry['fb_sem'] = data_sem['Value'][i]
+                    ue_entry['v2_sem'] = data_sem['Value'][i]
         for i in range(len(data_com['UE'])):
             if data_com['UE'][i] == ue:
-                if data_com['Video'][i] == 'highway':
-                    ue_entry['hw_com'] = data_com['Value'][i]
+                if data_com['Video'][i] == video1_name:
+                    ue_entry['v1_com'] = data_com['Value'][i]
                 else:
-                    ue_entry['fb_com'] = data_com['Value'][i]
+                    ue_entry['v2_com'] = data_com['Value'][i]
         plot_data.append(ue_entry)
         positions.append(current_x)
         current_x += group_spacing
     
     positions = np.array(positions)
     
-    # Cria 4 barras por UE: Highway SEM, Highway COM, Football SEM, Football COM
-    hw_sem = [d['hw_sem'] for d in plot_data]
-    hw_com = [d['hw_com'] for d in plot_data]
-    fb_sem = [d['fb_sem'] for d in plot_data]
-    fb_com = [d['fb_com'] for d in plot_data]
+    # Cria 4 barras por UE: Video1 SEM, Video1 COM, Video2 SEM, Video2 COM
+    v1_sem = [d['v1_sem'] for d in plot_data]
+    v1_com = [d['v1_com'] for d in plot_data]
+    v2_sem = [d['v2_sem'] for d in plot_data]
+    v2_com = [d['v2_com'] for d in plot_data]
     
-    # Barras agrupadas
-    bars1 = ax.bar(positions - 1.5*bar_width, hw_sem, bar_width, 
-                   label='Highway - SEM SDN', color='#2980b9', edgecolor='black', linewidth=0.5)
-    bars2 = ax.bar(positions - 0.5*bar_width, hw_com, bar_width, 
-                   label='Highway - COM SDN', color='#85c1e9', edgecolor='black', linewidth=0.5)
-    bars3 = ax.bar(positions + 0.5*bar_width, fb_sem, bar_width, 
-                   label='Football - SEM SDN', color='#c0392b', edgecolor='black', linewidth=0.5)
-    bars4 = ax.bar(positions + 1.5*bar_width, fb_com, bar_width, 
-                   label='Football - COM SDN', color='#f1948a', edgecolor='black', linewidth=0.5)
+    # Barras agrupadas com nomes dinâmicos
+    bars1 = ax.bar(positions - 1.5*bar_width, v1_sem, bar_width, 
+                   label=f'{video1_name.capitalize()} - SEM SDN', color='#2980b9', edgecolor='black', linewidth=0.5)
+    bars2 = ax.bar(positions - 0.5*bar_width, v1_com, bar_width, 
+                   label=f'{video1_name.capitalize()} - COM SDN', color='#85c1e9', edgecolor='black', linewidth=0.5)
+    bars3 = ax.bar(positions + 0.5*bar_width, v2_sem, bar_width, 
+                   label=f'{video2_name.capitalize()} - SEM SDN', color='#c0392b', edgecolor='black', linewidth=0.5)
+    bars4 = ax.bar(positions + 1.5*bar_width, v2_com, bar_width, 
+                   label=f'{video2_name.capitalize()} - COM SDN', color='#f1948a', edgecolor='black', linewidth=0.5)
     
     # Adiciona valores nas barras
     def add_labels(bars):
@@ -192,13 +210,22 @@ def create_video_comparison_chart(data_sem, data_com, output_file, title, ylabel
     print(f"  ✓ Gráfico gerado: {output_file}")
 
 def create_ue_video_comparison(data_sem, data_com, output_file, title, ylabel):
-    """Cria gráfico comparando Highway vs Football para cada UE"""
-    
-    data_sem = aggregate_by_ue(data_sem)
-    data_com = aggregate_by_ue(data_com)
+    """Cria gráfico comparando vídeos para cada UE (dinâmico)"""
     
     if not data_sem['UE']:
         return
+    
+    # IMPORTANTE: Obter nomes dos vídeos ANTES de agregar
+    video_names = get_video_names(data_sem, data_com)
+    if len(video_names) < 2:
+        video_names = video_names + ['video2'] if len(video_names) == 1 else ['video1', 'video2']
+    
+    video1_name = video_names[0]
+    video2_name = video_names[1] if len(video_names) > 1 else 'video2'
+    
+    # Agrega dados
+    data_sem = aggregate_by_ue(data_sem)
+    data_com = aggregate_by_ue(data_com)
     
     # Organiza dados por UE
     ues = sorted(set(data_sem['UE']))
@@ -209,30 +236,40 @@ def create_ue_video_comparison(data_sem, data_com, output_file, title, ylabel):
     width = 0.2
     
     # Coleta valores por UE e vídeo
-    hw_sem = []
-    hw_com = []
-    fb_sem = []
-    fb_com = []
+    v1_sem = []
+    v1_com = []
+    v2_sem = []
+    v2_com = []
     
     for ue in ues:
+        v1_sem_val = 0
+        v1_com_val = 0
+        v2_sem_val = 0
+        v2_com_val = 0
+        
         for i, (u, v, val) in enumerate(zip(data_sem['UE'], data_sem['Video'], data_sem['Value'])):
             if u == ue:
-                if v == 'highway':
-                    hw_sem.append(val)
+                if v == video1_name:
+                    v1_sem_val = val
                 else:
-                    fb_sem.append(val)
+                    v2_sem_val = val
         for i, (u, v, val) in enumerate(zip(data_com['UE'], data_com['Video'], data_com['Value'])):
             if u == ue:
-                if v == 'highway':
-                    hw_com.append(val)
+                if v == video1_name:
+                    v1_com_val = val
                 else:
-                    fb_com.append(val)
+                    v2_com_val = val
+        
+        v1_sem.append(v1_sem_val)
+        v1_com.append(v1_com_val)
+        v2_sem.append(v2_sem_val)
+        v2_com.append(v2_com_val)
     
-    # Barras agrupadas: 4 barras por UE
-    bars1 = ax.bar(x - 1.5*width, hw_sem, width, label='Highway SEM SDN', color='#3498db', edgecolor='black')
-    bars2 = ax.bar(x - 0.5*width, hw_com, width, label='Highway COM SDN', color='#85c1e9', edgecolor='black')
-    bars3 = ax.bar(x + 0.5*width, fb_sem, width, label='Football SEM SDN', color='#e74c3c', edgecolor='black')
-    bars4 = ax.bar(x + 1.5*width, fb_com, width, label='Football COM SDN', color='#f1948a', edgecolor='black')
+    # Barras agrupadas: 4 barras por UE com nomes dinâmicos
+    bars1 = ax.bar(x - 1.5*width, v1_sem, width, label=f'{video1_name.capitalize()} SEM SDN', color='#3498db', edgecolor='black')
+    bars2 = ax.bar(x - 0.5*width, v1_com, width, label=f'{video1_name.capitalize()} COM SDN', color='#85c1e9', edgecolor='black')
+    bars3 = ax.bar(x + 0.5*width, v2_sem, width, label=f'{video2_name.capitalize()} SEM SDN', color='#e74c3c', edgecolor='black')
+    bars4 = ax.bar(x + 1.5*width, v2_com, width, label=f'{video2_name.capitalize()} COM SDN', color='#f1948a', edgecolor='black')
     
     ax.set_xlabel('Usuário (UE)', fontsize=11)
     ax.set_ylabel(ylabel, fontsize=11)
