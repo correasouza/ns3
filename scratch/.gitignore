@@ -1,0 +1,12 @@
+# Ignore everything on scratch by default, except the provided examples
+/*
+!.gitignore
+
+!subdir/
+!scratch-simulator.cc
+!CMakeLists.txt
+
+# Arquivos do projeto LTE-SDN-EvalVid
+!evalvid_lte_aval_x2.cc
+!lte-sdn-evalvid/
+!run_lte_sdn_evaluation_explicado.sh

@@ -1,0 +1,8 @@
+/usr/ns-3-dev/scratch/evalvid_lte_aval_x2.cc
+/usr/ns-3-dev/scratch/scratch-simulator.cc
+/usr/ns-3-dev/scratch/subdir/scratch-subdir.cc
+/usr/ns-3-dev/scratch/subdir/scratch-subdir-additional-header.cc
+/usr/ns-3-dev/scratch/nested-subdir/scratch-nested-subdir-executable.cc
+/usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc
+/usr/ns-3-dev/scratch/lte-sdn-evalvid/main.cc
+/usr/ns-3-dev/scratch/lte-sdn-evalvid/video-qos-controller.cc

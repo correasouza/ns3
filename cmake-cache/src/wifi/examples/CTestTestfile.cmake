@@ -1,0 +1,18 @@
+# CMake generated Testfile for 
+# Source directory: /usr/ns-3-dev/src/wifi/examples
+# Build directory: /usr/ns-3-dev/cmake-cache/src/wifi/examples
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(ctest-wifi-phy-test "ns3.39-wifi-phy-test-optimized")
+set_tests_properties(ctest-wifi-phy-test PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;1;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")
+add_test(ctest-wifi-test-interference-helper "ns3.39-wifi-test-interference-helper-optimized")
+set_tests_properties(ctest-wifi-test-interference-helper PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;11;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")
+add_test(ctest-wifi-manager-example "ns3.39-wifi-manager-example-optimized")
+set_tests_properties(ctest-wifi-manager-example PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;21;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")
+add_test(ctest-wifi-trans-example "ns3.39-wifi-trans-example-optimized")
+set_tests_properties(ctest-wifi-trans-example PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;33;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")
+add_test(ctest-wifi-phy-configuration "ns3.39-wifi-phy-configuration-optimized")
+set_tests_properties(ctest-wifi-phy-configuration PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;45;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")
+add_test(ctest-wifi-bianchi "ns3.39-wifi-bianchi-optimized")
+set_tests_properties(ctest-wifi-bianchi PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/src/wifi/examples/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/custom-modules/ns3-module-macros.cmake;439;build_exec;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;52;build_lib_example;/usr/ns-3-dev/src/wifi/examples/CMakeLists.txt;0;")

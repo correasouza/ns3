@@ -1,0 +1,13 @@
+# Ignorar resultados e gráficos gerados
+results_lte_sdn_*/
+*/graficos_png/
+*/comparison/
+*/graphs/
+*.pyc
+__pycache__/
+.vscode/
+*.log
+*.aux
+*.out
+*.bak
+DS_Store

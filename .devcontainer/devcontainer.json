@@ -1,0 +1,33 @@
+{
+    "name": "NS-3 Network Simulator",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "workspaceFolder": "/usr",
+    "workspaceMount": "",
+    "runArgs": [
+        "--cap-add=NET_ADMIN",
+        "--cap-add=SYS_ADMIN"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "twxs.cmake",
+                "jeff-hykin.better-cpp-syntax"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+                "python.defaultInterpreterPath": "/usr/bin/python3"
+            }
+        }
+    },
+    "postStartCommand": "cd /usr/ns-3-dev && echo '✅ NS-3 está pronto! Use: ./ns3 run <programa>' && ./ns3 show version",
+    "remoteUser": "root"
+}

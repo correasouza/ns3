@@ -1,0 +1,13 @@
+# Ignore everything by default, contrib sources are coming from other places
+*
+
+# Include specific files that should be tracked by Git
+!.gitignore
+
+# Include EvalVid module
+!evalvid/
+!evalvid/**
+
+# Include OFSwitch13 (SDN) module
+!ofswitch13/
+!ofswitch13/**

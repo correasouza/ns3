@@ -1,0 +1,13 @@
+exec_prefix="/usr/local/bin"
+libdir="/usr/local/lib"
+includedir="/usr/local/include"
+
+Name: ns3-visualizer
+Description: 
+URL: 
+Version: 3.39
+Requires:  ns3-core ns3-internet ns3-wifi ns3-point-to-point ns3-csma ns3-bridge ns3-wimax ns3-lte ns3-mesh
+Requires.private: 
+Cflags: -I"${includedir}" -I/usr/include -I/usr; -I/usr/include/eigen3 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-3.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/libxml2 -I/usr/include/python3.10
+Libs: -L"${libdir}" -lns3.39-visualizer-optimized  -lns3.39-core-optimized -lns3.39-internet-optimized -lns3.39-wifi-optimized -lns3.39-point-to-point-optimized -lns3.39-csma-optimized -lns3.39-bridge-optimized -lns3.39-wimax-optimized -lns3.39-lte-optimized -lns3.39-mesh-optimized /usr/lib/x86_64-linux-gnu/libpython3.10.so
+Libs.private: -L"${libdir}" 

@@ -1,0 +1,22 @@
+# CMake generated Testfile for 
+# Source directory: /usr/ns-3-dev/examples/tutorial
+# Build directory: /usr/ns-3-dev/cmake-cache/examples/tutorial
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(ctest-hello-simulator "ns3.39-hello-simulator-optimized")
+set_tests_properties(ctest-hello-simulator PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;1;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-first "ns3.39-first-optimized")
+set_tests_properties(ctest-first PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;7;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-second "ns3.39-second-optimized")
+set_tests_properties(ctest-second PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;17;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-third "ns3.39-third-optimized")
+set_tests_properties(ctest-third PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;28;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-fourth "ns3.39-fourth-optimized")
+set_tests_properties(ctest-fourth PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;40;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-fifth "ns3.39-fifth-optimized")
+set_tests_properties(ctest-fifth PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;46;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-sixth "ns3.39-sixth-optimized")
+set_tests_properties(ctest-sixth PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;57;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
+add_test(ctest-seventh "ns3.39-seventh-optimized")
+set_tests_properties(ctest-seventh PROPERTIES  WORKING_DIRECTORY "/usr/ns-3-dev/build/examples/tutorial/" _BACKTRACE_TRIPLES "/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1584;add_test;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1659;set_runtime_outputdirectory;/usr/ns-3-dev/build-support/macros-and-definitions.cmake;1812;build_exec;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;68;build_example;/usr/ns-3-dev/examples/tutorial/CMakeLists.txt;0;")
