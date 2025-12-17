@@ -114,6 +114,9 @@ docker-compose exec ns3 bash
 # Construir a imagem
 docker build -t ns3-lte-sdn-evalvid .
 
+# Pegar ID
+Docker images
+
 # Executar o container
 docker run -it {id}
 ```
