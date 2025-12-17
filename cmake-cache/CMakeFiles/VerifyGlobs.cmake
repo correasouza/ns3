@@ -29,32 +29,6 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # scratch_sources at scratch/CMakeLists.txt:98 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/usr/ns-3-dev/scratch/nested-subdir/lib/[^.]*.cc")
-set(OLD_GLOB
-  "/usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc"
-  )
-if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
-  message("-- GLOB mismatch!")
-  set(NEW_ONLY ${NEW_GLOB})
-  set(OLD_ONLY ${OLD_GLOB})
-  list(REMOVE_ITEM NEW_ONLY ${OLD_GLOB})
-  list(REMOVE_ITEM OLD_ONLY ${NEW_GLOB})
-  if(NEW_ONLY)
-    message("The following files were added:")
-    foreach(VAR_FILE IN LISTS NEW_ONLY)
-      message("  +${VAR_FILE}")
-    endforeach()
-  endif()
-  if(OLD_ONLY)
-    message("The following files were removed:")
-    foreach(VAR_FILE IN LISTS OLD_ONLY)
-      message("  -${VAR_FILE}")
-    endforeach()
-  endif()
-  file(TOUCH_NOCREATE "/usr/ns-3-dev/cmake-cache/CMakeFiles/cmake.verify_globs")
-endif()
-
-# scratch_sources at scratch/CMakeLists.txt:98 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/usr/ns-3-dev/scratch/subdir/[^.]*.cc")
 set(OLD_GLOB
   "/usr/ns-3-dev/scratch/subdir/scratch-subdir-additional-header.cc"
@@ -92,12 +66,6 @@ set(OLD_GLOB
   "/usr/ns-3-dev/scratch/lte-sdn-evalvid/main.cc"
   "/usr/ns-3-dev/scratch/lte-sdn-evalvid/video-qos-controller.cc"
   "/usr/ns-3-dev/scratch/lte-sdn-evalvid/video-qos-controller.h"
-  "/usr/ns-3-dev/scratch/nested-subdir"
-  "/usr/ns-3-dev/scratch/nested-subdir/CMakeLists.txt"
-  "/usr/ns-3-dev/scratch/nested-subdir/lib"
-  "/usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-header.h"
-  "/usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc"
-  "/usr/ns-3-dev/scratch/nested-subdir/scratch-nested-subdir-executable.cc"
   "/usr/ns-3-dev/scratch/run_lte_sdn_evaluation_explicado.sh"
   "/usr/ns-3-dev/scratch/scratch-simulator.cc"
   "/usr/ns-3-dev/scratch/subdir"

@@ -45,7 +45,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/usr/ns-3-dev/cmake-cache/scratch/lte-sdn-evalvid/cmake_install.cmake")
-  include("/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/cmake_install.cmake")
 
 endif()
 

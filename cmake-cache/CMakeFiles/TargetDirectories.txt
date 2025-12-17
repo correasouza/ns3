@@ -1178,15 +1178,6 @@
 /usr/ns-3-dev/cmake-cache/scratch/lte-sdn-evalvid/CMakeFiles/install.dir
 /usr/ns-3-dev/cmake-cache/scratch/lte-sdn-evalvid/CMakeFiles/install/local.dir
 /usr/ns-3-dev/cmake-cache/scratch/lte-sdn-evalvid/CMakeFiles/install/strip.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/scratch-nested-subdir-lib.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/scratch_nested-subdir_scratch-nested-subdir-executable.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/test.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/edit_cache.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/rebuild_cache.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/list_install_components.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/install.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/install/local.dir
-/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/install/strip.dir
 /usr/ns-3-dev/cmake-cache/utils/CMakeFiles/test-runner.dir
 /usr/ns-3-dev/cmake-cache/utils/CMakeFiles/bench-scheduler.dir
 /usr/ns-3-dev/cmake-cache/utils/CMakeFiles/bench-packets.dir

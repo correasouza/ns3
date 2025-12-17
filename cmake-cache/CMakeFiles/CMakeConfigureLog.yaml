@@ -56807,3 +56807,118 @@ events:
       CMAKE_SYSTEM_INCLUDE_PATH:
         - "/usr/include/X11"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build-support/macros-and-definitions.cmake:2043 (find_file)"
+      - "CMakeLists.txt:133 (parse_ns3rc)"
+    mode: "file"
+    variable: "NS3RC"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - ".ns3rc"
+    candidate_directories:
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/root/.vscode-server/bin/618725e67565b290ba4da6fe2d29f8fa1d4e3622/bin/remote-cli/"
+      - "/usr/ns-3-dev/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/local/include/x86_64-linux-gnu/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/x86_64-linux-gnu/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/x86_64-linux-gnu/"
+      - "/include/"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/include/x86_64-linux-gnu/"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/include/"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/x86_64-linux-gnu/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/x86_64-linux-gnu/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/etc/"
+      - "/root/"
+    searched_directories:
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand/.ns3rc"
+      - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli/.ns3rc"
+      - "/root/.vscode-server/bin/618725e67565b290ba4da6fe2d29f8fa1d4e3622/bin/remote-cli/.ns3rc"
+      - "/usr/ns-3-dev/.ns3rc"
+      - "/usr/local/sbin/.ns3rc"
+      - "/usr/local/bin/.ns3rc"
+      - "/usr/sbin/.ns3rc"
+      - "/usr/bin/.ns3rc"
+      - "/sbin/.ns3rc"
+      - "/bin/.ns3rc"
+      - "/usr/local/include/x86_64-linux-gnu/.ns3rc"
+      - "/usr/local/include/.ns3rc"
+      - "/usr/local/.ns3rc"
+      - "/usr/include/x86_64-linux-gnu/.ns3rc"
+      - "/usr/include/.ns3rc"
+      - "/usr/.ns3rc"
+      - "/include/x86_64-linux-gnu/.ns3rc"
+      - "/include/.ns3rc"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/include/x86_64-linux-gnu/.ns3rc"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/include/.ns3rc"
+      - "/usr/local/lib/python3.10/dist-packages/cmake/data/.ns3rc"
+      - "/usr/X11R6/include/x86_64-linux-gnu/.ns3rc"
+      - "/usr/X11R6/include/.ns3rc"
+      - "/usr/X11R6/.ns3rc"
+      - "/usr/pkg/include/x86_64-linux-gnu/.ns3rc"
+      - "/usr/pkg/include/.ns3rc"
+      - "/usr/pkg/.ns3rc"
+      - "/opt/include/x86_64-linux-gnu/.ns3rc"
+      - "/opt/include/.ns3rc"
+      - "/opt/.ns3rc"
+      - "/usr/include/X11/.ns3rc"
+      - "/etc/.ns3rc"
+      - "/root/.ns3rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/root/.vscode-server/bin/618725e67565b290ba4da6fe2d29f8fa1d4e3622/bin/remote-cli"
+        - "/usr/ns-3-dev"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr/local/lib/python3.10/dist-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+...

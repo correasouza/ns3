@@ -127,6 +127,14 @@ mkdir -p "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR/graphs"
 mkdir -p "$OUTPUT_DIR/comparison"
 
+# Extrai nomes base dos vídeos (sem extensão .st)
+VIDEO1_NAME=$(basename "$VIDEO1" .st)
+VIDEO2_NAME=$(basename "$VIDEO2" .st)
+
+# Salva nomes dos vídeos para uso nos scripts Python
+echo "$VIDEO1_NAME" > "$OUTPUT_DIR/video1_name.txt"
+echo "$VIDEO2_NAME" > "$OUTPUT_DIR/video2_name.txt"
+
 echo "============================================================"
 echo "CENÁRIO 1: SEM SDN (switch como comutador normal)"
 echo "============================================================"

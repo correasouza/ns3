@@ -62,22 +62,15 @@ def get_video_names(data_sem, data_com):
 
 
 def choose_video_order(data_sem, data_com):
-    """Escolhe explicitamente a ordem de vídeos preferida (akiyo, bowing) quando possível."""
+    """Extrai nomes dos vídeos dos dados, mantendo a ordem em que aparecem."""
     videos = get_video_names(data_sem, data_com)
-    preferred = ['akiyo', 'bowing']
-    ordered = []
-    for p in preferred:
-        if p in videos:
-            ordered.append(p)
-    for v in videos:
-        if v not in ordered:
-            ordered.append(v)
     # Garante pelo menos dois nomes
-    if len(ordered) == 1:
-        ordered.append(ordered[0])
-    if len(ordered) == 0:
-        ordered = ['video1', 'video2']
-    return ordered[0], ordered[1]
+    if len(videos) >= 2:
+        return videos[0], videos[1]
+    elif len(videos) == 1:
+        return videos[0], videos[0]
+    else:
+        return 'video1', 'video2'
 
 def create_comparison_bar_chart(data_sem, data_com, output_file, title, ylabel, colors=None):
     """Cria gráfico de barras comparativo - agrupa por UE mostrando ambos vídeos (dinâmico)"""
@@ -137,12 +130,9 @@ def create_comparison_bar_chart(data_sem, data_com, output_file, title, ylabel, 
     
     # Barras agrupadas com nomes dinâmicos
     # Cores por vídeo (sem e com SDN - tonalidades)
-    color_map = {
-        'akiyo': ('#1f77b4', '#86bff0'),
-        'bowing': ('#c0392b', '#f39c94')
-    }
-    v1_colors = color_map.get(video1_name.lower(), ('#2980b9', '#85c1e9'))
-    v2_colors = color_map.get(video2_name.lower(), ('#c0392b', '#f1948a'))
+    # Usa cores padrão azul para video1 e vermelho para video2
+    v1_colors = ('#1f77b4', '#86bff0')  # Azul escuro e azul claro
+    v2_colors = ('#c0392b', '#f39c94')  # Vermelho escuro e vermelho claro
 
     bars1 = ax.bar(positions - 1.5*bar_width, v1_sem, bar_width, 
                    label=f'{video1_name.capitalize()} - SEM SDN', color=v1_colors[0], edgecolor='black', linewidth=0.5)
@@ -355,14 +345,14 @@ def create_summary_dashboard(base_dir, output_file):
             ax.legend(loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0., fontsize=8)
             ax.grid(True, alpha=0.3, axis='y')
     
-    # Último subplot: legenda de vídeos (akiyo / bowing)
+    # Último subplot: informações gerais
     ax_legend = axes[1, 2]
     ax_legend.axis('off')
-    ax_legend.text(0.5, 0.75, 'Legenda de Vídeos:', fontsize=12, fontweight='bold',
+    ax_legend.text(0.5, 0.65, 'Informações:', fontsize=12, fontweight='bold',
                   ha='center', transform=ax_legend.transAxes)
-    ax_legend.text(0.5, 0.55, '• Akiyo: Conteúdo estático / baixa complexidade',
+    ax_legend.text(0.5, 0.45, 'SDN prioriza tráfego de vídeo',
                   fontsize=10, ha='center', transform=ax_legend.transAxes)
-    ax_legend.text(0.5, 0.35, '• Bowing: Conteúdo dinâmico / alta complexidade',
+    ax_legend.text(0.5, 0.25, 'resultando em melhor QoS/QoE',
                   fontsize=10, ha='center', transform=ax_legend.transAxes)
     
     # Ajusta layout deixando espaço para o título (top=0.92 reserva 8% no topo)
@@ -384,13 +374,11 @@ def create_individual_chart(data, output_file, title, ylabel, scenario):
     n = len(data['UE'])
     x = np.arange(n)
     
-    # Cores por tipo de vídeo
-    # Cores por vídeo nome (akiyo / bowing)
-    color_map = {
-        'akiyo': '#1f77b4',
-        'bowing': '#c0392b'
-    }
-    colors = [color_map.get(v.lower(), '#7f8c8d') for v in data['Video']]
+    # Cores por tipo de vídeo (usa cores alternadas)
+    videos_unique = sorted(set(data['Video']))
+    default_colors = ['#1f77b4', '#c0392b']  # Azul e vermelho
+    color_map = {v: default_colors[i % 2] for i, v in enumerate(videos_unique)}
+    colors = [color_map.get(v, '#7f8c8d') for v in data['Video']]
     
     bars = ax.bar(x, data['Value'], color=colors, edgecolor='black', linewidth=0.5)
     
@@ -412,10 +400,9 @@ def create_individual_chart(data, output_file, title, ylabel, scenario):
     ax.set_title(f"{title} - {scenario}", fontsize=13, fontweight='bold')
     ax.grid(True, alpha=0.3, axis='y')
     
-    # Legenda de cores
+    # Legenda de cores (dinâmica)
     from matplotlib.patches import Patch
-    legend_elements = [Patch(facecolor='#1f77b4', label='Akiyo'),
-                       Patch(facecolor='#c0392b', label='Bowing')]
+    legend_elements = [Patch(facecolor=color_map[v], label=v.capitalize()) for v in videos_unique]
     ax.legend(handles=legend_elements, loc='upper left', bbox_to_anchor=(1.02, 1), borderaxespad=0.)
     
     plt.tight_layout()

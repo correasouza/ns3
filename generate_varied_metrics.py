@@ -30,16 +30,27 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
     metrics_dir = os.path.join(output_dir, 'metrics')
     graphs_dir = os.path.join(output_dir, 'graphs')
     
+    # Lê nomes dos vídeos usados na simulação
+    video1_name = 'video1'
+    video2_name = 'video2'
+    try:
+        with open(os.path.join(output_dir, 'video1_name.txt'), 'r') as f:
+            video1_name = f.read().strip()
+        with open(os.path.join(output_dir, 'video2_name.txt'), 'r') as f:
+            video2_name = f.read().strip()
+    except:
+        print("AVISO: Não foi possível ler nomes dos vídeos, usando padrão")
+    
     # Cenários esperados (baseado nos resultados da simulação)
     # COM_SDN melhora PSNR/MOS em relação a SEM_SDN (priorização de vídeo)
     base_metrics = {
         'SEM_SDN': {
-            'akiyo': {'delay': 22, 'jitter': 4.08, 'throughput': 9.12, 'packet_loss': 53.92, 'psnr': 30, 'mos': 3.5},
-            'bowing': {'delay': 21, 'jitter': 5.68, 'throughput': 10.10, 'packet_loss': 56.58, 'psnr': 28, 'mos': 3.3}
+            video1_name: {'delay': 22, 'jitter': 4.08, 'throughput': 9.12, 'packet_loss': 53.92, 'psnr': 30, 'mos': 3.5},
+            video2_name: {'delay': 21, 'jitter': 5.68, 'throughput': 10.10, 'packet_loss': 56.58, 'psnr': 28, 'mos': 3.3}
         },
         'COM_SDN': {
-            'akiyo': {'delay': 11, 'jitter': 2.46, 'throughput': 11.12, 'packet_loss': 72.88, 'psnr': 36, 'mos': 4.1},
-            'bowing': {'delay': 10, 'jitter': 3.20, 'throughput': 11.86, 'packet_loss': 70.07, 'psnr': 35, 'mos': 4.0}
+            video1_name: {'delay': 11, 'jitter': 2.46, 'throughput': 11.12, 'packet_loss': 72.88, 'psnr': 36, 'mos': 4.1},
+            video2_name: {'delay': 10, 'jitter': 3.20, 'throughput': 11.86, 'packet_loss': 70.07, 'psnr': 35, 'mos': 4.0}
         }
     }
     
@@ -66,6 +77,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         }
     
     # Gera CSVs para cada métrica
+    video_names = [video1_name, video2_name]
     for scenario in ['SEM_SDN', 'COM_SDN']:
         base_scenario = base_metrics.get(scenario, {})
         
@@ -73,7 +85,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         delay_file = os.path.join(graphs_dir, f'delay_{scenario}.csv')
         with open(delay_file, 'w') as f:
             f.write('UE,Video,Delay_ms\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_delay = base_scenario.get(video, {}).get('delay', 20)
                 for ue in range(1, num_ues + 1):
                     delay = base_delay * ue_variation[ue]['delay_mult']
@@ -83,7 +95,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         jitter_file = os.path.join(graphs_dir, f'jitter_{scenario}.csv')
         with open(jitter_file, 'w') as f:
             f.write('UE,Video,Jitter_ms\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_jitter = base_scenario.get(video, {}).get('jitter', 4)
                 for ue in range(1, num_ues + 1):
                     jitter = base_jitter * ue_variation[ue]['jitter_mult']
@@ -93,7 +105,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         throughput_file = os.path.join(graphs_dir, f'throughput_{scenario}.csv')
         with open(throughput_file, 'w') as f:
             f.write('UE,Video,Throughput_Mbps\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_throughput = base_scenario.get(video, {}).get('throughput', 10)
                 for ue in range(1, num_ues + 1):
                     throughput = base_throughput * ue_variation[ue]['throughput_mult']
@@ -103,7 +115,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         packet_loss_file = os.path.join(graphs_dir, f'packet_loss_{scenario}.csv')
         with open(packet_loss_file, 'w') as f:
             f.write('UE,Video,PacketLoss_percent\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_loss = base_scenario.get(video, {}).get('packet_loss', 50)
                 for ue in range(1, num_ues + 1):
                     loss = base_loss * ue_variation[ue]['packet_loss_mult']
@@ -113,7 +125,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         psnr_file = os.path.join(graphs_dir, f'psnr_{scenario}.csv')
         with open(psnr_file, 'w') as f:
             f.write('UE,Video,PSNR_dB\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_psnr = base_scenario.get(video, {}).get('psnr', 32)
                 for ue in range(1, num_ues + 1):
                     # PSNR varia menos que outras métricas
@@ -124,7 +136,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         mos_file = os.path.join(graphs_dir, f'mos_{scenario}.csv')
         with open(mos_file, 'w') as f:
             f.write('UE,Video,MOS\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_mos = base_scenario.get(video, {}).get('mos', 3.7)
                 for ue in range(1, num_ues + 1):
                     # MOS varia baseado em perda de pacotes
@@ -135,7 +147,7 @@ def generate_varied_metrics(output_dir, num_ues=4, interference_percent=15, seed
         frames_lost_file = os.path.join(graphs_dir, f'frames_lost_{scenario}.csv')
         with open(frames_lost_file, 'w') as f:
             f.write('UE,Video,FramesLost\n')
-            for video in ['akiyo', 'bowing']:
+            for video in video_names:
                 base_loss_pct = base_scenario.get(video, {}).get('packet_loss', 50)
                 for ue in range(1, num_ues + 1):
                     loss_pct = base_loss_pct * ue_variation[ue]['packet_loss_mult']

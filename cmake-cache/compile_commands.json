@@ -9595,18 +9595,6 @@
 },
 {
   "directory": "/usr/ns-3-dev/cmake-cache",
-  "command": "/usr/bin/c++ -DEIGEN_MPL2_ONLY -DHAVE_EIGEN3 -DHAVE_GSL -DHAVE_LIBXML2 -DHAVE_SQLITE3 -DNS3_BUILD_PROFILE_OPTIMIZED -DPROJECT_SOURCE_PATH=\\\"/usr/ns-3-dev\\\" -D__LINUX__ -I/usr -I/usr/ns-3-dev/build/include -I/usr/include/eigen3 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-3.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/libxml2 -I/usr/include/python3.10 -O3 -DNDEBUG -std=c++17 -fPIC   -fno-semantic-interposition -fdiagnostics-color=always -Wall -march=native -mtune=native -o scratch/nested-subdir/CMakeFiles/scratch-nested-subdir-lib.dir/lib/scratch-nested-subdir-library-source.cc.o -c /usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc",
-  "file": "/usr/ns-3-dev/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc",
-  "output": "/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/scratch-nested-subdir-lib.dir/lib/scratch-nested-subdir-library-source.cc.o"
-},
-{
-  "directory": "/usr/ns-3-dev/cmake-cache",
-  "command": "/usr/bin/c++ -DEIGEN_MPL2_ONLY -DHAVE_EIGEN3 -DHAVE_GSL -DHAVE_LIBXML2 -DHAVE_SQLITE3 -DNS3_BUILD_PROFILE_OPTIMIZED -DPROJECT_SOURCE_PATH=\\\"/usr/ns-3-dev\\\" -D__LINUX__ -I/usr -I/usr/ns-3-dev/build/include -I/usr/include/eigen3 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-3.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/libxml2 -I/usr/include/python3.10 -O3 -DNDEBUG -std=c++17 -fPIE   -fno-semantic-interposition -fdiagnostics-color=always -Wall -march=native -mtune=native -Winvalid-pch -include /usr/ns-3-dev/cmake-cache/CMakeFiles/stdlib_pch_exec.dir/cmake_pch.hxx -o scratch/nested-subdir/CMakeFiles/scratch_nested-subdir_scratch-nested-subdir-executable.dir/scratch-nested-subdir-executable.cc.o -c /usr/ns-3-dev/scratch/nested-subdir/scratch-nested-subdir-executable.cc",
-  "file": "/usr/ns-3-dev/scratch/nested-subdir/scratch-nested-subdir-executable.cc",
-  "output": "/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/CMakeFiles/scratch_nested-subdir_scratch-nested-subdir-executable.dir/scratch-nested-subdir-executable.cc.o"
-},
-{
-  "directory": "/usr/ns-3-dev/cmake-cache",
   "command": "/usr/bin/c++ -DEIGEN_MPL2_ONLY -DHAVE_EIGEN3 -DHAVE_GSL -DHAVE_LIBXML2 -DHAVE_SQLITE3 -DNS3_BUILD_PROFILE_OPTIMIZED -DPROJECT_SOURCE_PATH=\\\"/usr/ns-3-dev\\\" -D__LINUX__ -I/usr -I/usr/ns-3-dev/build/include -I/usr/include/eigen3 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gtk-3.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/libxml2 -I/usr/include/python3.10 -I/usr/local/include/bofuss -O3 -DNDEBUG -std=c++17 -fPIE   -fno-semantic-interposition -fdiagnostics-color=always -Wall -march=native -mtune=native -o utils/CMakeFiles/test-runner.dir/test-runner.cc.o -c /usr/ns-3-dev/utils/test-runner.cc",
   "file": "/usr/ns-3-dev/utils/test-runner.cc",
   "output": "/usr/ns-3-dev/cmake-cache/utils/CMakeFiles/test-runner.dir/test-runner.cc.o"

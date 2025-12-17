@@ -104,7 +104,6 @@
 		"/usr/ns-3-dev/cmake-cache/examples/wireless/cmake_install.cmake",
 		"/usr/ns-3-dev/cmake-cache/scratch/cmake_install.cmake",
 		"/usr/ns-3-dev/cmake-cache/scratch/lte-sdn-evalvid/cmake_install.cmake",
-		"/usr/ns-3-dev/cmake-cache/scratch/nested-subdir/cmake_install.cmake",
 		"/usr/ns-3-dev/cmake-cache/utils/cmake_install.cmake"
 	],
 	"Parallel" : false
