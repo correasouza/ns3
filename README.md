@@ -115,10 +115,7 @@ docker-compose exec ns3 bash
 docker build -t ns3-lte-sdn-evalvid .
 
 # Executar o container
-docker run -it --name ns3-sim \
-  -v $(pwd)/results:/ns-3/results \
-  -v $(pwd)/scratch:/ns-3/scratch \
-  ns3-lte-sdn-evalvid
+docker run -it {id}
 ```
 
 ### Comandos Docker Úteis
