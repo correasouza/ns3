@@ -1,0 +1,76 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: coastguard
+  Throughput: 0.262 Mbps
+  Delay médio: 27.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/310)
+
+UE 2 - Vídeo: coastguard
+  Throughput: 0.262 Mbps
+  Delay médio: 23.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 0.323 % (1/310)
+
+UE 3 - Vídeo: coastguard
+  Throughput: 0.259 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 1.290 % (4/310)
+
+UE 4 - Vídeo: coastguard
+  Throughput: 0.249 Mbps
+  Delay médio: 31.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 4.839 % (15/310)
+
+UE 5 - Vídeo: coastguard
+  Throughput: 0.262 Mbps
+  Delay médio: 23.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.323 % (1/310)
+
+UE 6 - Vídeo: coastguard
+  Throughput: 0.262 Mbps
+  Delay médio: 24.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.323 % (1/310)
+
+UE 1 - Vídeo: bowing
+  Throughput: 5.841 Mbps
+  Delay médio: 25.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 66.447 % (202/304)
+
+UE 2 - Vídeo: bowing
+  Throughput: 5.792 Mbps
+  Delay médio: 31.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 67.105 % (204/304)
+
+UE 3 - Vídeo: bowing
+  Throughput: 6.677 Mbps
+  Delay médio: 28.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 60.855 % (185/304)
+
+UE 4 - Vídeo: bowing
+  Throughput: 6.809 Mbps
+  Delay médio: 30.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.882 % (179/304)
+
+UE 5 - Vídeo: bowing
+  Throughput: 7.462 Mbps
+  Delay médio: 26.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.882 % (179/304)
+
+UE 6 - Vídeo: bowing
+  Throughput: 7.463 Mbps
+  Delay médio: 26.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.553 % (178/304)
+

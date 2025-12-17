@@ -86,6 +86,7 @@ RUN apt-get update && apt-get install -y \
     libavfilter-dev \
     x264 \
     libx264-dev \
+    gpac \
     gnuplot \
     gnuplot-x11 \
     imagemagick \

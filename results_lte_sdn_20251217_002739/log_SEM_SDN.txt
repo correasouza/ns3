@@ -1,0 +1,13 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+==========================================
+Iniciando simulação: SEM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: ./container.st (container), ./bowing.st (bowing)
+  Diretório: results_lte_sdn_20251217_002739
+==========================================
+msg=">> EvalvidServer: Frame does not exist!", +2.121935422s 3 file=/usr/ns-3-dev/contrib/evalvid/model/evalvid-server.cc, line=317
+NS_FATAL, terminating
+terminate called without an active exception
+Command 'build/scratch/ns3.39-evalvid_lte_aval_x2-optimized --numEnbs=2 --numUes=6 --simTime=60 --enableSdn=false --outputDir=results_lte_sdn_20251217_002739 --video1=./container.st --video2=./bowing.st' died with <Signals.SIGABRT: 6>.

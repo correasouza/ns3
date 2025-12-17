@@ -1,0 +1,64 @@
+========================================
+Métricas QoE - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: akiyo
+  PSNR estimado: 32.96 dB
+  MOS estimado: 4.16
+  Frames perdidos: ~16
+
+UE 2 - Vídeo: akiyo
+  PSNR estimado: 32.96 dB
+  MOS estimado: 4.16
+  Frames perdidos: ~16
+
+UE 3 - Vídeo: akiyo
+  PSNR estimado: 32.96 dB
+  MOS estimado: 4.16
+  Frames perdidos: ~16
+
+UE 4 - Vídeo: akiyo
+  PSNR estimado: 32.96 dB
+  MOS estimado: 4.16
+  Frames perdidos: ~16
+
+UE 5 - Vídeo: akiyo
+  PSNR estimado: 32.96 dB
+  MOS estimado: 4.16
+  Frames perdidos: ~16
+
+UE 6 - Vídeo: akiyo
+  PSNR estimado: 33.02 dB
+  MOS estimado: 4.17
+  Frames perdidos: ~16
+
+UE 1 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 2 - Vídeo: bowing
+  PSNR estimado: 32.71 dB
+  MOS estimado: 4.14
+  Frames perdidos: ~17
+
+UE 3 - Vídeo: bowing
+  PSNR estimado: 32.71 dB
+  MOS estimado: 4.14
+  Frames perdidos: ~17
+
+UE 4 - Vídeo: bowing
+  PSNR estimado: 32.71 dB
+  MOS estimado: 4.14
+  Frames perdidos: ~17
+
+UE 5 - Vídeo: bowing
+  PSNR estimado: 32.71 dB
+  MOS estimado: 4.14
+  Frames perdidos: ~17
+
+UE 6 - Vídeo: bowing
+  PSNR estimado: 32.71 dB
+  MOS estimado: 4.14
+  Frames perdidos: ~17
+

@@ -1,0 +1,29 @@
+============================================================
+RESUMO DA SIMULAÇÃO - COM_SDN
+============================================================
+
+Configuração:
+  - eNodeBs: 2
+  - UEs: 6
+  - Tempo de simulação: 60 s
+  - Velocidade UE: 30 km/h
+  - SDN Priorização: ATIVADA
+  - Vídeo 1: akiyo.st (akiyo)
+  - Vídeo 2: bowing.st (bowing)
+
+Métricas Médias por Vídeo:
+
+  VÍDEO 1 - akiyo:
+    Delay médio: 14.33 ms
+    Throughput médio: 10.00 Mbps
+    PSNR médio: 31.33 dB
+    Perda média: 71.73 %
+    MOS estimado: 4.03
+
+  VÍDEO 2 - bowing:
+    Delay médio: 12.33 ms
+    Throughput médio: 10.74 Mbps
+    PSNR médio: 31.51 dB
+    Perda média: 69.63 %
+    MOS estimado: 4.04
+

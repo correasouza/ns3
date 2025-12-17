@@ -1,0 +1,64 @@
+========================================
+Métricas QoE - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: coastguard
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: coastguard
+  PSNR estimado: 39.53 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: coastguard
+  PSNR estimado: 38.60 dB
+  MOS estimado: 4.60
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: coastguard
+  PSNR estimado: 37.01 dB
+  MOS estimado: 4.50
+  Frames perdidos: ~1
+
+UE 5 - Vídeo: coastguard
+  PSNR estimado: 39.53 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 6 - Vídeo: coastguard
+  PSNR estimado: 39.53 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 1 - Vídeo: bowing
+  PSNR estimado: 31.80 dB
+  MOS estimado: 4.07
+  Frames perdidos: ~20
+
+UE 2 - Vídeo: bowing
+  PSNR estimado: 31.74 dB
+  MOS estimado: 4.06
+  Frames perdidos: ~20
+
+UE 3 - Vídeo: bowing
+  PSNR estimado: 32.31 dB
+  MOS estimado: 4.11
+  Frames perdidos: ~18
+
+UE 4 - Vídeo: bowing
+  PSNR estimado: 32.49 dB
+  MOS estimado: 4.12
+  Frames perdidos: ~17
+
+UE 5 - Vídeo: bowing
+  PSNR estimado: 32.49 dB
+  MOS estimado: 4.12
+  Frames perdidos: ~17
+
+UE 6 - Vídeo: bowing
+  PSNR estimado: 32.52 dB
+  MOS estimado: 4.13
+  Frames perdidos: ~17
+

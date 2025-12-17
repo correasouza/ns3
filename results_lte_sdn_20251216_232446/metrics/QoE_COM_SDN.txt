@@ -1,0 +1,64 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 5 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 6 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 1 - Vídeo: bowing
+  PSNR estimado: 31.53 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 2 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 3 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 4 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 5 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+
+UE 6 - Vídeo: bowing
+  PSNR estimado: 31.47 dB
+  MOS estimado: 4.04
+  Frames perdidos: ~21
+

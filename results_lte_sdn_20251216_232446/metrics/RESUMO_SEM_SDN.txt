@@ -1,0 +1,29 @@
+============================================================
+RESUMO DA SIMULAÇÃO - SEM_SDN
+============================================================
+
+Configuração:
+  - eNodeBs: 2
+  - UEs: 6
+  - Tempo de simulação: 60 s
+  - Velocidade UE: 30 km/h
+  - SDN Priorização: DESATIVADA
+  - Vídeo 1: ice.st (ice)
+  - Vídeo 2: bowing.st (bowing)
+
+Métricas Médias por Vídeo:
+
+  VÍDEO 1 - ice:
+    Delay médio: 15.17 ms
+    Throughput médio: 0.44 Mbps
+    PSNR médio: 39.74 dB
+    Perda média: 0.20 %
+    MOS estimado: 4.67
+
+  VÍDEO 2 - bowing:
+    Delay médio: 22.50 ms
+    Throughput médio: 9.74 Mbps
+    PSNR médio: 32.65 dB
+    Perda média: 57.24 %
+    MOS estimado: 4.14
+

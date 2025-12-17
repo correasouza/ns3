@@ -1,0 +1,29 @@
+============================================================
+RESUMO DA SIMULAÇÃO - COM_SDN
+============================================================
+
+Configuração:
+  - eNodeBs: 2
+  - UEs: 6
+  - Tempo de simulação: 60 s
+  - Velocidade UE: 30 km/h
+  - SDN Priorização: ATIVADA
+  - Vídeo 1: container.st (container)
+  - Vídeo 2: ice.st (ice)
+
+Métricas Médias por Vídeo:
+
+  VÍDEO 1 - container:
+    Delay médio: 20.17 ms
+    Throughput médio: 0.09 Mbps
+    PSNR médio: 40.00 dB
+    Perda média: 0.00 %
+    MOS estimado: 4.69
+
+  VÍDEO 2 - ice:
+    Delay médio: 22.83 ms
+    Throughput médio: 0.43 Mbps
+    PSNR médio: 40.00 dB
+    Perda média: 0.00 %
+    MOS estimado: 4.69
+

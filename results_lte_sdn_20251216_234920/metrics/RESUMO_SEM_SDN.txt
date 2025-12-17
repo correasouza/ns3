@@ -1,0 +1,29 @@
+============================================================
+RESUMO DA SIMULAÇÃO - SEM_SDN
+============================================================
+
+Configuração:
+  - eNodeBs: 2
+  - UEs: 6
+  - Tempo de simulação: 60 s
+  - Velocidade UE: 30 km/h
+  - SDN Priorização: DESATIVADA
+  - Vídeo 1: coastguard.st (coastguard)
+  - Vídeo 2: bowing.st (bowing)
+
+Métricas Médias por Vídeo:
+
+  VÍDEO 1 - coastguard:
+    Delay médio: 27.00 ms
+    Throughput médio: 0.26 Mbps
+    PSNR médio: 39.03 dB
+    Perda média: 1.18 %
+    MOS estimado: 4.63
+
+  VÍDEO 2 - bowing:
+    Delay médio: 27.67 ms
+    Throughput médio: 6.67 Mbps
+    PSNR médio: 32.22 dB
+    Perda média: 61.79 %
+    MOS estimado: 4.10
+

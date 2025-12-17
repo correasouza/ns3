@@ -1,0 +1,76 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 26.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 0.000 % (0/307)
+
+UE 2 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 21.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 0.000 % (0/307)
+
+UE 3 - Vídeo: container
+  Throughput: 0.093 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 0.651 % (2/307)
+
+UE 4 - Vídeo: container
+  Throughput: 0.092 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 6.000 ms
+  Perda de pacotes: 2.932 % (9/307)
+
+UE 5 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 22.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.000 % (0/307)
+
+UE 6 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 21.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/307)
+
+UE 1 - Vídeo: ice
+  Throughput: 0.431 Mbps
+  Delay médio: 25.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 2 - Vídeo: ice
+  Throughput: 0.432 Mbps
+  Delay médio: 22.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 3 - Vídeo: ice
+  Throughput: 0.426 Mbps
+  Delay médio: 36.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 1.415 % (6/424)
+
+UE 4 - Vídeo: ice
+  Throughput: 0.421 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 2.830 % (12/424)
+
+UE 5 - Vídeo: ice
+  Throughput: 0.432 Mbps
+  Delay médio: 23.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 6 - Vídeo: ice
+  Throughput: 0.432 Mbps
+  Delay médio: 24.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+

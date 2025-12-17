@@ -1,0 +1,76 @@
+========================================
+Métricas QoS - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 7.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 2 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 8.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 3 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 8.000 ms
+  Jitter médio: 3.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 4 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 11.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 5 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 8.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 6 - Vídeo: ice
+  Throughput: 0.437 Mbps
+  Delay médio: 7.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 0.000 % (0/424)
+
+UE 1 - Vídeo: bowing
+  Throughput: 8.062 Mbps
+  Delay médio: 22.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 69.408 % (211/304)
+
+UE 2 - Vídeo: bowing
+  Throughput: 9.175 Mbps
+  Delay médio: 21.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 70.066 % (213/304)
+
+UE 3 - Vídeo: bowing
+  Throughput: 11.863 Mbps
+  Delay médio: 10.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 70.066 % (213/304)
+
+UE 4 - Vídeo: bowing
+  Throughput: 11.863 Mbps
+  Delay médio: 10.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 70.066 % (213/304)
+
+UE 5 - Vídeo: bowing
+  Throughput: 11.863 Mbps
+  Delay médio: 10.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 70.066 % (213/304)
+
+UE 6 - Vídeo: bowing
+  Throughput: 11.863 Mbps
+  Delay médio: 10.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 70.066 % (213/304)
+

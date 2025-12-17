@@ -1,0 +1,64 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 5 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 1 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 6 - Vídeo: container
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 5 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+
+UE 6 - Vídeo: ice
+  PSNR estimado: 40.00 dB
+  MOS estimado: 4.69
+  Frames perdidos: ~0
+

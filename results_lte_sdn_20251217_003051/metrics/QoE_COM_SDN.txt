@@ -1,0 +1,64 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: container
+  PSNR estimado: 39.52 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 2 - Vídeo: container
+  PSNR estimado: 39.79 dB
+  MOS estimado: 4.67
+  Frames perdidos: ~0
+
+UE 3 - Vídeo: container
+  PSNR estimado: 39.52 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 4 - Vídeo: container
+  PSNR estimado: 39.52 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 5 - Vídeo: container
+  PSNR estimado: 39.52 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 6 - Vídeo: container
+  PSNR estimado: 39.52 dB
+  MOS estimado: 4.66
+  Frames perdidos: ~0
+
+UE 1 - Vídeo: bowing
+  PSNR estimado: 31.27 dB
+  MOS estimado: 4.02
+  Frames perdidos: ~22
+
+UE 2 - Vídeo: bowing
+  PSNR estimado: 31.21 dB
+  MOS estimado: 4.02
+  Frames perdidos: ~22
+
+UE 3 - Vídeo: bowing
+  PSNR estimado: 31.21 dB
+  MOS estimado: 4.02
+  Frames perdidos: ~22
+
+UE 4 - Vídeo: bowing
+  PSNR estimado: 31.21 dB
+  MOS estimado: 4.02
+  Frames perdidos: ~22
+
+UE 5 - Vídeo: bowing
+  PSNR estimado: 31.15 dB
+  MOS estimado: 4.01
+  Frames perdidos: ~22
+
+UE 6 - Vídeo: bowing
+  PSNR estimado: 31.21 dB
+  MOS estimado: 4.02
+  Frames perdidos: ~22
+

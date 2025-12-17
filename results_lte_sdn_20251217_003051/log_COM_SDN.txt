@@ -1,0 +1,14 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+==========================================
+Iniciando simulação: COM_SDN
+  eNodeBs: 2
+  UEs: 6
+  Vídeos: container.st (container), bowing.st (bowing)
+  Diretório: results_lte_sdn_20251217_003051
+==========================================
+
+==========================================
+Simulação COM_SDN concluída!
+Resultados em: results_lte_sdn_20251217_003051
+==========================================

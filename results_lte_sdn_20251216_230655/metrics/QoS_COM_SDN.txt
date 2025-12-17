@@ -1,0 +1,64 @@
+========================================
+Métricas QoS - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: football
+  Throughput: 2.352 Mbps
+  Delay médio: 25.000 ms
+  Jitter médio: 7.000 ms
+  Perda de pacotes: 56.491 % (2315/4098)
+
+UE 2 - Vídeo: football
+  Throughput: 1.203 Mbps
+  Delay médio: 62.000 ms
+  Jitter médio: 11.000 ms
+  Perda de pacotes: 76.598 % (3139/4098)
+
+UE 3 - Vídeo: football
+  Throughput: 0.601 Mbps
+  Delay médio: 135.000 ms
+  Jitter médio: 11.000 ms
+  Perda de pacotes: 87.189 % (3573/4098)
+
+UE 4 - Vídeo: football
+  Throughput: 1.732 Mbps
+  Delay médio: 45.000 ms
+  Jitter médio: 9.000 ms
+  Perda de pacotes: 67.277 % (2757/4098)
+
+UE 5 - Vídeo: football
+  Throughput: 2.114 Mbps
+  Delay médio: 37.000 ms
+  Jitter médio: 8.000 ms
+  Perda de pacotes: 60.786 % (2491/4098)
+
+UE 1 - Vídeo: bowing
+  Throughput: 1.842 Mbps
+  Delay médio: 34.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 81.579 % (248/304)
+
+UE 2 - Vídeo: bowing
+  Throughput: 0.385 Mbps
+  Delay médio: 64.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 94.408 % (287/304)
+
+UE 3 - Vídeo: bowing
+  Throughput: 0.044 Mbps
+  Delay médio: 174.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 98.026 % (298/304)
+
+UE 4 - Vídeo: bowing
+  Throughput: 0.526 Mbps
+  Delay médio: 51.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 97.697 % (297/304)
+
+UE 5 - Vídeo: bowing
+  Throughput: 0.497 Mbps
+  Delay médio: 51.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 97.368 % (296/304)
+

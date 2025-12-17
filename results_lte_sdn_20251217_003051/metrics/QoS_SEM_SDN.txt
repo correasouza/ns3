@@ -1,0 +1,76 @@
+========================================
+Métricas QoS - Cenário: SEM_SDN
+========================================
+
+UE 1 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 27.000 ms
+  Jitter médio: 1.000 ms
+  Perda de pacotes: 0.000 % (0/307)
+
+UE 2 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 20.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 0.326 % (1/307)
+
+UE 3 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 24.000 ms
+  Jitter médio: 4.000 ms
+  Perda de pacotes: 0.326 % (1/307)
+
+UE 4 - Vídeo: container
+  Throughput: 0.093 Mbps
+  Delay médio: 31.000 ms
+  Jitter médio: 5.000 ms
+  Perda de pacotes: 1.629 % (5/307)
+
+UE 5 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 23.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.326 % (1/307)
+
+UE 6 - Vídeo: container
+  Throughput: 0.094 Mbps
+  Delay médio: 15.000 ms
+  Jitter médio: 2.000 ms
+  Perda de pacotes: 0.326 % (1/307)
+
+UE 1 - Vídeo: bowing
+  Throughput: 8.231 Mbps
+  Delay médio: 24.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 60.526 % (184/304)
+
+UE 2 - Vídeo: bowing
+  Throughput: 7.604 Mbps
+  Delay médio: 25.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 60.197 % (183/304)
+
+UE 3 - Vídeo: bowing
+  Throughput: 6.557 Mbps
+  Delay médio: 29.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.224 % (177/304)
+
+UE 4 - Vídeo: bowing
+  Throughput: 6.557 Mbps
+  Delay médio: 29.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.224 % (177/304)
+
+UE 5 - Vídeo: bowing
+  Throughput: 7.212 Mbps
+  Delay médio: 26.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.553 % (178/304)
+
+UE 6 - Vídeo: bowing
+  Throughput: 7.212 Mbps
+  Delay médio: 26.000 ms
+  Jitter médio: 0.000 ms
+  Perda de pacotes: 58.553 % (178/304)
+

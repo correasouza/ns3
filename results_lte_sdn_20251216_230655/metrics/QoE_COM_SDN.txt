@@ -1,0 +1,54 @@
+========================================
+Métricas QoE - Cenário: COM_SDN
+========================================
+
+UE 1 - Vídeo: football
+  PSNR estimado: 32.51 dB
+  MOS estimado: 4.13
+  Frames perdidos: ~231
+
+UE 2 - Vídeo: football
+  PSNR estimado: 30.04 dB
+  MOS estimado: 3.84
+  Frames perdidos: ~313
+
+UE 3 - Vídeo: football
+  PSNR estimado: 27.67 dB
+  MOS estimado: 3.45
+  Frames perdidos: ~357
+
+UE 4 - Vídeo: football
+  PSNR estimado: 31.31 dB
+  MOS estimado: 4.03
+  Frames perdidos: ~275
+
+UE 5 - Vídeo: football
+  PSNR estimado: 32.00 dB
+  MOS estimado: 4.08
+  Frames perdidos: ~249
+
+UE 1 - Vídeo: bowing
+  PSNR estimado: 30.47 dB
+  MOS estimado: 3.91
+  Frames perdidos: ~24
+
+UE 2 - Vídeo: bowing
+  PSNR estimado: 29.11 dB
+  MOS estimado: 3.69
+  Frames perdidos: ~28
+
+UE 3 - Vídeo: bowing
+  PSNR estimado: 26.61 dB
+  MOS estimado: 3.27
+  Frames perdidos: ~29
+
+UE 4 - Vídeo: bowing
+  PSNR estimado: 29.10 dB
+  MOS estimado: 3.68
+  Frames perdidos: ~29
+
+UE 5 - Vídeo: bowing
+  PSNR estimado: 29.13 dB
+  MOS estimado: 3.69
+  Frames perdidos: ~29
+
